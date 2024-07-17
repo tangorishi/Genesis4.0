@@ -6,17 +6,21 @@ import {
   TwitterLogoIcon,
   LinkedInLogoIcon,
   GitHubLogoIcon,
+  InstagramLogoIcon,
 } from "@radix-ui/react-icons";
-import behanceLogo from "../../public/behanceLogo.svg";
 
-const SocialMediaIcon = ({ Icon, href }) => (
-  <a href={href} target="_blank">
-    <Icon
-      className="w-7 h-7 text-white transition ease-in-out delay-150 
-        hover:scale-125 duration-300"
-    />
-  </a>
-);
+const SocialMediaIcon = ({ Icon, href }) => {
+  if (!href) return null; // Return null if href is not provided or empty
+
+  return (
+    <a href={href} target="_blank" className="social-icon">
+      <Icon
+        className="w-7 h-7 text-white transition ease-in-out delay-150 
+          hover:scale-125 duration-300"
+      />
+    </a>
+  );
+};
 
 const HumansCard = ({
   index,
@@ -26,6 +30,7 @@ const HumansCard = ({
   linkedin,
   twitter,
   github,
+  instagram,
 }) => {
   const defaultGradient =
     "radial-gradient(100% at center, #363636 100%, #1A1A1A 27%)";
@@ -50,39 +55,48 @@ const HumansCard = ({
         viewport={{ once: true }}
       >
         <div
-          className="flex flex-col gap-3 w-[260px] shadow text-white"
+          className="flex flex-col items-center gap-0 shadow text-white rounded-lg bg-gray-800"
           style={{ background: defaultGradient }}
         >
-          <Image
-            src={profilepic}
-            className="w-[260px] h-[320px] outline-none object-cover"
-            placeholder="blur"
-            alt="Profile Picture"
-          />
+          <div className="relative group bg-gray-800 rounded-lg overflow-hidden ">
+            <motion.div
+              className="relative"
+              initial={{ y: 0 }}
+              whileHover={{ y: -10 }}
+              transition={{ duration: 0.3 }}
+              style={{ boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)' }}
+            >
+              <div className="relative w-[240px] h-[300px]">
+                <Image
+                  src={profilepic}
+                  className="w-full h-full outline-none object-cover transition-shadow duration-300 group-hover:shadow-lg group-hover:shadow-black border-8 border-gray-800"
+                  placeholder="blur"
+                  alt="Profile Picture"
+                />
+                <div
+                  className="absolute inset-0 flex items-center justify-center bg-black 
+                  bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-0"
+                >
+                  <div className="flex gap-6 transform translate-y-10 group-hover:translate-y-0 transition-transform duration-300">
+                    {linkedin && <SocialMediaIcon href={linkedin} Icon={LinkedInLogoIcon} />}
+                    {twitter && <SocialMediaIcon href={twitter} Icon={TwitterLogoIcon} />}
+                    {github && <SocialMediaIcon href={github} Icon={GitHubLogoIcon} />}
+                    {instagram && <SocialMediaIcon href={instagram} Icon={InstagramLogoIcon} />}
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
 
-          <div className="w-full flex flex-col gap-2 rounded-b-[8px] p-1">
-            <p className="sm:text-2xl text-xl text-white">{name}</p>
+          <div className="w-full flex flex-col items-center gap-2 p-1 bg-gray-800 rounded-b-lg">
+            <p className="sm:text-2xl text-xl text-white font-semibold text-center mb-1">
+              {name}
+            </p>
             {role && (
-              <p className="font-[Inter] text-[#D1CAC7] text-lg sm:text-xl leading-9">
+              <p className="font-[Inter] text-blue-500 text-lg sm:text-base leading-6">
                 {role}
               </p>
             )}
-            <div className="flex gap-6 py-2">
-              <SocialMediaIcon href={linkedin} Icon={LinkedInLogoIcon} />
-              <SocialMediaIcon href={twitter} Icon={TwitterLogoIcon} />
-              {name !== "Aditya Raj" && (
-                <SocialMediaIcon href={github} Icon={GitHubLogoIcon} />
-              )}
-              {name === "Aditya Raj" && (
-                <a href="https://www.behance.net/adi_ux" target="_blank">
-                  <Image
-                    src={behanceLogo}
-                    className="w-7 h-7"
-                    alt="Behance Logo"
-                  />
-                </a>
-              )}
-            </div>
           </div>
         </div>
       </motion.div>
