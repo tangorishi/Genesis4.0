@@ -46,8 +46,8 @@ export default function Contact() {
                   text-[1.25rem] sm:max-w-[32rem] lg:max-w-[40rem] xl:max-w-[50rem] 
                   2xl:max-w-[55rem] md:text-[1rem] xl:text-[1.5rem]"
               >
-                Hacker Experience is what we prioritize! Have questions, need
-                assistance, or just want to connect? Feel free to reach out!
+                At IEEE Genesis, we prioritize the experience! Whether you have questions, need assistance, or simply want to connect, don’t hesitate to reach out. 
+                Join us at IEEE's biggest technical fest at Manipal University Jaipur, featuring a variety of events from fun activities to coding challenges.
               </p>
             </div>
 
