@@ -55,10 +55,10 @@ const HumansCard = ({
         viewport={{ once: true }}
       >
         <div
-          className="flex flex-col items-center gap-0 shadow text-white rounded-lg bg-gray-800"
+          className="flex flex-col items-center gap-0 shadow text-white rounded-lg bg-gray-900"
           style={{ background: defaultGradient }}
         >
-          <div className="relative group bg-gray-800 rounded-lg overflow-hidden ">
+          <div className="relative group bg-gray-900 rounded-lg overflow-hidden ">
             <motion.div
               className="relative"
               initial={{ y: 0 }}
@@ -69,7 +69,7 @@ const HumansCard = ({
               <div className="relative w-[240px] h-[300px]">
                 <Image
                   src={profilepic}
-                  className="w-full h-full outline-none object-cover transition-shadow duration-300 group-hover:shadow-lg group-hover:shadow-black border-8 border-gray-800"
+                  className="w-full h-full outline-none object-cover transition-shadow duration-300 group-hover:shadow-lg group-hover:shadow-black border-8 border-gray-900"
                   placeholder="blur"
                   alt="Profile Picture"
                 />
@@ -88,7 +88,7 @@ const HumansCard = ({
             </motion.div>
           </div>
 
-          <div className="w-full flex flex-col items-center gap-2 p-1 bg-gray-800 rounded-b-lg">
+          <div className="w-full flex flex-col items-center gap-2 p-1 bg-gray-900 rounded-b-lg">
             <p className="sm:text-2xl text-xl text-white font-semibold text-center mb-1">
               {name}
             </p>
