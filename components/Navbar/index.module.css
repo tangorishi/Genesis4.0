@@ -1,0 +1,45 @@
+.hamburger {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  cursor: pointer;
+  transition: all 0.25s;
+  border: 1.5px solid #9d9d9d;
+  border-radius: 2rem;
+  padding: 0.6rem 1.3rem;
+  row-gap: 0.31rem;
+}
+
+.hamburgerTop,
+.hamburgerMiddle,
+.hamburgerBottom {
+  width: 24px;
+  height: 2.5px;
+  top: 0;
+  left: 0;
+  background: #fff;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburgerBottom {
+  width: calc(100% - 8px);
+}
+.open {
+  border: none;
+  position: relative;
+  transform: rotate(90deg);
+}
+
+.open .hamburgerTop {
+  transform: translateY(4px) rotate(45deg);
+}
+
+.open .hamburgerMiddle {
+  transform: translateY(-4px) rotate(-45deg);
+}
+
+.open .hamburgerBottom {
+  display: none;
+}
