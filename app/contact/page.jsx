@@ -6,18 +6,18 @@ import Footer from "@/components/Footer";
 import "./page.css";
 
 export const metadata = {
-  title: "Contact | HackByte",
+  title: "Contact | Genesis",
   description:
-    "Connect with us at HackByte! Reach out for assistance, questions, or just to say hello. Find information on reaching IIIT Jabalpur, including travel options.",
-  keywords: "contact, hackbyte, reach us, get in touch",
+    "Connect with us at IEEE's Genesis! Reach out for assistance, questions, or just to say hello. Find information on reaching Manipal University Jaipur, including travel options.",
+  keywords: "contact, genesis, reach us, get in touch",
   openGraph: {
-    title: "Contact | HackByte",
+    title: "Contact | Genesis",
     description:
-      "Connect with us at HackByte! Reach out for assistance, questions, or just to say hello. Find information on reaching IIIT Jabalpur, including travel options.",
-    url: "https://hackbyte.in/contact",
+      "Connect with us at IEEE's Genesis! Reach out for assistance, questions, or just to say hello. Find information on reaching Manipal University Jaipur, including travel options.",
+    url: "https://genesis.muj/contact",
     images:
       "https://res.cloudinary.com/drtmfrghg/image/upload/v1708016443/opengraph-image_vkiopn.jpg",
-    siteName: "HackByte - IIITDMJ Hackathon",
+    siteName: "Genesis - IEEE MUJ Event",
     type: "website",
     locale: "en_US",
   },
@@ -51,24 +51,17 @@ export default function Contact() {
               </p>
             </div>
 
-            <img
-              className="w-44 h-44 md:hidden lg:block xl:h-60 xl:w-60 rotatingContainer"
-              src="/getInTouchImage.svg"
-              alt="Get in touch"
-            />
           </div>
 
           <div className="flex flex-col items-start gap-8 md:gap-12">
             <p className="text-[#F5F0D8] font-normal font-['Inter'] text-[1.5rem] md:text-[1.875rem]">
-              Reaching IIIT Jabalpur
+              Reaching Manipal University Jaipur
             </p>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3174.631325012539!2d80.02390068793628!3d23.17681212828739!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3981a94397365dd3%3A0x5f9aeb812c2678c9!2sIIITDM%20Jabalpur!5e0!3m2!1sen!2sin!4v1696615484249!5m2!1sen!2sin"
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5086.387345091763!2d75.5675908396371!3d26.841597323992485!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4850e1a5a723%3A0x85186d7bad10eac4!2sManipal%20University%20Library!5e0!3m2!1sen!2sin!4v1720507553431!5m2!1sen!2sin"
               className="w-full h-full md:h-[25rem] border-0 rounded-[1rem]"
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
+
+             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
           </div>
 
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
@@ -90,8 +83,10 @@ export default function Contact() {
                   By Train
                 </p>
                 <p className="text-[#D1CAC7] font-['Inter'] text-[1rem] font-normal md:text-[1.125rem]">
-                  Book tickets from IRCTC : The campus is 10kms from the Railway
-                  Terminal and auto fare is usually around ₹200-₹250.
+                  Book tickets from IRCTC : The campus is 
+                  <span className="font-[600]" > 25kms from Jaipur Railway </span>
+                  Terminal and auto fare is usually around 
+                  <span className="font-[600]"> ₹500-₹600. </span>
                 </p>
               </div>
             </div>
@@ -116,10 +111,9 @@ export default function Contact() {
                 <p className="text-[#D1CAC7] font-['Inter'] text-[1rem] font-normal md:text-[1.125rem]">
                   Daily flights from{" "}
                   <span className="font-[600]">
-                    Delhi, Mumbai, Hyderabad, Indore and Bilaspur.
-                  </span>{" "}
-                  From <span className="font-[600]">Bangalore</span>, connecting
-                  flights are available.
+                    Delhi, Mumbai, Hyderabad, and Bangalore. 
+                  </span>
+                  The campus is approximately 35kms from Jaipur International Airport.
                 </p>
               </div>
             </div>
@@ -143,12 +137,10 @@ export default function Contact() {
                 </p>
                 <p className="text-[#D1CAC7] font-['Inter'] text-[1rem] font-normal md:text-[1.125rem]">
                   Only suggested if you live around{" "}
-                  <span className="font-[600]">8-10hrs</span> from Jabalpur.{" "}
-                  <span className="font-[600]">
-                    ISBT (Pandit Deen Dayal Bus Stand)
-                  </span>{" "}
-                  is around 13km from the venue, auto fare is usually around{" "}
-                  <span className="font-[600]">₹400-₹450</span>.
+                  <span className="font-[600]">8-10hrs</span> from Jaipur. 
+                  <span className="font-[600]"> Sindhi Camp Bus Stand </span> 
+                  is around 30km from the venue, auto fare is usually around 
+                  <span className="font-[600]"> ₹400-₹450</span>.
                 </p>
               </div>
             </div>
@@ -164,12 +156,13 @@ export default function Contact() {
               font-normal text-[1rem] md:flex-row lg:text-[1.5rem]"
               >
                 <div className="flex flex-col items-start gap-2">
-                  <p>+91 89498 47292</p>
-                  <p>Samyak Bhargava</p>
+                <p>+91 XXXXXXXXXX</p>
+                <p>Will update</p>
                 </div>
                 <div className="flex flex-col items-start gap-2">
-                  <p>+91 73758 32032</p>
-                  <p>Bhavik Agarwal</p>
+
+                  <p>+91 XXXXXXXXXX</p>
+                  <p>Will update</p>
                 </div>
               </div>
             </div>
@@ -181,8 +174,7 @@ export default function Contact() {
                 className="max-w-full md:max-w-[18rem] lg:max-w-[25rem] text-white 
               font-normal text-[1rem] lg:text-[1.5rem]"
               >
-                IIITDM Jabalpur, Near Dumna Airport, Jabalpur, Madhya Pradesh
-                482005
+                Manipal University Jaipur, Dahmi Kalan, Jaipur, Rajasthan 303007
               </p>
             </div>
           </div>
@@ -203,7 +195,7 @@ export default function Contact() {
             <br /> Odyssey!
           </p>
 
-          <FooterAnimation />
+          {/* <FooterAnimation /> */}
         </div>
       </div>
       <Footer />
