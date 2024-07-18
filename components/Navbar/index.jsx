@@ -24,7 +24,7 @@ const NavItem = ({ label, href }) => {
 
   return (
     <div
-      className={`group relative text-[#9A9A9A] font-[600] px-6 py-2 
+      className={`group relative text-white font-[600] px-6 py-2 
       rounded-full transition-all ease-in-out focus-visible:outline-2 ${
         pathname === href ? "" : "hover:bg-[#FFFFFF10]"
       }`}

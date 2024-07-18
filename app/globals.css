@@ -30,16 +30,29 @@ scrollbar-thumb {
   border-radius: 10px;
 }
 
-.cursor {
+cursor {
   position: fixed;
-  top: 0;
   left: 0;
-  width: 20px;
-  height: 20px;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  background-color: white;
   border-radius: 50%;
-  background: #fff;
-  transition: 0.1s;
-  transform: translate(-50%, -50%);
   pointer-events: none;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.cursor-follower {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
   mix-blend-mode: difference;
+  cursor: pointer;
 }
