@@ -15,25 +15,19 @@ import auth0 from "@/public/partnersPage/auth0.webp";
 import taipy from "@/public/partnersPage/taipy.jpg";
 import godaddy from "@/public/partnersPage/godaddy.webp";
 
-import balsamiq from "@/public/partnersPage/balsamiq.webp";
-import edubard from "@/public/partnersPage/edubard.webp";
-import wolfram from "@/public/partnersPage/wolfram.webp";
-import mongodb from "@/public/partnersPage/mongodb.webp";
-import finlatics from "@/public/partnersPage/finlatics.webp";
-import jdoodle from "@/public/partnersPage/jdoodle.png";
 import FooterAnimation from "@/components/FooterAnimation";
 import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Partners | HackByte",
   description:
-    "Explore the invaluable support from our esteemed sponsors and partners at HackByte – the premier hackathon hosted by IIITDMJ. Discover their contributions and partnerships, playing a pivotal role in empowering the coding community.",
+    "Explore the invaluable support from our esteemed sponsors at HackByte – the premier hackathon hosted by IIITDMJ. Discover their contributions and partnerships, playing a pivotal role in empowering the coding community.",
   keywords:
     "Sponsors, Partners, Hackathon, IIITDMJ, Hackbyte, Coding, Programming, Tech, Collaboration, Innovation, Community Support, Technology Events",
   openGraph: {
     title: "Partners | HackByte",
     description:
-      "Explore the invaluable support from our esteemed sponsors and partners at HackByte – the premier hackathon hosted by IIITDMJ. Discover their contributions and partnerships, playing a pivotal role in empowering the coding community.",
+      "Explore the invaluable support from our esteemed sponsors at HackByte – the premier hackathon hosted by IIITDMJ. Discover their contributions and partnerships, playing a pivotal role in empowering the coding community.",
     url: "https://hackbyte.in/partners",
     images:
       "https://res.cloudinary.com/drtmfrghg/image/upload/v1708016443/opengraph-image_vkiopn.jpg",
@@ -43,7 +37,7 @@ export const metadata = {
   },
 };
 
-const normalSponsorsData = [
+const sponsorsData = [
   {
     sponsor: "MLH",
     category: "Platform Partner",
@@ -112,45 +106,6 @@ const normalSponsorsData = [
   },
 ];
 
-const inKindSponsorsData = [
-  {
-    sponsor: "Balsamiq",
-    category: "Community Sponsor",
-    sponsorimgsrc: balsamiq,
-    site: "https://balsamiq.com",
-  },
-  {
-    sponsor: "Edubard",
-    category: "Media Partner",
-    sponsorimgsrc: edubard,
-    site: "https://edubard.in",
-  },
-  {
-    sponsor: "Wolfram",
-    category: "Community Sponsor",
-    sponsorimgsrc: wolfram,
-    site: "https://www.wolfram.com/wolfram-one/",
-  },
-  {
-    sponsor: "MongoDB",
-    category: "Community Sponsor",
-    sponsorimgsrc: mongodb,
-    site: "https://www.mongodb.com/",
-  },
-  {
-    sponsor: "Finlatics",
-    category: "Community Sponsor",
-    sponsorimgsrc: finlatics,
-    site: "https://www.finlatics.com/",
-  },
-  {
-    sponsor: "JDoodle",
-    category: "Community Sponsor",
-    sponsorimgsrc: jdoodle,
-    site: "https://www.jdoodle.com/?utm_source=Event+Website&utm_medium=Event+Sponsorship&utm_campaign=HackByte+Sponsorship+2024&utm_id=HackByte+2.0",
-  },
-];
-
 const Partners = () => {
   return (
     <div className="overflow-x-hidden">
@@ -170,56 +125,25 @@ const Partners = () => {
             >
               We are proud to collaborate with visionary organizations that
               share our passion for innovation and technology. These esteemed
-              partners play a crucial role in making our hackathon a success
+              partners play a crucial role in making GENESIS 4.0 a success.
             </p>
           </div>
         </div>
 
-        <Tabs
-          defaultValue="Sponsors"
-          className="flex flex-col justify-center items-center text-white"
+        <div
+          className="w-full flex flex-col items-center gap-8 xl:gap-12"
         >
-          <TabsList className="mb-16 w-[19rem] min-w-[321px]:w-80 sm:w-[488px]">
-            <TabsTrigger
-              value="Sponsors"
-              className="sm:p-4 p-2 sm:w-60 w-40 min-[300px]:text-lg sm:text-2xl 
-                text-xl leading-7"
-            >
-              Sponsors
-            </TabsTrigger>
-            <TabsTrigger
-              value="InKind Sponsors"
-              className="sm:p-4 p-2 sm:w-60 w-40 min-[300px]:text-lg sm:text-2xl 
-                text-xl leading-7"
-            >
-              In Kind Sponsors
-            </TabsTrigger>
-          </TabsList>
-          <TabsContent value="Sponsors">
-            <div className="w-full flex flex-col items-center gap-8 xl:gap-12">
-              <TitleSponsorCard />
+          <TitleSponsorCard />
 
-              <div
-                className="w-full xl:max-w-[95%] 2xl:max-w-[90%] grid grid-cols-1 
-                  md:grid-cols-2 xl:grid-cols-3 gap-8 xl:gap-12"
-              >
-                {normalSponsorsData.map((sponsor, index) => {
-                  return <SponsorCard key={index} index={index} {...sponsor} />;
-                })}
-              </div>
-            </div>
-          </TabsContent>
-          <TabsContent value="InKind Sponsors">
-            <div
-              className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 
-                gap-8 xl:gap-12"
-            >
-              {inKindSponsorsData.map((sponsor, index) => {
-                return <SponsorCard key={index} index={index} {...sponsor} />;
-              })}
-            </div>
-          </TabsContent>
-        </Tabs>
+          <div
+            className="w-full xl:max-w-[95%] 2xl:max-w-[90%] grid grid-cols-1 
+              md:grid-cols-2 xl:grid-cols-3 gap-8 xl:gap-12"
+          >
+            {sponsorsData.map((sponsor, index) => {
+              return <SponsorCard key={index} index={index} {...sponsor} />;
+            })}
+          </div>
+        </div>
       </div>
 
       <div className="bg-black w-full h-full py-24 lg:py-40">
