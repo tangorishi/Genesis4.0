@@ -1,3 +1,4 @@
+'use client';
 import Navbar from "@/components/Navbar";
 import ThemeTitle from "@/components/ThemeTitle";
 import { Button } from "@/components/ui/button";
@@ -10,11 +11,14 @@ import {
   DiscordLogoIcon,
 } from "@radix-ui/react-icons";
 import Link from "next/link";
-import StatisticCard from "@/components/StatisticCard";
+import {motion} from "framer-motion";
+
 import NewsLetter from "@/components/NewsLetter";
 
 import FooterAnimation from "@/components/FooterAnimation";
 import Footer from "@/components/Footer";
+import ParticipateAdvantage from "@/components/ParticipateAdvantage";
+import CountAnimation from "@/components/CountAnimation";
 
 const SocialMediaIcon = ({ Icon, href }) => (
   <a href={href} target="_blank">
@@ -46,44 +50,38 @@ export default function Home() {
     },
   ];
 
-  const aboutData = [
+  const advantages = [
     {
-      imgSrc: "/aboutPage/img1.svg",
-      title: "Collaborate and skill up",
-      description:
-        "Connect with people, form a team, learn new skills and develop amazing projects!",
+      icon: '/img1.svg',
+      heading: 'Collaborate and skill up',
+      description: 'Connect with people, form a team, learn new skills and develop amazing projects!'
     },
     {
-      imgSrc: "/aboutPage/img2.svg",
-      title: "Exciting Prices",
-      description:
-        "Top 3 teams plus best projects of each domain will win prizes which will be disclosed soon!",
+      icon: '/img2.svg',
+      heading: 'Win exciting prizes',
+      description: 'Top 3 teams plus best projects of each domain will win prizes which will be disclosed soon!'
     },
     {
-      imgSrc: "/aboutPage/img3.svg",
-      title: "Engaging Workshops",
-      description:
-        "Technical workshops and events like no-light event will keep the participants engaged throughout.",
+      icon: '/img3.svg',
+      heading: 'Engaging Workshops',
+      description: 'Technical workshops and events like no-light event will keep the participants engaged throughout.'
     },
     {
-      imgSrc: "/aboutPage/img4.svg",
-      title: "Mentorship sessions",
-      description:
-        "Get mentorship and guidance from prominent technocrats of the industry.",
+      icon: '/img4.svg',
+      heading: 'Mentorship sessions',
+      description: 'Get mentorship and guidance from prominent technocrats of the industry.'
     },
     {
-      imgSrc: "/aboutPage/img5.svg",
-      title: "Recruitment offers",
-      description:
-        "Best performers will get recruitment offers from prestigious companies.",
+      icon: '/img5.svg',
+      heading: 'Recruitment offers',
+      description: 'Best performers will get recruitment offers from prestigious companies.'
     },
     {
-      imgSrc: "/aboutPage/img6.svg",
-      title: "Expand network",
-      description:
-        "Connect with industry professionals and recruiters and other teams to learn and grow more.",
-    },
-  ];
+      icon: '/img6.svg',
+      heading: 'Expand network',
+      description: 'Connect with industry professionals and recruiters and other teams to learn and grow more.'
+    }
+  ]
 
   return (
     <div className="overflow-x-hidden">
@@ -93,7 +91,7 @@ export default function Home() {
           p-4 pt-20 md:pt-32 md:px-12 xl:px-20 md:py-4"
       >
         <div
-          className="flex flex-wrap justify-between items-center 
+          className="flex flex-wrap justify-between items-center
             pt-16 gap-4 xl:pt-12 lg:gap-0"
         >
           <div className="flex flex-col items-start w-full lg:w-1/2">
@@ -101,7 +99,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col items-start gap-3 w-full lg:items-end lg:w-1/2">
             <p
-              className="text-[#FAF8ED] text-[1.25rem] font-medium text-left 
+              className="text-[#FAF8ED] text-[1.25rem] font-medium text-left
               lg:text-right lg:text-[1.5rem]"
             >
               Join us at IIIT Jabalpur, April
@@ -111,8 +109,8 @@ export default function Home() {
             <Link href="/prizes#logitech-tracks" passHref>
               <Button
                 size="sm"
-                className="bg-[#FAF8ED] text-black text-[1.125rem] font-semibold p-6 
-                rounded-none hover:bg-[#FAF8ED] hover:text-black hover:scale-105 
+                className="bg-[#FAF8ED] text-black text-[1.125rem] font-semibold p-6
+                rounded-none hover:bg-[#FAF8ED] hover:text-black hover:scale-105
                 transition-transform ease-in-out duration-300"
                 style={{
                   boxShadow:
@@ -162,7 +160,7 @@ export default function Home() {
           </div>
           <div className="hidden lg:flex flex-col items-end gap-4">
             <p
-              className="text-[#FAF8ED] text-[1rem] xl:text-[1.25rem] 
+              className="text-[#FAF8ED] text-[1rem] xl:text-[1.25rem]
                 font-semibold text-right"
             >
               We Think to Innovate
@@ -190,94 +188,76 @@ export default function Home() {
       </div>
 
       <div className="w-full flex flex-col bg-[#101010]">
-        <div className="flex flex-col p-4 md:px-12 xl:px-20 py-16 md:py-24">
-          <div
-            className="grid grid-cols-1 gap-6 md:gap-8 md:grid-cols-2 
-            lg:grid-cols-3 xl:grid-cols-4 pt-8 md:pt-16"
-          >
-            {statisticsData.map((statistic, index) => (
-              <StatisticCard key={index} {...statistic} />
-            ))}
+        <motion.div
+          className="flex flex-row mt-6 md:mt-8 items-center justify-center"
+        >
+          <div className="flex flex-col w-[30%] items-center">
+            <CountAnimation targetValue={10}/>
+            <div className="md:text-3xl text-center text-slate-200">Sponsors</div>
           </div>
-        </div>
+          <div className="flex flex-col w-[30%] items-center">
+            <CountAnimation targetValue={2000}/>
+            <div className="md:text-3xl text-center text-slate-200">Participants</div>
+          </div>
+          <div className="flex flex-col w-[30%] items-center">
+            <CountAnimation targetValue={300000}/>
+            <div className="md:text-3xl text-center text-slate-200">Prize Pool</div>
+          </div>
+        </motion.div>
 
         <div className="flex flex-col items-center p-4 md:px-12 xl:px-20 py-16 md:py-24">
           <div className="flex flex-col items-start gap-16">
             <div className="w-full flex flex-col items-center gap-5">
               <div className="flex flex-col items-start gap-3">
                 <p
-                  className="self-stretch text-center text-[#7A7A7A] text-sm md:text-sm 
+                  className="self-stretch text-center text-[#7A7A7A] text-sm md:text-sm
                     lg:text-base font-semibold leading-normal"
                 >
                   Opportunities for Participants
                 </p>
                 <p
-                  className="text-center text-[#F5F0D8] text-3xl lg:text-4xl 
+                  className="text-center text-[#F5F0D8] text-3xl lg:text-4xl
                     font-medium leading-[44px]"
                 >
-                  Why participate in Hackbyte?
+                  Why participate in Genesis 4.0?
                 </p>
               </div>
               <p
-                className="text-center text-[#D1CAC7] text-lg lg:text-xl 
+                className="text-center text-[#D1CAC7] text-lg lg:text-xl
                   font-normal font-['Inter'] leading-[30px]"
               >
-                HackByte 2.0 promises a wonderful experience to the
+                Genesis 4.0 promises a wonderful experience to the
                 participants.
               </p>
             </div>
-
             <div
-              className="inline-flex flex-col py-[3rem] px-[2.275rem] rounded-[8px] border-2 border-[rgba(255,255,255,0.6)]"
-              style={{
-                background:
-                  "radial-gradient(116.96% 115.94% at 9.81% 9.24%, #363636 0%, rgba(26, 26, 26, 0.27) 100%)",
-              }}
-            >
-              <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-12 xl:gap-8">
-                {aboutData.map((item, index) => (
-                  <div
-                    key={index}
-                    className={`flex flex-col items-center gap-5 ${
-                      index >= 3 ? "xl:mt-9" : ""
-                    }`}
-                  >
-                    <img
-                      className="w-10 h-10 lg:w-12 lg:h-12"
-                      src={item.imgSrc}
-                      alt={`Image ${index + 1}`}
-                    />
-                    <div className="flex flex-col items-center gap-1">
-                      <p className="text-center text-[#D1CAC7] font-medium text-lg lg:text-xl">
-                        {item.title}
-                      </p>
-                      <p className="text-center text-[#D1CAC7] font-medium leading-normal text-base md:text-sm lg:text-base">
-                        {item.description}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
+              className="flex justify-center flex-wrap mt-12 items-center bg-gradient-to-r from-[#9d00ff1f] to-[#5600ff4d] rounded-2xl pt-4 md:pt-0">
+              {
+                advantages.map((advantage, index) => (
+                  <ParticipateAdvantage key={index} icon={advantage.icon} heading={advantage.heading}
+                                        description={advantage.description}/>
+                ))
+              }
             </div>
           </div>
         </div>
       </div>
 
       <div
-        className="bg-[#EBB323] w-full h-full flex flex-col md:flex-row justify-between 
+        className="bg-[#EBB323] w-full h-full flex flex-col md:flex-row justify-between
           items-center px-4 md:px-8 xl:px-36 pt-10 pb-28 lg:pb-48 xl:pb-40"
       >
         <div className="flex flex-col justify-center items-center max-w-lg">
           <div className="flex flex-col gap-8">
             <div className="flex flex-col gap-4">
               <p
-                className=" text-black text-4xl lg:text-5xl font-medium 
+                className=" text-black text-4xl lg:text-5xl font-medium
                   leading-[2.75rem] tracking-tighter"
               >
                 Join our mailing list!
               </p>
               <p
-                className="max-w-[30rem] text-black text-base md:text-sm lg:text-lg 
+                className="max-w-[30rem] text-black text-base md:text-sm lg:text-lg
                 font-normal font-['Inter'] leading-6 sm:leading-7 tracking-tight"
               >
                 To stay up-to-date with HackByte 2.0, consider subscribing to
@@ -293,7 +273,7 @@ export default function Home() {
                   src="/aboutPage/checkIcon.svg"
                 />
                 <p
-                  className=" text-black text-base md:text-sm lg:text-lg font-normal 
+                  className=" text-black text-base md:text-sm lg:text-lg font-normal
                   font-['Inter'] leading-6 sm:leading-7 tracking-tight"
                 >
                   Get updates about your application status
@@ -305,7 +285,7 @@ export default function Home() {
                   src="/aboutPage/checkIcon.svg"
                 />
                 <p
-                  className=" text-black text-base md:text-sm lg:text-lg font-normal 
+                  className=" text-black text-base md:text-sm lg:text-lg font-normal
                   font-['Inter'] leading-6 sm:leading-7 tracking-tight"
                 >
                   Get notified for exciting events!
@@ -317,7 +297,7 @@ export default function Home() {
                   src="/aboutPage/checkIcon.svg"
                 />
                 <p
-                  className=" text-black text-base md:text-sm lg:text-lg font-normal 
+                  className=" text-black text-base md:text-sm lg:text-lg font-normal
                   font-['Inter'] leading-6 sm:leading-7 tracking-tight"
                 >
                   Be the first ones to register for HackByte 2.0
@@ -337,12 +317,12 @@ export default function Home() {
       <div className="relative bg-[#000000] w-full h-full flex flex-col justify-end pt-48 md:pt-60 lg:pt-80">
         <NewsLetter />
         <div
-          className="flex flex-col justify-between gap-20 md:flex-row 
+          className="flex flex-col justify-between gap-20 md:flex-row
             px-6 md:px-8 xl:px-20 py-20"
         >
           <p
-            className="max-w-3xl text-6xl md:text-[5.5rem] lg:text-[7rem] xl:text-[9rem] 
-          text-white font-normal md:leading-[8rem] lg:leading-[10rem] 
+            className="max-w-3xl text-6xl md:text-[5.5rem] lg:text-[7rem] xl:text-[9rem]
+          text-white font-normal md:leading-[8rem] lg:leading-[10rem]
             tracking-tighter md:tracking-[-0.2rem]"
           >
             Empower
