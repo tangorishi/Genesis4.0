@@ -3,17 +3,19 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import TitleSponsorCard from "@/components/TitleSponsorCard";
 import SponsorCard from "@/components/ui/cards";
 
-import mlh from "@/public/partnersPage/mlh.webp";
-import github from "@/public/partnersPage/github.jpg";
-import postman from "@/public/partnersPage/postman.jpg";
-import bobble from "@/public/partnersPage/bobble.webp";
-import godspeed from "@/public/partnersPage/godSpeed.jpg";
-import devfolio from "@/public/partnersPage/devfolio.webp";
-import virtualProtocol from "@/public/partnersPage/virtualProtocol.jpg";
-import nextgen from "@/public/partnersPage/nextgen.jpg";
-import auth0 from "@/public/partnersPage/auth0.webp";
-import taipy from "@/public/partnersPage/taipy.jpg";
-import godaddy from "@/public/partnersPage/godaddy.webp";
+import codingNinjas from "@/public/partnersPage/codingNinjas.png";
+import codechef from "@/public/partnersPage/codechef.png";
+import ieeeRajasthan from "@/public/partnersPage/ieeeRajasthan.jpg";
+import guvi from "@/public/partnersPage/guvi.webp";
+import vivo from "@/public/partnersPage/vivo.jpg";
+import starbucks from "@/public/partnersPage/starbucks.webp";
+import decathlon from "@/public/partnersPage/decathlon.webp";
+import paradyes from "@/public/partnersPage/paradyes.jpg";
+import unstop from "@/public/partnersPage/unstop.jpg";
+import tribevibe from "@/public/partnersPage/tribevibe.png";
+import axure from "@/public/partnersPage/axure.jpg";
+import siuk from "@/public/partnersPage/siuk.png";
+import xyz from "@/public/partnersPage/xyz.jpg";
 
 import FooterAnimation from "@/components/FooterAnimation";
 import Footer from "@/components/Footer";
@@ -39,70 +41,82 @@ export const metadata = {
 
 const sponsorsData = [
   {
-    sponsor: "MLH",
+    sponsor: "Coding Ninjas",
     category: "Platform Partner",
-    sponsorimgsrc: mlh,
-    site: "https://mlh.io",
+    sponsorimgsrc: codingNinjas,
+    site: "https://www.codingninjas.com",
   },
   {
-    sponsor: "GitHub",
+    sponsor: "Codechef",
     category: "Gold Sponsor",
-    sponsorimgsrc: github,
-    site: "https://gh.io/hackbyte2",
+    sponsorimgsrc: codechef,
+    site: "https://www.codechef.com",
   },
   {
-    sponsor: "Postman",
+    sponsor: "IEEE Rajasthan",
     category: "Gold Sponsor",
-    sponsorimgsrc: postman,
-    site: "https://community.postman.com",
+    sponsorimgsrc: ieeeRajasthan,
+    site: "https://www.ieeerajasthan.org",
   },
   {
-    sponsor: "Bobble Fan Store",
+    sponsor: "Guvi",
     category: "Merch Partner",
-    sponsorimgsrc: bobble,
-    site: "https://fanstore.bobble.ai",
+    sponsorimgsrc: guvi,
+    site: "https://www.guvi.in",
   },
   {
-    sponsor: "Godspeed Systems",
+    sponsor: "Vivo",
     category: "Silver Sponsor",
-    sponsorimgsrc: godspeed,
-    site: "https://godspeed.systems",
+    sponsorimgsrc: vivo,
+    site: "https://www.vivo.com",
   },
   {
-    sponsor: "Devfolio",
+    sponsor: "Starbucks",
     category: "Platform Partner",
-    sponsorimgsrc: devfolio,
-    site: "https://devfolio.co",
+    sponsorimgsrc: starbucks,
+    site: "https://www.starbucks.com",
   },
   {
-    sponsor: "Virtual Protocol",
+    sponsor: "Decathlon",
     category: "Bronze Sponsor",
-    sponsorimgsrc: virtualProtocol,
-    site: "https://www.virtuals.io/",
+    sponsorimgsrc: decathlon,
+    site: "https://www.decathlon.in",
   },
   {
-    sponsor: "NextGen",
+    sponsor: "Paradyes",
     category: "Bronze Sponsor",
-    sponsorimgsrc: nextgen,
-    site: "https://nextgenglobalhub.github.io/opensourcecohort/",
+    sponsorimgsrc: paradyes,
+    site: "https://www.paradyes.com",
   },
   {
-    sponsor: "Auth0",
+    sponsor: "Unstop",
     category: "Track Sponsor",
-    sponsorimgsrc: auth0,
-    site: "http://hackp.ac/auth0",
+    sponsorimgsrc: unstop,
+    site: "https://unstop.com",
   },
   {
-    sponsor: "Taipy",
+    sponsor: "Tribevibe",
     category: "Track Sponsor",
-    sponsorimgsrc: taipy,
-    site: "https://hackp.ac/taipy-gettingstarted",
+    sponsorimgsrc: tribevibe,
+    site: "https://www.tribevibe.live",
   },
   {
-    sponsor: "Go Daddy Registry",
+    sponsor: "Axure",
     category: "Track Sponsor",
-    sponsorimgsrc: godaddy,
-    site: "http://hackp.ac/godaddyregistry",
+    sponsorimgsrc: axure,
+    site: "https://www.axure.com",
+  },
+  {
+    sponsor: "SI UK",
+    category: "Track Sponsor",
+    sponsorimgsrc: siuk,
+    site: "https://www.studyin-uk.com",
+  },
+  {
+    sponsor: ".xyz",
+    category: "Track Sponsor",
+    sponsorimgsrc: xyz,
+    site: "https://gen.xyz",
   },
 ];
 
@@ -130,9 +144,7 @@ const Partners = () => {
           </div>
         </div>
 
-        <div
-          className="w-full flex flex-col items-center gap-8 xl:gap-12"
-        >
+        <div className="w-full flex flex-col items-center gap-8 xl:gap-12">
           <TitleSponsorCard />
 
           <div
