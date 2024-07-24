@@ -3,37 +3,33 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import TitleSponsorCard from "@/components/TitleSponsorCard";
 import SponsorCard from "@/components/ui/cards";
 
-import mlh from "@/public/partnersPage/mlh.webp";
-import github from "@/public/partnersPage/github.jpg";
-import postman from "@/public/partnersPage/postman.jpg";
-import bobble from "@/public/partnersPage/bobble.webp";
-import godspeed from "@/public/partnersPage/godSpeed.jpg";
-import devfolio from "@/public/partnersPage/devfolio.webp";
-import virtualProtocol from "@/public/partnersPage/virtualProtocol.jpg";
-import nextgen from "@/public/partnersPage/nextgen.jpg";
-import auth0 from "@/public/partnersPage/auth0.webp";
-import taipy from "@/public/partnersPage/taipy.jpg";
-import godaddy from "@/public/partnersPage/godaddy.webp";
+import codingNinjas from "@/public/partnersPage/codingNinjas.png";
+import codechef from "@/public/partnersPage/codechef.png";
+import ieeeRajasthan from "@/public/partnersPage/ieeeRajasthan.jpg";
+import guvi from "@/public/partnersPage/guvi.webp";
+import vivo from "@/public/partnersPage/vivo.jpg";
+import starbucks from "@/public/partnersPage/starbucks.webp";
+import decathlon from "@/public/partnersPage/decathlon.webp";
+import paradyes from "@/public/partnersPage/paradyes.jpg";
+import unstop from "@/public/partnersPage/unstop.jpg";
+import tribevibe from "@/public/partnersPage/tribevibe.png";
+import axure from "@/public/partnersPage/axure.jpg";
+import siuk from "@/public/partnersPage/siuk.png";
+import xyz from "@/public/partnersPage/xyz.jpg";
 
-import balsamiq from "@/public/partnersPage/balsamiq.webp";
-import edubard from "@/public/partnersPage/edubard.webp";
-import wolfram from "@/public/partnersPage/wolfram.webp";
-import mongodb from "@/public/partnersPage/mongodb.webp";
-import finlatics from "@/public/partnersPage/finlatics.webp";
-import jdoodle from "@/public/partnersPage/jdoodle.png";
 import FooterAnimation from "@/components/FooterAnimation";
 import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Partners | HackByte",
   description:
-    "Explore the invaluable support from our esteemed sponsors and partners at HackByte – the premier hackathon hosted by IIITDMJ. Discover their contributions and partnerships, playing a pivotal role in empowering the coding community.",
+    "Explore the invaluable support from our esteemed sponsors at HackByte – the premier hackathon hosted by IIITDMJ. Discover their contributions and partnerships, playing a pivotal role in empowering the coding community.",
   keywords:
     "Sponsors, Partners, Hackathon, IIITDMJ, Hackbyte, Coding, Programming, Tech, Collaboration, Innovation, Community Support, Technology Events",
   openGraph: {
     title: "Partners | HackByte",
     description:
-      "Explore the invaluable support from our esteemed sponsors and partners at HackByte – the premier hackathon hosted by IIITDMJ. Discover their contributions and partnerships, playing a pivotal role in empowering the coding community.",
+      "Explore the invaluable support from our esteemed sponsors at HackByte – the premier hackathon hosted by IIITDMJ. Discover their contributions and partnerships, playing a pivotal role in empowering the coding community.",
     url: "https://hackbyte.in/partners",
     images:
       "https://res.cloudinary.com/drtmfrghg/image/upload/v1708016443/opengraph-image_vkiopn.jpg",
@@ -43,111 +39,84 @@ export const metadata = {
   },
 };
 
-const normalSponsorsData = [
+const sponsorsData = [
   {
-    sponsor: "MLH",
+    sponsor: "Coding Ninjas",
     category: "Platform Partner",
-    sponsorimgsrc: mlh,
-    site: "https://mlh.io",
+    sponsorimgsrc: codingNinjas,
+    site: "https://www.codingninjas.com",
   },
   {
-    sponsor: "GitHub",
+    sponsor: "Codechef",
     category: "Gold Sponsor",
-    sponsorimgsrc: github,
-    site: "https://gh.io/hackbyte2",
+    sponsorimgsrc: codechef,
+    site: "https://www.codechef.com",
   },
   {
-    sponsor: "Postman",
+    sponsor: "IEEE Rajasthan",
     category: "Gold Sponsor",
-    sponsorimgsrc: postman,
-    site: "https://community.postman.com",
+    sponsorimgsrc: ieeeRajasthan,
+    site: "https://www.ieeerajasthan.org",
   },
   {
-    sponsor: "Bobble Fan Store",
+    sponsor: "Guvi",
     category: "Merch Partner",
-    sponsorimgsrc: bobble,
-    site: "https://fanstore.bobble.ai",
+    sponsorimgsrc: guvi,
+    site: "https://www.guvi.in",
   },
   {
-    sponsor: "Godspeed Systems",
+    sponsor: "Vivo",
     category: "Silver Sponsor",
-    sponsorimgsrc: godspeed,
-    site: "https://godspeed.systems",
+    sponsorimgsrc: vivo,
+    site: "https://www.vivo.com",
   },
   {
-    sponsor: "Devfolio",
+    sponsor: "Starbucks",
     category: "Platform Partner",
-    sponsorimgsrc: devfolio,
-    site: "https://devfolio.co",
+    sponsorimgsrc: starbucks,
+    site: "https://www.starbucks.com",
   },
   {
-    sponsor: "Virtual Protocol",
+    sponsor: "Decathlon",
     category: "Bronze Sponsor",
-    sponsorimgsrc: virtualProtocol,
-    site: "https://www.virtuals.io/",
+    sponsorimgsrc: decathlon,
+    site: "https://www.decathlon.in",
   },
   {
-    sponsor: "NextGen",
+    sponsor: "Paradyes",
     category: "Bronze Sponsor",
-    sponsorimgsrc: nextgen,
-    site: "https://nextgenglobalhub.github.io/opensourcecohort/",
+    sponsorimgsrc: paradyes,
+    site: "https://www.paradyes.com",
   },
   {
-    sponsor: "Auth0",
+    sponsor: "Unstop",
     category: "Track Sponsor",
-    sponsorimgsrc: auth0,
-    site: "http://hackp.ac/auth0",
+    sponsorimgsrc: unstop,
+    site: "https://unstop.com",
   },
   {
-    sponsor: "Taipy",
+    sponsor: "Tribevibe",
     category: "Track Sponsor",
-    sponsorimgsrc: taipy,
-    site: "https://hackp.ac/taipy-gettingstarted",
+    sponsorimgsrc: tribevibe,
+    site: "https://www.tribevibe.live",
   },
   {
-    sponsor: "Go Daddy Registry",
+    sponsor: "Axure",
     category: "Track Sponsor",
-    sponsorimgsrc: godaddy,
-    site: "http://hackp.ac/godaddyregistry",
-  },
-];
-
-const inKindSponsorsData = [
-  {
-    sponsor: "Balsamiq",
-    category: "Community Sponsor",
-    sponsorimgsrc: balsamiq,
-    site: "https://balsamiq.com",
+    sponsorimgsrc: axure,
+    site: "https://www.axure.com",
   },
   {
-    sponsor: "Edubard",
-    category: "Media Partner",
-    sponsorimgsrc: edubard,
-    site: "https://edubard.in",
+    sponsor: "SI UK",
+    category: "Track Sponsor",
+    sponsorimgsrc: siuk,
+    site: "https://www.studyin-uk.com",
   },
   {
-    sponsor: "Wolfram",
-    category: "Community Sponsor",
-    sponsorimgsrc: wolfram,
-    site: "https://www.wolfram.com/wolfram-one/",
-  },
-  {
-    sponsor: "MongoDB",
-    category: "Community Sponsor",
-    sponsorimgsrc: mongodb,
-    site: "https://www.mongodb.com/",
-  },
-  {
-    sponsor: "Finlatics",
-    category: "Community Sponsor",
-    sponsorimgsrc: finlatics,
-    site: "https://www.finlatics.com/",
-  },
-  {
-    sponsor: "JDoodle",
-    category: "Community Sponsor",
-    sponsorimgsrc: jdoodle,
-    site: "https://www.jdoodle.com/?utm_source=Event+Website&utm_medium=Event+Sponsorship&utm_campaign=HackByte+Sponsorship+2024&utm_id=HackByte+2.0",
+    sponsor: ".xyz",
+    category: "Track Sponsor",
+    sponsorimgsrc: xyz,
+    site: "https://gen.xyz",
   },
 ];
 
@@ -170,56 +139,23 @@ const Partners = () => {
             >
               We are proud to collaborate with visionary organizations that
               share our passion for innovation and technology. These esteemed
-              partners play a crucial role in making our hackathon a success
+              partners play a crucial role in making GENESIS 4.0 a success.
             </p>
           </div>
         </div>
 
-        <Tabs
-          defaultValue="Sponsors"
-          className="flex flex-col justify-center items-center text-white"
-        >
-          <TabsList className="mb-16 w-[19rem] min-w-[321px]:w-80 sm:w-[488px]">
-            <TabsTrigger
-              value="Sponsors"
-              className="sm:p-4 p-2 sm:w-60 w-40 min-[300px]:text-lg sm:text-2xl 
-                text-xl leading-7"
-            >
-              Sponsors
-            </TabsTrigger>
-            <TabsTrigger
-              value="InKind Sponsors"
-              className="sm:p-4 p-2 sm:w-60 w-40 min-[300px]:text-lg sm:text-2xl 
-                text-xl leading-7"
-            >
-              In Kind Sponsors
-            </TabsTrigger>
-          </TabsList>
-          <TabsContent value="Sponsors">
-            <div className="w-full flex flex-col items-center gap-8 xl:gap-12">
-              <TitleSponsorCard />
+        <div className="w-full flex flex-col items-center gap-8 xl:gap-12">
+          <TitleSponsorCard />
 
-              <div
-                className="w-full xl:max-w-[95%] 2xl:max-w-[90%] grid grid-cols-1 
-                  md:grid-cols-2 xl:grid-cols-3 gap-8 xl:gap-12"
-              >
-                {normalSponsorsData.map((sponsor, index) => {
-                  return <SponsorCard key={index} index={index} {...sponsor} />;
-                })}
-              </div>
-            </div>
-          </TabsContent>
-          <TabsContent value="InKind Sponsors">
-            <div
-              className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 
-                gap-8 xl:gap-12"
-            >
-              {inKindSponsorsData.map((sponsor, index) => {
-                return <SponsorCard key={index} index={index} {...sponsor} />;
-              })}
-            </div>
-          </TabsContent>
-        </Tabs>
+          <div
+            className="w-full xl:max-w-[95%] 2xl:max-w-[90%] grid grid-cols-1 
+              md:grid-cols-2 xl:grid-cols-3 gap-8 xl:gap-12"
+          >
+            {sponsorsData.map((sponsor, index) => {
+              return <SponsorCard key={index} index={index} {...sponsor} />;
+            })}
+          </div>
+        </div>
       </div>
 
       <div className="bg-black w-full h-full py-24 lg:py-40">
