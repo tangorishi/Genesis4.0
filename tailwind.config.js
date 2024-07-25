@@ -2,10 +2,10 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{js,jsx}',
-    './components/**/*.{js,jsx}',
-    './app/**/*.{js,jsx}',
-    './src/**/*.{js,jsx}',
+    "./pages/**/*.{js,jsx}",
+    "./components/**/*.{js,jsx}",
+    "./app/**/*.{js,jsx}",
+    "./src/**/*.{js,jsx}",
   ],
   prefix: "",
   theme: {
@@ -23,6 +23,7 @@ module.exports = {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        customArrow: "#F5F0D8",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -53,8 +54,10 @@ module.exports = {
         },
       },
       backgroundImage: {
-        'custom-gradient': 'linear-gradient(to bottom, #69c4ed 10%, #224d95 40%, #19234a 80%)',
-        'custom-footer': 'linear-gradient(to bottom, #19234a 20%, #004a89 50%, #FFFFFF 100%)',
+        "custom-gradient":
+          "linear-gradient(to bottom, #69c4ed 10%, #224d95 40%, #19234a 80%)",
+        "custom-footer":
+          "linear-gradient(to bottom, #19234a 20%, #004a89 50%, #FFFFFF 100%)",
       },
 
       borderRadius: {
@@ -79,4 +82,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};
