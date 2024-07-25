@@ -1,30 +1,16 @@
-'use client';
+"use client";
 import Navbar from "@/components/Navbar";
-import ThemeTitle from "@/components/ThemeTitle";
-import { Button } from "@/components/ui/button";
-import { ArrowTopRightIcon } from "@radix-ui/react-icons";
-import { HackbyteLogo } from "@/components/HackbyteLogo";
-import {
-  TwitterLogoIcon,
-  InstagramLogoIcon,
-  LinkedInLogoIcon,
-  DiscordLogoIcon,
-} from "@radix-ui/react-icons";
-import Link from "next/link";
 import {motion} from "framer-motion";
-
-import NewsLetter from "@/components/NewsLetter";
-
-import FooterAnimation from "@/components/FooterAnimation";
 import Footer from "@/components/Footer";
+import Image from "next/image";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/all";
+import { useEffect } from "react";
+
+gsap.registerPlugin(ScrollTrigger);
 import ParticipateAdvantage from "@/components/ParticipateAdvantage";
 import CountAnimation from "@/components/CountAnimation";
 
-const SocialMediaIcon = ({ Icon, href }) => (
-  <a href={href} target="_blank">
-    <Icon className="w-7 h-7 text-white transition ease-in-out delay-150 hover:scale-125 duration-300" />
-  </a>
-);
 
 export default function Home() {
   const statisticsData = [
@@ -77,117 +63,102 @@ export default function Home() {
       description: 'Best performers will get recruitment offers from prestigious companies.'
     },
     {
-      icon: '/img6.svg',
-      heading: 'Expand network',
-      description: 'Connect with industry professionals and recruiters and other teams to learn and grow more.'
-    }
-  ]
+      imgSrc: "/aboutPage/img6.svg",
+      title: "Expand network",
+      description:
+        "Connect with industry professionals and recruiters and other teams to learn and grow more.",
+    },
+  ];
+  const gridImage =
+    "https://img.freepik.com/free-photo/aesthetic-minimal-white-grid-pattern-wallpaper_53876-96916.jpg?w=2000&t=st=1720271713~exp=1720272313~hmac=4bf0c737de802436d6775db246fd322cc7c497c72c9ea2edee3a1a8cb6b994ba";
+
+  useEffect(() => {
+
+
+    //the below is code is commented to be considered later
+    //the below is the code for rotating the mascot with the scroll
+    // const tl = gsap.timeline({
+    //   scrollTrigger: {
+    //     trigger: ".mascot",
+    //     start: "top bottom",
+    //     end: "bottom top",
+    //     scrub: true,
+    //   },
+    // });
+
+    // tl.fromTo(
+    //   ".mascot",
+    //   { rotation: 0, y: 100 },
+    //   { rotation: 360, y: 0 }
+    // );
+
+    gsap.to(".mascot", {
+      y: -20,
+      duration: 0.5,
+      ease: "power1.inOut",
+      repeat: -1,
+      yoyo: true,
+    });
+    }, []);
+
+
+
+  useEffect(() => {
+    gsap.to(".bounce-svg", {
+      y: -20,
+      duration: 0.5,
+      yoyo: true,
+      repeat: -1,
+      ease: "easeInOut",
+    });
+  }, []);
 
   return (
-    <div className="overflow-x-hidden">
+    <div className="overflow-x-hidden bg-custom-gradient">
       <Navbar />
-      <div
-        className="relative flex flex-col min-h-fit
-          p-4 pt-20 md:pt-32 md:px-12 xl:px-20 md:py-4"
-      >
+      <div className=" relative ">
+        <img
+          src={gridImage}
+          alt="grid"
+          className="absolute w-full h-full object-cover  text-white mix-blend-overlay opacity-5  blur-sm"
+        />
+        <div className=" pt-10"></div>
         <div
-          className="flex flex-wrap justify-between items-center
-            pt-16 gap-4 xl:pt-12 lg:gap-0"
+          className="relative flex flex-col min-h-fit
+            md:px-12 xl:px-20  "
         >
-          <div className="flex flex-col items-start w-full lg:w-1/2">
-            <ThemeTitle />
-          </div>
-          <div className="flex flex-col items-start gap-3 w-full lg:items-end lg:w-1/2">
-            <p
-              className="text-[#FAF8ED] text-[1.25rem] font-medium text-left
-              lg:text-right lg:text-[1.5rem]"
-            >
-              Join us at IIIT Jabalpur, April
-              <br />
-              5-7 for an in-person hackathon.
-            </p>
-            <Link href="/prizes#logitech-tracks" passHref>
-              <Button
-                size="sm"
-                className="bg-[#FAF8ED] text-black text-[1.125rem] font-semibold p-6
-                rounded-none hover:bg-[#FAF8ED] hover:text-black hover:scale-105
-                transition-transform ease-in-out duration-300"
-                style={{
-                  boxShadow:
-                    "0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 0px 0px 1px rgba(103, 110, 118, 0.16), 0px 2px 5px 0px rgba(103, 110, 118, 0.08)",
-                }}
-              >
-                Explore Logitech Tracks
-                <ArrowTopRightIcon className="w-5 h-5 ml-1" />
-              </Button>
-            </Link>
-          </div>
-        </div>
-
-        <HackbyteLogo />
-
-        <div className="flex items-center justify-between gap-4 my-12">
-          <div className="flex items-stretch">
-            <div
-              className="flex justify-center items-center py-2 md:py-2.5 px-4 md:px-6"
-              style={{ border: "1.275px solid #FAF8ED" }}
-            >
-              <div className="flex justify-center items-center gap-4">
-                <img
-                  src="/tpcLogo.svg"
-                  alt="TPC Logo"
-                  className="w-[4rem] h-[2.125rem]"
-                />
-                <p className="text-[#FAF8ED] text-[0.75rem] font-[600]">
-                  Organised by
-                  <br className="hidden md:block" /> The Programming Club of
-                  IIITDMJ
-                </p>
-              </div>
+          <div className="flex items-center gap-4 flex-col justify-between min-h-[60rem] md:max-h-[70rem] relative">
+            <div className="lg:text-[19.7rem] md:text-[12rem] text-white sm:text-[10rem] text-[6rem] sm:block cursor:pointer flex flex-nowrap font-bold tracking-normal px-2 md:px-0">
+              GENESIS{" "}
+              <span className="text-[50px] ml-8  absolute left-[1380px] top-[290px]  cursor:pointer tracking-normal">
+                4.0
+              </span>
             </div>
-            <div
-              className="flex justify-center items-center py-2 md:py-2.5 px-4 md:px-6"
-              style={{ border: "1.275px solid #FAF8ED" }}
-            >
-              <div className="flex justify-center items-center">
-                <img
-                  src="/iiitdmjLogo.svg"
-                  alt="IIITDMJ Logo"
-                  className="w-[6rem] h-[3rem]"
-                />
-              </div>
+
+            {/* if the bouncing ball svg is needed the code is below */}
+            <div className="bounce-svg absolute top-96 right-1 hidden sm:block md:right-2   lg:right-48 z-20 h-80 w-80 rounded-full bg-transparent backdrop-blur-3xl "></div>
+
+            {/* the code for mascot */}
+            <div className="lg:mt-[-27rem]  md:mt-[-15rem] h-[50rem] w-auto sm:h-[70rem] sm:mt-[-13rem]  md:w-full md:h-[70rem] lg:h-[100rem]  max-w-screen-xl mx-auto px-2 sm:px-0">
+              <Image
+                src="https://s3-alpha-sig.figma.com/img/e22a/e5af/28f38cae7afd544d9e8c5cf6ac6b911b?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=F6Zd~CUMbaNCmAVd3N-2FngI2lYO~oiqmm6JWfc9im2BnpWyC14IgkInillqXYHZlFGGYj-qDMonkL12n~g2MmA5qp0DInbW6M2jEqXTzWKieTlq5b1GRhscoSed4vLD2CctAij-~FHA~Xs8fLC8ZOaQuCynF9s9~f~0aOzemx5oFF4bZmwDKEs9tQC27N8ZVczCnGgyt0swX~Z2ahWKY2AuIOTclQihEHBsyMOVNifgKtXNpubTBL3bc619opYTl4uXCAdIEWn0baYQf3ASpc0MqpBy2DddCafCnDQRPvCz3pB1bAQRRmQ40NA3PT6WOuPN0PvRRYZgmiP7T7NJDw__"
+                alt="Mascot Image"
+                height={1500}
+                width={1500}
+                className="w-full h-full object-cover mascot"
+              />
             </div>
-          </div>
-          <div className="hidden lg:flex flex-col items-end gap-4">
-            <p
-              className="text-[#FAF8ED] text-[1rem] xl:text-[1.25rem]
-                font-semibold text-right"
-            >
-              We Think to Innovate
-            </p>
-            <div className="flex gap-6">
-              <SocialMediaIcon
-                href="https://www.instagram.com/hackbyte.tpc/"
-                Icon={InstagramLogoIcon}
-              />
-              <SocialMediaIcon
-                href="https://twitter.com/HackbyteTPC"
-                Icon={TwitterLogoIcon}
-              />
-              <SocialMediaIcon
-                href="https://www.linkedin.com/company/bitbyte-tpc/"
-                Icon={LinkedInLogoIcon}
-              />
-              <SocialMediaIcon
-                href="https://discord.gg/NTueHjdPn8"
-                Icon={DiscordLogoIcon}
-              />
+
+            <div className="bounce-svg absolute bottom-36 hidden sm:block sm:left-48  md:left-5 lg:left-72 z-20 h-72 w-72 rounded-full bg-transparent backdrop-blur-3xl   "></div>
+
+            <div className=" lg:flex flex-col items-end gap-4">
+              <div className="flex gap-6"></div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="w-full flex flex-col bg-[#101010]">
+      <div className="w-full flex flex-col ">
         <motion.div
           className="flex flex-row mt-6 md:mt-8 items-center justify-center"
         >
@@ -231,7 +202,7 @@ export default function Home() {
               </p>
             </div>
             <div
-              className="flex justify-center flex-wrap mt-12 items-center bg-gradient-to-r from-[#9d00ff1f] to-[#5600ff4d] rounded-2xl pt-4 md:pt-0">
+              className="flex justify-center flex-wrap mt-12 items-center  rounded-2xl pt-4 md:pt-0">
               {
                 advantages.map((advantage, index) => (
                   <ParticipateAdvantage key={index} icon={advantage.icon} heading={advantage.heading}
@@ -240,97 +211,6 @@ export default function Home() {
               }
             </div>
           </div>
-        </div>
-      </div>
-
-      <div
-        className="bg-[#EBB323] w-full h-full flex flex-col md:flex-row justify-between
-          items-center px-4 md:px-8 xl:px-36 pt-10 pb-28 lg:pb-48 xl:pb-40"
-      >
-        <div className="flex flex-col justify-center items-center max-w-lg">
-          <div className="flex flex-col gap-8">
-            <div className="flex flex-col gap-4">
-              <p
-                className=" text-black text-4xl lg:text-5xl font-medium
-                  leading-[2.75rem] tracking-tighter"
-              >
-                Join our mailing list!
-              </p>
-              <p
-                className="max-w-[30rem] text-black text-base md:text-sm lg:text-lg
-                font-normal font-['Inter'] leading-6 sm:leading-7 tracking-tight"
-              >
-                To stay up-to-date with HackByte 2.0, consider subscribing to
-                our mailing list. Helps us share important updates right away
-                with hackers and enthusiasts alike !
-              </p>
-            </div>
-
-            <div className="flex flex-col gap-5 sm:pl-4">
-              <div className="flex gap-3 sm:gap-4 items-center">
-                <img
-                  className="w-7 h-7 md:w-5 md:h-5"
-                  src="/aboutPage/checkIcon.svg"
-                />
-                <p
-                  className=" text-black text-base md:text-sm lg:text-lg font-normal
-                  font-['Inter'] leading-6 sm:leading-7 tracking-tight"
-                >
-                  Get updates about your application status
-                </p>
-              </div>
-              <div className="flex gap-3 sm:gap-4 items-center">
-                <img
-                  className="w-7 h-7 md:w-5 md:h-5"
-                  src="/aboutPage/checkIcon.svg"
-                />
-                <p
-                  className=" text-black text-base md:text-sm lg:text-lg font-normal
-                  font-['Inter'] leading-6 sm:leading-7 tracking-tight"
-                >
-                  Get notified for exciting events!
-                </p>
-              </div>
-              <div className="flex gap-3 sm:gap-4 items-center">
-                <img
-                  className="w-7 h-7 md:w-5 md:h-5"
-                  src="/aboutPage/checkIcon.svg"
-                />
-                <p
-                  className=" text-black text-base md:text-sm lg:text-lg font-normal
-                  font-['Inter'] leading-6 sm:leading-7 tracking-tight"
-                >
-                  Be the first ones to register for HackByte 2.0
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="max-w-xl flex justify-center items-center mb-16 lg:mb-0">
-          <div className="max-w-md md:max-w-sm lg:max-w-md">
-            <img src="/aboutPage/about_img2.png" />
-          </div>
-        </div>
-      </div>
-
-      <div className="relative bg-[#000000] w-full h-full flex flex-col justify-end pt-48 md:pt-60 lg:pt-80">
-        <NewsLetter />
-        <div
-          className="flex flex-col justify-between gap-20 md:flex-row
-            px-6 md:px-8 xl:px-20 py-20"
-        >
-          <p
-            className="max-w-3xl text-6xl md:text-[5.5rem] lg:text-[7rem] xl:text-[9rem]
-          text-white font-normal md:leading-[8rem] lg:leading-[10rem]
-            tracking-tighter md:tracking-[-0.2rem]"
-          >
-            Empower
-            <br /> Your Digital
-            <br /> Odyssey!
-          </p>
-
-          <FooterAnimation />
         </div>
       </div>
       <Footer />

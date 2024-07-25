@@ -177,7 +177,7 @@ export default function Prizes() {
     <div className="overflow-x-hidden">
       <Navbar />
       <div
-        className="bg-[#101010] flex flex-col min-h-screen
+        className="bg-custom-gradient flex flex-col min-h-screen
           px-4 md:px-10 lg:px-20 2xl:px-32 py-40"
       >
         <div className="w-full flex flex-col gap-10 md:gap-16">
@@ -409,7 +409,7 @@ export default function Prizes() {
         </div>
       </div>
 
-      <div className="bg-black w-full h-full py-24 lg:py-40">
+      {/* <div className="bg-black w-full h-full py-24 lg:py-40">
         <div
           className="flex flex-col justify-between gap-20 md:flex-row 
           px-4 md:px-8 xl:px-20 2xl:px-40"
@@ -426,7 +426,8 @@ export default function Prizes() {
 
           <FooterAnimation />
         </div>
-      </div>
+      </div> */}
+      
       <Footer />
     </div>
   );

@@ -125,7 +125,7 @@ const Partners = () => {
     <div className="overflow-x-hidden">
       <Navbar />
       <div
-        className="bg-[#101010] flex flex-col items-center min-h-screen 
+        className="bg-custom-gradient flex flex-col items-center min-h-screen 
           px-6 md:px-16 lg:px-20 2xl:px-32 py-40"
       >
         <div className="flex flex-col items-center gap-4 mb-12">
@@ -158,7 +158,7 @@ const Partners = () => {
         </div>
       </div>
 
-      <div className="bg-black w-full h-full py-24 lg:py-40">
+      {/* <div className="bg-black w-full h-full py-24 lg:py-40">
         <div
           className="flex flex-col justify-between gap-20 md:flex-row 
             px-4 md:px-8 xl:px-20 2xl:px-40"
@@ -175,7 +175,7 @@ const Partners = () => {
 
           <FooterAnimation />
         </div>
-      </div>
+      </div> */}
 
       <Footer />
     </div>

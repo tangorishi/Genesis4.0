@@ -24,7 +24,7 @@ const Footer = () => {
   ];
 
   return (
-    <div className="bg-black flex flex-col px-4 md:px-10 xl:px-28">
+    <div className="bg-custom-footer h-52 flex flex-col px-4 md:px-10 xl:px-28 overflow-hidden p-8">
       <hr className="border-[#808080] mb-12" />
       <div className="flex flex-col lg:flex-row gap-12 justify-between items-start">
         <div className="w-full md:w-auto flex items-center flex-wrap mb-6 sm:mb-0 gap-8 sm:gap-10">
@@ -58,7 +58,7 @@ const Footer = () => {
         </div>
       </div>
       <p
-        className="text-stone-400 text-lg font-normal leading-normal 
+        className="text-white text-lg font-normal leading-normal 
           tracking-tight pt-12 mb-8"
       >
         © 2024 Hackbyte, All rights reserved
