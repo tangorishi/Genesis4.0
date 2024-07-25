@@ -80,7 +80,7 @@ export default function Home() {
   useEffect(() => {
 
 
-
+    //the below is code is commented to be considered later
     //the below is the code for rotating the mascot with the scroll
     // const tl = gsap.timeline({
     //   scrollTrigger: {
