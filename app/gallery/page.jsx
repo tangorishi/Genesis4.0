@@ -28,7 +28,7 @@ const Gallery = () => {
   return (
     <>
       <Navbar />
-      <div className="bg-[#101010] flex flex-col min-h-screen p-4 md:px-8 lg:px-12 py-40">
+      <div className="bg-custom-gradient flex flex-col min-h-screen p-4 md:px-8 lg:px-12 py-40">
         <div className="w-full flex flex-col gap-6">
           <div className="flex flex-col items-center gap-4">
             <p className="text-[#F5F0D8] font-normal text-[2.25rem] md:text-[5rem]">
@@ -64,7 +64,7 @@ const Gallery = () => {
           </div>
         </div>
       </div>
-      <div className="bg-black w-full h-full py-24 lg:py-40">
+      {/* <div className="bg-black w-full h-full py-24 lg:py-40">
         <div
           className="flex flex-col justify-between gap-20 md:flex-row 
           px-4 md:px-8 xl:px-20 2xl:px-40"
@@ -81,7 +81,7 @@ const Gallery = () => {
 
           <FooterAnimation />
         </div>
-      </div>
+      </div> */}
       <Footer />
     </>
   );

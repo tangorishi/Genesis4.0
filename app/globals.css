@@ -30,17 +30,17 @@ scrollbar-thumb {
   border-radius: 10px;
 }
 
-cursor {
+.cursor {
   position: fixed;
   left: 0;
   top: 0;
   width: 10px;
   height: 10px;
-  background-color: white;
+  background-color: #32CD32; /* Bright Yellow */
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999;
-  cursor: pointer;
+  mix-blend-mode: difference; /* Optional: Change blend mode if needed */
 }
 
 .cursor-follower {
@@ -49,10 +49,10 @@ cursor {
   top: 0;
   width: 30px;
   height: 30px;
-  background-color: white;
+  background-color: #32CD32; /* Bright Yellow */
   border-radius: 50%;
   pointer-events: none;
   z-index: 9998;
-  mix-blend-mode: difference;
-  cursor: pointer;
+  mix-blend-mode: difference; /* Optional: Change blend mode if needed */
+  transition: transform 0.1s ease; /* For smooth following */
 }
