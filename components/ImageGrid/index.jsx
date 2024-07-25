@@ -4,11 +4,10 @@ import Image from "next/image";
 
 import React, { useRef, useEffect } from "react";
 
-import img1 from "@/public/galleryPage/img1.jpeg";
-import img2 from "@/public/galleryPage/img2.jpg";
-import img3 from "@/public/galleryPage/img3.jpeg";
-import img4 from "@/public/galleryPage/img4.jpeg";
-
+import img1 from "@/public/galleryPage/img1.webp";
+import img2 from "@/public/galleryPage/img2.webp";
+import img3 from "@/public/galleryPage/img3.webp";
+import img4 from "@/public/galleryPage/img4.webp";
 import img6 from "@/public/galleryPage/img6.webp";
 
 const GridImage = () => {

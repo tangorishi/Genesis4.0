@@ -1,4 +1,3 @@
-import banner from "@/public/galleryPage/banner.jpg";
 import { GridImage, Carousel } from "@/components/ImageGrid";
 
 // export const metadata = {
