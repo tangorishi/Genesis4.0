@@ -52,6 +52,11 @@ module.exports = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(to bottom, #69c4ed 10%, #224d95 40%, #19234a 80%)',
+        'custom-footer': 'linear-gradient(to bottom, #19234a 20%, #004a89 50%, #FFFFFF 100%)',
+      },
+
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",

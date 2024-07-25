@@ -24,7 +24,7 @@ const NavItem = ({ label, href }) => {
 
   return (
     <div
-      className={`group relative text-[#9A9A9A] font-[600] px-6 py-2 
+      className={`group relative text-white font-[600] px-6 py-2 
       rounded-full transition-all ease-in-out focus-visible:outline-2 ${
         pathname === href ? "" : "hover:bg-[#FFFFFF10]"
       }`}
@@ -62,14 +62,6 @@ export default function Navbar() {
   return (
     <>
       <nav className="absolute sm:z-[2] w-full flex items-center xl:justify-center px-4 pt-8">
-        <Image
-          src={HBMobileLogo}
-          alt="Hackathon-Mobile-Logo"
-          className="md:hidden"
-          width={"6rem"}
-          height={"3rem"}
-          priority
-        />
         <div
           className="hidden h-10 xl:flex xl:justify-center xl:items-center 
             px-3 py-8 rounded-full border-2 border-solid border-gray-800 
@@ -79,20 +71,6 @@ export default function Navbar() {
             <NavItem key={label} label={label} href={href} />
           ))}
         </div>
-        <a
-          id="mlh-trust-badge"
-          className="block absolute top-0 w-[10%] z-10000 max-w-[65px] min-w-[60px] 
-            right-[100px] md:right-[120px] xl:right-[80px]"
-          href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2024-season&utm_content=white"
-          target="_blank"
-        >
-          <img
-            src="https://s3.amazonaws.com/logged-assets/trust-badge/2024/mlh-trust-badge-2024-white.svg"
-            alt="Major League Hacking 2024 Hackathon Season"
-            className="w-full hover:scale-110 transition-all duration-300 ease-in-out"
-          />
-        </a>
-
         <div className="flex items-center justify-end w-full xl:hidden">
           <button
             id="menu-btn"

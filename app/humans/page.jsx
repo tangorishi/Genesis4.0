@@ -249,7 +249,7 @@ export default function Team() {
     <>
       <Navbar />
       <div
-        className="bg-[#101010] flex flex-col min-h-screen
+        className="bg-custom-gradient flex flex-col min-h-screen
           px-4 md:px-10 lg:px-20 xl:px-10 2xl:px-48 py-40"
       >
         <div className="flex flex-col items-center gap-4 md:gap-6">
@@ -333,8 +333,8 @@ export default function Team() {
           </TabsContent>
         </Tabs>
       </div>
-      <div className="bg-black w-full h-full py-24 lg:py-40">
-      </div>
+      {/* <div className="bg-black w-full h-full py-24 lg:py-40">
+      </div> */}
       <Footer />
     </>
   );

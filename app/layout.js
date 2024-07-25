@@ -2,9 +2,10 @@ import "./globals.css";
 import Script from "next/script";
 import "react-toastify/dist/ReactToastify.css";
 import "./clash_grotesk.css";
+import CustomCursor from "@/components/ui/Cursor";
 
 export const metadata = {
-  title: "HackByte - IIITDMJ Hackathon",
+  title: "Genesis",
   description:
     "HackByte is the IIITDMJ's student-run hackathon, which centers on bringing developers and problem solvers from different foundations together and enables them to develop projects that can bring out an impact.",
   keywords: "hackathon, IIITDMJ, hackbyte, coding, programming, tech",
@@ -39,7 +40,9 @@ export default function RootLayout({ children }) {
           `}
         </Script>
       </head>
-      <body>{children}</body>
+      <body>
+        <CustomCursor/>
+        {children}</body>
     </html>
   );
 }
