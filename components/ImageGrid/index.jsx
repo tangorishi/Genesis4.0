@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 
 import React, { useRef, useEffect } from "react";
@@ -9,6 +8,8 @@ import img2 from "@/public/galleryPage/img2.webp";
 import img3 from "@/public/galleryPage/img3.webp";
 import img4 from "@/public/galleryPage/img4.webp";
 import img6 from "@/public/galleryPage/img6.webp";
+
+import styles from "./styles.module.css";
 
 const GridImage = () => {
   return (
@@ -27,55 +28,55 @@ const GridImage = () => {
         <Image
           src={img6}
           alt="1"
-          className="xl:w-[340px] xl:h-[310px] lg:w-[280px] max-w-[700px] h-[250px] rounded-3xl object-cover"
+          className="2xl:w-[340px] 2xl:h-[310px] lg:w-[280px] max-w-[700px] h-[250px] rounded-3xl object-cover"
           placeholder="blur"
         />
         <Image
           src={img6}
           alt="1"
-          className="xl:w-[340px] xl:h-[310px] lg:w-[280px] max-w-[700px] h-[250px] rounded-3xl object-cover"
+          className="2xl:w-[340px] 2xl:h-[310px] lg:w-[280px] max-w-[700px] h-[250px] rounded-3xl object-cover"
           placeholder="blur"
         />
         <Image
           src={img6}
           alt="1"
-          className="xl:h-[310px] lg:w-[320px] h-[250px] rounded-3xl object-cover lg:flex-1 lg:max-w-[880px] max-w-[700px]"
+          className="2xl:h-[310px] lg:w-[320px] h-[250px] rounded-3xl object-cover lg:flex-1 lg:max-w-[880px] max-w-[700px]"
           placeholder="blur"
         />
       </div>
 
-      <div className="flex flex-row gap-x-8 lg:gap-x-8 max-w-[700px] lg:max-w-fit mx-auto justify-between">
+      <div className="flex flex-row gap-x-8 lg:gap-x-8 max-w-[700px] lg:max-w-full mx-auto justify-between lg:m-0 sm:gap-x-6">
         <div className="flex flex-col lg:gap-y-10 gap-y-8">
           <Image
             src={img6}
             alt="1"
-            className="flex:1 xl:flex-none xl:w-[420px] xl:h-[300px] lg:h-[550px] w-full h-[500px] rounded-3xl object-cover lg:w-max-[700px]"
+            className="flex:1 2xl:flex-none 2xl:w-[420px] 2xl:h-[300px] lg:h-[550px] w-full h-[500px] rounded-3xl object-cover lg:w-max-[700px]"
             placeholder="blur"
           />
           <Image
             src={img6}
             alt="1"
-            className="hidden xl:block xl:w-[420px] xl:h-[300px] lg:h-[250px] lg:w-[280px] w-[280px] h-[200px] rounded-3xl object-cover"
+            className="hidden 2xl:block 2xl:w-[420px] 2xl:h-[300px] lg:h-[250px] lg:w-[280px] w-[280px] h-[200px] rounded-3xl object-cover"
             placeholder="blur"
           />
         </div>
         <Image
           src={img6}
           alt="1"
-          className="sm:hidden xl:block xl:flex-1 xl:h-[650px] xl:w-[716px] lg:h-[550px] lg:w-[400px] w-[280px] h-[200px] rounded-3xl object-cover"
+          className="sm:hidden 2xl:block 2xl:flex-1 2xl:h-[650px] 2xl:w-[716px] lg:h-[550px] lg:w-[400px] w-[280px] h-[200px] rounded-3xl object-cover"
           placeholder="blur"
         />
         <div className="flex flex-col lg:gap-y-10 gap-y-8">
           <Image
             src={img6}
             alt="1"
-            className="lg:flex-1 xl:flex-none xl:block lg:h-[550px] xl:w-[420px] xl:h-[300px] w-[300px] h-[230px] rounded-3xl object-cover"
+            className="lg:flex-1 2xl:flex-none 2xl:block lg:h-[550px] lg:w-[550px] 2xl:w-[420px] 2xl:h-[300px] w-[300px] h-[230px] rounded-3xl object-cover"
             placeholder="blur"
           />
           <Image
             src={img6}
             alt="1"
-            className=" lg:hidden xl:block xl:w-[420px] xl:h-[300px] lg:h-[250px] lg:w-[280px] w-[300px] h-[230px] rounded-3xl object-cover"
+            className=" lg:hidden 2xl:block 2xl:w-[420px] 2xl:h-[300px] lg:h-[250px] lg:w-[280px] w-[300px] h-[230px] rounded-3xl object-cover"
             placeholder="blur"
           />
         </div>
@@ -85,19 +86,19 @@ const GridImage = () => {
         <Image
           src={img6}
           alt="1"
-          className="xl:h-[310px] lg:w-[320px] h-[250px] rounded-3xl object-cover lg:flex-1 lg:max-w-[880px] max-w-[700px]"
+          className="2xl:h-[310px] lg:w-[320px] h-[250px] rounded-3xl object-cover lg:flex-1 lg:max-w-[880px] max-w-[700px]"
           placeholder="blur"
         />
         <Image
           src={img6}
           alt="1"
-          className="xl:w-[340px] xl:h-[310px] lg:w-[280px] h-[250px] rounded-3xl object-cover max-w-[700px]"
+          className="2xl:w-[340px] 2xl:h-[310px] lg:w-[280px] h-[250px] rounded-3xl object-cover max-w-[700px]"
           placeholder="blur"
         />
         <Image
           src={img6}
           alt="1"
-          className="xl:w-[340px] xl:h-[310px] lg:w-[280px] h-[250px] rounded-3xl object-cover max-w-[700px]"
+          className="2xl:w-[340px] 2xl:h-[310px] lg:w-[280px] h-[250px] rounded-3xl object-cover max-w-[700px]"
           placeholder="blur"
         />
       </div>
@@ -153,47 +154,37 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className="flex items-center justify-center gap-[200px]">
+    <div className="mt-8 lg:mt-12 slider relative w-full h-[320px] md:h-[350px] lg:h-[470px] xl:h-[570px] 2xl:h-[650px] flex items-center justify-center overflow-hidden">
       <button
-        className="text-customArrow bg-transparent border-none text-[250px] font-bold"
+        className={`absolute next sm:text-[150px] md:text-[200px] lg:text-[250px] xl:text-[270px] 2xl:text-[350px] text-customArrow bg-transparent border-none text-[250px] font-bold inline-block left-[30px] md:left-[10px] xl:left-[50px] 2xl:left-[50=px] ${styles["text-shadow-md"]}`}
         id="previous"
       >
         &lt;
       </button>
 
-      <div className="slider relative w-[800px] h-[560px] overflow-hidden">
-        <Image
-          src={img1}
-          alt="1"
-          className="picture absolute w-[800px] rounded-3xl"
-          width={800}
-          height={560}
-        />
-        <Image
-          src={img2}
-          alt="2"
-          className="picture absolute w-[800px] rounded-3xl"
-          width={800}
-          height={560}
-        />
-        <Image
-          src={img3}
-          alt="3"
-          className="picture absolute w-[800px] rounded-3xl"
-          width={800}
-          height={560}
-        />
-        <Image
-          src={img4}
-          alt="4"
-          className="picture absolute w-[800px] rounded-3xl"
-          width={800}
-          height={560}
-        />
-      </div>
+      <Image
+        src={img3}
+        alt="1"
+        className={`picture absolute transform -translate-y-1/2 rounded-3xl h-[270px] md:h-[300px] lg:h-[400px] xl:h-[520px] 2xl:h-[600px] ${styles["image-glow"]} w-fit`}
+      />
+      <Image
+        src={img4}
+        alt="2"
+        className={`picture absolute  -translate-y-1/2 rounded-3xl h-[270px] md:h-[300px] lg:h-[400px] xl:h-[520px] 2xl:h-[600px] ${styles["image-glow"]} w-fit`}
+      />
+      <Image
+        src={img3}
+        alt="3"
+        className={`picture absolute -translate-y-1/2 rounded-3xl h-[270px] md:h-[300px] lg:h-[400px] xl:h-[520px] 2xl:h-[600px] ${styles["image-glow"]} w-fit`}
+      />
+      <Image
+        src={img4}
+        alt="4"
+        className={`picture absolute -translate-y-1/2 rounded-3xl h-[270px] md:h-[300px] lg:h-[400px] xl:h-[520px] 2xl:h-[600px] w-fit ${styles["image-glow"]}`}
+      />
 
       <button
-        className="text-customArrow bg-transparent border-none text-[250px] font-bold"
+        className={`sm:text-[150px] md:text-[200px] lg:text-[250px] xl:text-[250px] 2xl:text-[350px] absolute text-customArrow bg-transparent border-none text-[250px] font-bold inline-block right-[30px] md:right-[10px] xl:right-[50px] 2xl:right-[50px] ${styles["text-shadow-md"]}`}
         id="next"
       >
         &gt;
