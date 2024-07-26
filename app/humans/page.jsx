@@ -254,17 +254,6 @@ export default function Team() {
       >
         <div className="flex flex-col items-center gap-4 md:gap-6">
           <div className="flex flex-col items-center gap-1 md:gap-3">
-            <div
-              className="w-fit rounded-full 
-                border border-[#D1CAC7] px-4 py-1 mb-3"
-            >
-              <p
-                className="w-full text-[#C3C3C3] font-[Inter] 
-                  text-center font-normal text-[1.25rem] tracking-[0.0625rem]"
-              >
-                TEAM GENESIS
-              </p>
-            </div>
             <p
               className="text-[#F5F0D8] text-center text-[2.5rem] font-normal 
                 md:text-[4rem] xl:text-[5rem] md:leading-[4.5rem] xl:leading-[5.25rem]"
@@ -282,19 +271,19 @@ export default function Team() {
           <TabsList className="mb-8 md:mb-16 w-full max-w-3xl mx-auto border border-white rounded-full min-w-[24rem]">
             <TabsTrigger
               value="Executives"
-              className="sm:p-2 p-0 sm:w-1/3 w-1/3 min-[300px]:text-lg sm:text-2xl text-xl leading-7 font-bold text-center border-none m-2 min-w-[100px] rounded-full"
+              className="sm:p-2 p-0 sm:w-1/3 w-1/3 min-[300px]:text-lg sm:text-2xl text-xl leading-7 font-bold text-center border-none m-2 min-w-[100px] rounded-full hover:bg-blue-900"
             >
               Executives
             </TabsTrigger>
             <TabsTrigger
               value="Organizers"
-              className="sm:p-2 p-0 sm:w-1/3 w-1/3 min-[300px]:text-lg sm:text-2xl text-xl leading-7 font-bold text-center border-none m-2 min-w-[100px] rounded-full"
+              className="sm:p-2 p-0 sm:w-1/3 w-1/3 min-[300px]:text-lg sm:text-2xl text-xl leading-7 font-bold text-center border-none m-2 min-w-[100px] rounded-full hover:bg-blue-900"
             >
               Organizers
             </TabsTrigger>
             <TabsTrigger
               value="Faculty"
-              className="sm:p-2 p-0 sm:w-1/3 w-1/3 min-[300px]:text-lg sm:text-2xl text-xl leading-7 font-bold text-center border-none m-2 min-w-[100px] rounded-full"
+              className="sm:p-2 p-0 sm:w-1/3 w-1/3 min-[300px]:text-lg sm:text-2xl text-xl leading-7 font-bold text-center border-none m-2 min-w-[100px] rounded-full hover:bg-blue-900"
             >
               Faculty
             </TabsTrigger>
