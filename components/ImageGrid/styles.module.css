@@ -1,0 +1,22 @@
+.text-shadow {
+  text-shadow: 0px 0px 1px rgb(0 0 0 / 20%), 0px 0px 1px rgb(1 0 5 / 10%);
+}
+.text-shadow-sm {
+  text-shadow: 1px 1px 3px rgb(36 37 47 / 25%);
+}
+.text-shadow-md {
+  text-shadow: 0px 2px 10px rgba(255, 250, 225, 0.405);
+}
+.text-shadow-lg {
+  text-shadow: 3px 3px 6px rgb(0 0 0 / 26%), 0 0 5px rgb(15 3 86 / 22%);
+}
+.text-shadow-xl {
+  text-shadow: 1px 1px 3px rgb(0 0 0 / 29%), 2px 4px 7px rgb(73 64 125 / 35%);
+}
+.text-shadow-none {
+  text-shadow: none;
+}
+.image-glow {
+  box-shadow: 0px 4px 18px rgba(255, 250, 225, 0.277),
+    inset 0px 4px 18px rgb(255, 250, 225);
+}
