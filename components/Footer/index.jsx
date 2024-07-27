@@ -1,70 +1,91 @@
 import Link from "next/link";
-import {
-  TwitterLogoIcon,
-  InstagramLogoIcon,
-  LinkedInLogoIcon,
-  DiscordLogoIcon,
-} from "@radix-ui/react-icons";
-
-const SocialMediaIcon = ({ Icon, href }) => (
-  <a href={href} target="_blank">
-    <Icon className="w-7 h-7 text-white transition ease-in-out delay-150 hover:scale-125 duration-300" />
-  </a>
-);
+import { InstagramLogoIcon } from "@radix-ui/react-icons";
+import genesisLogo from './../../public/footer/WHITE TEXT .png';
+import ieeeSBLogo from './../../public/footer/ieee sb white logo.png';
+import ieeeCSLogo from './../../public/footer/IEEE CS WHITE LOGO.png';
+import ieeeWIELogo from './../../public/footer/ieee wie white logo.png';
 
 const Footer = () => {
-  const navigationItems = [
-    { label: "Home", href: "/" },
-    { label: "Gallery", href: "/gallery" },
-    { label: "Partners", href: "/partners" },
-    { label: "Prizes", href: "/prizes" },
-    { label: "Schedule", href: "/schedule" },
-    { label: "FAQs", href: "/faq" },
-    { label: "Contact Us", href: "/contact" },
-  ];
-
   return (
-    <div className="bg-custom-footer h-52 flex flex-col px-4 md:px-10 xl:px-28 overflow-hidden p-8">
-      <hr className="border-[#808080] mb-12" />
-      <div className="flex flex-col lg:flex-row gap-12 justify-between items-start">
-        <div className="w-full md:w-auto flex items-center flex-wrap mb-6 sm:mb-0 gap-8 sm:gap-10">
-          {navigationItems.map(({ label, href }) => (
-            <Link
-              href={href}
-              key={label}
-              className="text-white text-lg font-normal leading-5 md:leading-normal tracking-wide md:tracking-tight hover:text-stone-400 relative after:content-[''] after:bg-stone-400 after:h-[1px] after:w-0 after:left-0 after:bottom-[-4px] after:absolute after:duration-300 hover:after:w-full"
-            >
-              {label}
-            </Link>
-          ))}
+    <div className="bg-gradient-to-b from-blue-900 via-blue-800 to-blue-500 h-auto flex flex-col px-4 md:px-10 xl:px-28 overflow-hidden p-8"
+      style={{
+        backgroundImage: "url('/footer/bgfooter.svg')",
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
+      <div className="flex flex-col lg:flex-row justify-between items-center">
+        <div className="flex flex-col items-start mb-8 lg:mb-0 lg:w-1/3">
+          <img src={genesisLogo.src} alt="Genesis Logo" className="w-80 h-auto mb-4" />
+          <div className="flex items-center gap-4">
+          <img src={ieeeCSLogo.src} alt="IEEE CS Logo" className="h-12 w-auto" />
+            <img src={ieeeSBLogo.src} alt="IEEE SB Logo" className="h-12 w-auto" />
+            <img src={ieeeWIELogo.src} alt="IEEE WIE Logo" className="h-12 w-auto" />
+          </div>
         </div>
-        <div className="flex gap-6">
-          <SocialMediaIcon
-            href="https://www.instagram.com/hackbyte.tpc/"
-            Icon={InstagramLogoIcon}
+
+        <div className="hidden lg:block w-px bg-white h-40 mx-4"></div>
+
+        <div className="flex flex-col items-center justify-center text-white lg:w-1/3 lg:px-4">
+        <ContactInfo
+            name="Rishi Joshi"
+            phone="+91 95699 13103"
+            role="(Chairperson-IEEE CS MUJ)"
           />
-          <SocialMediaIcon
-            href="https://twitter.com/HackbyteTPC"
-            Icon={TwitterLogoIcon}
+          <ContactInfo
+            name="Lakshita Agarwal"
+            phone="+91 93129 41940"
+            role="(Chairperson-IEEE SB MUJ)"
           />
-          <SocialMediaIcon
-            href="https://www.linkedin.com/company/bitbyte-tpc/"
-            Icon={LinkedInLogoIcon}
+          
+          <ContactInfo
+            name="Ananta Taneja"
+            phone="+91 95909 28296"
+            role="(Chairperson-IEEE WIE MUJ)"
           />
-          <SocialMediaIcon
-            href="https://discord.gg/NTueHjdPn8"
-            Icon={DiscordLogoIcon}
-          />
+        </div>
+
+        <div className="hidden lg:block w-px bg-white h-40 mx-4"></div>
+
+        <div className="flex flex-col items-center lg:items-end text-white mt-8 lg:mt-0 lg:w-1/3 lg:px-4">
+          <WebsiteLink name="IEEE SB WEBSITE" href="https://ieeemuj.com/" />
+          <WebsiteLink name="IEEE CS WEBSITE" href="https://cs.ieeemuj.com/" />
+          <WebsiteLink name="IEEE WIE WEBSITE" href="https://wie.ieeemuj.com/" />
         </div>
       </div>
-      <p
-        className="text-white text-lg font-normal leading-normal 
-          tracking-tight pt-12 mb-8"
-      >
-        © 2024 Hackbyte, All rights reserved
-      </p>
+
+      <div className="w-full h-px bg-white my-8"></div>
+
+      <div className="flex justify-center items-center space-x-8">
+        <InstagramLink name="Genesis" href="https://www.instagram.com/genesismuj/" />
+        <InstagramLink name="IEEE CS" href="https://www.instagram.com/ieeecs_muj/" />
+        <InstagramLink name="IEEE SB" href="https://www.instagram.com/ieeemuj/?igshid=NjIwNzIyMDk2Mg%3D%3D" />
+        <InstagramLink name="IEEE WIE" href="https://www.instagram.com/ieee.wiemuj/?igshid=NjIwNzIyMDk2Mg%3D%3D" />
+      </div>
     </div>
   );
 };
+
+const ContactInfo = ({ name, phone, role }) => (
+  <div className="mb-4 text-center">
+    <p className="text-lg font-semibold">{name}</p>
+    <p className="text-sm">{phone}</p>
+    <p className="text-xs">{role}</p>
+  </div>
+);
+
+const WebsiteLink = ({ name, href }) => (
+  <Link href={href} className="flex items-center text-white mb-4 hover:underline">
+    {name}
+  </Link>
+);
+
+const InstagramLink = ({ name, href }) => (
+  <Link href={href} className="flex items-center text-white hover:text-gray-300 transition-colors">
+    <InstagramLogoIcon className="w-6 h-6 mr-2" />
+    <span>{name}</span>
+  </Link>
+);
 
 export default Footer;
