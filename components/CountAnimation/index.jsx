@@ -39,14 +39,14 @@ export default function CountAnimation({targetValue}) {
 
   const styles = {
     background:
-      "linear-gradient(80deg, #d654ff 6.67%, #e787ff 28.13%, #9b65ff 64.87%, #a71bff 95.66%)",
+      "linear-gradient(80deg, #6CC6EF 6.67%, #72CFFA 28.13%, #74D3FF 64.87%, #6CC6EF 95.66%)",
     backgroundClip: "text",
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
   };
 
   return (
-    <div ref={ref} className="flex">
+    <div ref={ref} className="flex h-fit">
       <motion.p
         className="font-medium text-[2rem] md:text-[4rem]"
         style={styles}

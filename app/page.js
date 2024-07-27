@@ -128,7 +128,7 @@ export default function Home() {
 
             {/* the code for mascot */}
             <div
-              className="2xl:h-[100rem] 2xl:mt-[-16rem] xl:h-[80rem] xl:mt-[-14rem] lg:mt-[-12rem] lg:h-[70rem] md:mt-[-10rem] md:h-[60rem] sm:h-[50rem] sm:mt-[-7rem] h-[30rem] mt-[-4rem] w-auto max-w-screen-xl mx-auto px-2 sm:px-0">
+              className="2xl:h-[80rem] 2xl:mt-[-16rem] xl:h-[70rem] xl:mt-[-14rem] lg:mt-[-12rem] lg:h-[60rem] md:mt-[-10rem] md:h-[50rem] sm:h-[40rem] sm:mt-[-7rem] h-[30rem] mt-[-4rem] w-auto max-w-screen-xl mx-auto px-2 sm:px-0">
               <Image
                 src="https://s3-alpha-sig.figma.com/img/e22a/e5af/28f38cae7afd544d9e8c5cf6ac6b911b?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=F6Zd~CUMbaNCmAVd3N-2FngI2lYO~oiqmm6JWfc9im2BnpWyC14IgkInillqXYHZlFGGYj-qDMonkL12n~g2MmA5qp0DInbW6M2jEqXTzWKieTlq5b1GRhscoSed4vLD2CctAij-~FHA~Xs8fLC8ZOaQuCynF9s9~f~0aOzemx5oFF4bZmwDKEs9tQC27N8ZVczCnGgyt0swX~Z2ahWKY2AuIOTclQihEHBsyMOVNifgKtXNpubTBL3bc619opYTl4uXCAdIEWn0baYQf3ASpc0MqpBy2DddCafCnDQRPvCz3pB1bAQRRmQ40NA3PT6WOuPN0PvRRYZgmiP7T7NJDw__"
                 alt="Mascot Image"
@@ -144,9 +144,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full flex flex-col ">
+      <div className="w-full flex flex-col">
         <motion.div
-          className="flex flex-row mt-6 md:mt-8 items-center justify-center"
+          className="flex lg:flex-row flex-col mt-6 md:mt-8 items-center justify-center"
         >
           <div className="flex flex-col w-[30%] items-center">
             <CountAnimation targetValue={10}/>
@@ -163,7 +163,7 @@ export default function Home() {
         </motion.div>
 
         <div className="flex flex-col items-center p-4 md:px-12 xl:px-20 py-16 md:py-24">
-          <div className="flex flex-col items-start gap-16">
+          <div className="flex flex-col items-start">
             <div className="w-full flex flex-col items-center gap-5">
               <div className="flex flex-col items-start gap-3">
                 <p
@@ -188,7 +188,7 @@ export default function Home() {
               </p>
             </div>
             <div
-              className="flex justify-center flex-wrap mt-12 items-center  rounded-2xl pt-4 md:pt-0">
+              className="flex justify-center flex-wrap items-center rounded-2xl">
               {
                 advantages.map((advantage, index) => (
                   <ParticipateAdvantage key={index} icon={advantage.icon} heading={advantage.heading}
