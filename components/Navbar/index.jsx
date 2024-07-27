@@ -61,7 +61,7 @@ export default function Navbar() {
           <img src="/Navbar/genesis.png" alt="Genesis Logo" className="h-20 w-70 p-2" />
         </div>
         <nav
-          className="flex items-center h-10 xl:flex xl:justify-center xl:items-center px-3 py-8 rounded-full border-2 border-solid border-gray-800 bg-opacity-60 backdrop-blur-xl space-x-2"
+          className="flex items-center h-10 xl:flex xl:justify-center xl:items-center px-3 py-8 rounded-full border-2 border-solid border-white bg-opacity-60 backdrop-blur-xl space-x-2"
         >
           {navigationItems.map(({ label, href }) => (
             <NavItem key={label} label={label} href={href} />
