@@ -38,7 +38,7 @@ const Footer = () => {
             phone="+91 93129 41940"
             role="(Chairperson-IEEE SB MUJ)"
           />
-          
+
           <ContactInfo
             name="Ananta Taneja"
             phone="+91 95909 28296"
@@ -49,8 +49,8 @@ const Footer = () => {
         <div className="hidden lg:block w-px bg-white h-40 mx-4"></div>
 
         <div className="flex flex-col items-center lg:items-end text-white mt-8 lg:mt-0 lg:w-1/3 lg:px-4">
-          <WebsiteLink name="IEEE SB WEBSITE" href="https://ieeemuj.com/" />
           <WebsiteLink name="IEEE CS WEBSITE" href="https://cs.ieeemuj.com/" />
+          <WebsiteLink name="IEEE SB WEBSITE" href="https://ieeemuj.com/" />
           <WebsiteLink name="IEEE WIE WEBSITE" href="https://wie.ieeemuj.com/" />
         </div>
       </div>
