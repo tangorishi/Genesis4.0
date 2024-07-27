@@ -55,13 +55,13 @@ export default function Navbar() {
   return (
     <>
       <div className="absolute z-[2] w-full flex items-center justify-between px-4 pt-8">
-        <Image src="/Navbar/genesis.png" alt="Genesis Logo" width={70} height={20} className="h-auto w-auto" />
+        <Image src="/Navbar/genesis.png" alt="Genesis Logo" width={80} height={20} className="h-auto w-auto mb-5 md:mb-0 ml-8" />
         <nav className="hidden xl:flex items-center h-10 justify-center px-3 py-8 rounded-full border-2 border-solid border-white bg-opacity-60 backdrop-blur-xl space-x-2">
           {navigationItems.map(({ label, href }) => (
             <NavItem key={label} label={label} href={href} />
           ))}
         </nav>
-        <Image src="/Navbar/muj.png" alt="MUJ Logo" width={90} height={50} className="hidden h-auto w-auto md:block" />
+        <Image src="/Navbar/muj.png" alt="MUJ Logo" width={100} height={50} className="h-auto w-auto mb-5 md:mb-0 ml-8" />
         <div className="flex items-center justify-end xl:hidden">
           <button
             id="menu-btn"
