@@ -4,8 +4,6 @@ import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import classes from "./index.module.css";
 import Link from "next/link";
-import Image from "next/image";
-import HBMobileLogo from "@/public/HBMobileLogo.svg";
 import { AnimatePresence, motion } from "framer-motion";
 
 const navigationItems = [
@@ -24,7 +22,7 @@ const NavItem = ({ label, href }) => {
 
   return (
     <div
-      className={`group relative text-white font-[600] px-6 py-2 
+      className={`group relative text-white font-[500] px-6 py-2 
       rounded-full transition-all ease-in-out focus-visible:outline-2 ${
         pathname === href ? "" : "hover:bg-[#FFFFFF10]"
       }`}
@@ -63,8 +61,8 @@ export default function Navbar() {
     <>
       <nav className="absolute sm:z-[2] w-full flex items-center xl:justify-center px-4 pt-8">
         <div
-          className="hidden h-10 xl:flex xl:justify-center xl:items-center 
-            px-3 py-8 rounded-full border-2 border-solid border-gray-800 
+          className="hidden h-10 xl:flex xl:justify-center xl:items-center
+            px-3 py-8 rounded-full border-2 border-solid border-gray-800
             bg-opacity-60 backdrop-blur-xl space-x-2"
         >
           {navigationItems.map(({ label, href }) => (
@@ -95,8 +93,8 @@ export default function Navbar() {
         } w-full min-h-screen py-1 pt-40 px-8 backdrop-blur-lg`}
       >
         <div
-          className="flex flex-col self-end space-y-8 text-lg text-[#9d9d9d] 
-            font-medium uppercase p-8 border-1 border-[#222] rounded-[2rem] 
+          className="flex flex-col self-end space-y-8 text-lg text-[#9d9d9d]
+            font-medium uppercase p-8 border-1 border-[#222] rounded-[2rem]
             bg-[#090909] bg-opacity-80"
         >
           {navigationItems.map(({ label, href }) => (
