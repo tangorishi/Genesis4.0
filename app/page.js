@@ -13,29 +13,6 @@ import CountAnimation from "@/components/CountAnimation";
 
 
 export default function Home() {
-  const statisticsData = [
-    {
-      number: 1500,
-      label: "Registrations",
-      description: "1500+ registrations from across the country.",
-    },
-    {
-      number: 500,
-      label: "Offline Participants",
-      description: "500+ participants joined the offline hackathon!",
-    },
-    {
-      number: 100,
-      label: "Volunteers",
-      description: "To help you, get the best out of HackByte.",
-    },
-    {
-      number: 120,
-      label: "Projects",
-      description: "Innovative submissions from various domains.",
-    },
-  ];
-
   const advantages = [
     {
       icon: '/img1.svg',
@@ -63,8 +40,8 @@ export default function Home() {
       description: 'Best performers will get recruitment offers from prestigious companies.'
     },
     {
-      imgSrc: "/aboutPage/img6.svg",
-      title: "Expand network",
+      icon: "/img6.svg",
+      heading: "Expand network",
       description:
         "Connect with industry professionals and recruiters and other teams to learn and grow more.",
     },
@@ -120,26 +97,38 @@ export default function Home() {
         <img
           src={gridImage}
           alt="grid"
-          className="absolute w-full h-full object-cover  text-white mix-blend-overlay opacity-5  blur-sm"
+          className="absolute w-full h-full object-cover text-white mix-blend-overlay opacity-5 blur-sm"
         />
         <div className=" pt-10"></div>
         <div
           className="relative flex flex-col min-h-fit
             md:px-12 xl:px-20  "
         >
-          <div className="flex items-center gap-4 flex-col justify-between min-h-[60rem] md:max-h-[70rem] relative">
-            <div className="lg:text-[19.7rem] md:text-[12rem] text-white sm:text-[10rem] text-[6rem] sm:block cursor:pointer flex flex-nowrap font-bold tracking-normal px-2 md:px-0">
-              GENESIS{" "}
-              <span className="text-[50px] ml-8  absolute left-[1380px] top-[290px]  cursor:pointer tracking-normal">
+          <div className="flex items-center gap-4 flex-col justify-between relative">
+            <div className="flex flex-row cursor:pointer flex-nowrap font-bold tracking-normal">
+              <div
+                className="2xl:text-[19.7rem] xl:text-[15.7rem] lg:text-[12rem] md:text-[10rem] text-white sm:text-[8rem] text-[4rem]">
+                GENESIS
+              </div>
+              <div
+                className="2xl:text-[5rem] 2xl:pt-[20%] xl:text-[4.5rem] lg:text-[4rem] md:text-[3.5rem] sm:text-[3rem] sm:pt-[18%] text-[2rem] pt-[13%] text-white ">
                 4.0
-              </span>
+              </div>
             </div>
 
+
             {/* if the bouncing ball svg is needed the code is below */}
-            <div className="bounce-svg absolute top-96 right-1 hidden sm:block md:right-2   lg:right-48 z-20 h-80 w-80 rounded-full bg-transparent backdrop-blur-3xl "></div>
+            <div className="absolute 2xl:h-72 2xl:w-72 xl:h-64 xl:w-64 lg:h-52 lg:w-52 md:h-40 md:w-40 sm:h-32 sm:w-32 sm:block hidden
+             2xl:top-80 2xl:right-52 xl:top-64 xl:right-40 lg:top-48 lg:right-40 md:top-44 md:right-32 sm:top-32 sm:right-28
+             z-20 rounded-full bg-transparent backdrop-blur shadow-2xl shadow-black"></div>
+
+            <div className="absolute 2xl:h-72 2xl:w-72 xl:h-64 xl:w-64 lg:h-52 lg:w-52 md:h-40 md:w-40 sm:h-32 sm:w-32 sm:block hidden
+             2xl:bottom-72 2xl:left-64 xl:bottom-56 xl:left-40 lg:bottom-48 lg:left-40 md:bottom-40 md:left-32 sm:bottom-32 sm:left-28
+             z-20 rounded-full bg-transparent backdrop-blur shadow-2xl shadow-black"></div>
 
             {/* the code for mascot */}
-            <div className="lg:mt-[-27rem]  md:mt-[-15rem] h-[50rem] w-auto sm:h-[70rem] sm:mt-[-13rem]  md:w-full md:h-[70rem] lg:h-[100rem]  max-w-screen-xl mx-auto px-2 sm:px-0">
+            <div
+              className="2xl:h-[80rem] 2xl:mt-[-16rem] xl:h-[70rem] xl:mt-[-14rem] lg:mt-[-12rem] lg:h-[60rem] md:mt-[-10rem] md:h-[50rem] sm:h-[40rem] sm:mt-[-7rem] h-[30rem] mt-[-4rem] w-auto max-w-screen-xl mx-auto px-2 sm:px-0">
               <Image
                 src="https://s3-alpha-sig.figma.com/img/e22a/e5af/28f38cae7afd544d9e8c5cf6ac6b911b?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=F6Zd~CUMbaNCmAVd3N-2FngI2lYO~oiqmm6JWfc9im2BnpWyC14IgkInillqXYHZlFGGYj-qDMonkL12n~g2MmA5qp0DInbW6M2jEqXTzWKieTlq5b1GRhscoSed4vLD2CctAij-~FHA~Xs8fLC8ZOaQuCynF9s9~f~0aOzemx5oFF4bZmwDKEs9tQC27N8ZVczCnGgyt0swX~Z2ahWKY2AuIOTclQihEHBsyMOVNifgKtXNpubTBL3bc619opYTl4uXCAdIEWn0baYQf3ASpc0MqpBy2DddCafCnDQRPvCz3pB1bAQRRmQ40NA3PT6WOuPN0PvRRYZgmiP7T7NJDw__"
                 alt="Mascot Image"
@@ -148,9 +137,6 @@ export default function Home() {
                 className="w-full h-full object-cover mascot"
               />
             </div>
-
-            <div className="bounce-svg absolute bottom-36 hidden sm:block sm:left-48  md:left-5 lg:left-72 z-20 h-72 w-72 rounded-full bg-transparent backdrop-blur-3xl   "></div>
-
             <div className=" lg:flex flex-col items-end gap-4">
               <div className="flex gap-6"></div>
             </div>
@@ -158,9 +144,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full flex flex-col ">
+      <div className="w-full flex flex-col">
         <motion.div
-          className="flex flex-row mt-6 md:mt-8 items-center justify-center"
+          className="flex lg:flex-row flex-col mt-6 md:mt-8 items-center justify-center"
         >
           <div className="flex flex-col w-[30%] items-center">
             <CountAnimation targetValue={10}/>
@@ -177,7 +163,7 @@ export default function Home() {
         </motion.div>
 
         <div className="flex flex-col items-center p-4 md:px-12 xl:px-20 py-16 md:py-24">
-          <div className="flex flex-col items-start gap-16">
+          <div className="flex flex-col items-start">
             <div className="w-full flex flex-col items-center gap-5">
               <div className="flex flex-col items-start gap-3">
                 <p
@@ -202,7 +188,7 @@ export default function Home() {
               </p>
             </div>
             <div
-              className="flex justify-center flex-wrap mt-12 items-center  rounded-2xl pt-4 md:pt-0">
+              className="flex justify-center flex-wrap items-center rounded-2xl">
               {
                 advantages.map((advantage, index) => (
                   <ParticipateAdvantage key={index} icon={advantage.icon} heading={advantage.heading}

@@ -11,16 +11,16 @@ export default function NotFound() {
     <>
       <Navbar />
       <div
-        class="bg-[#101010] flex flex-col min-h-fit
+        className="bg-[#101010] flex flex-col min-h-fit
           p-4 md:pb-64 lg:px-0 md:pt-24 pt-16"
       >
         <div
-          className="flex flex-col items-start gap-12 xl:gap-16 px-4 pt-20 
+          className="flex flex-col items-start gap-12 xl:gap-16 px-4 pt-20
             md:px-8 lg:px-20 2xl:px-40 lg:pt-12"
         >
           <div className="flex flex-col items-start gap-6 max-w-full lg:max-w-[80%]">
             <div
-              className="flex items-center rounded-[2.5rem] border border-[#D1CAC7] 
+              className="flex items-center rounded-[2.5rem] border border-[#D1CAC7]
                 py-3 px-4 md:py-4"
             >
               <p className="text-[#AD9C94] font-normal text-[1.125rem] md:text-[1.25rem]">
@@ -28,7 +28,7 @@ export default function NotFound() {
               </p>
             </div>
             <p
-              className="text-[#F5F0D8] font-normal text-[3rem] leading-[4rem] 
+              className="text-[#F5F0D8] font-normal text-[3rem] leading-[4rem]
                 xl:leading-[5.5rem] xl:text-[5rem]"
             >
               Sorry, but the page you are looking for might have been removed or
@@ -54,12 +54,12 @@ export default function NotFound() {
       </div>
       <div className="bg-black w-full h-full py-24 lg:py-40">
         <div
-          className="flex flex-col justify-between gap-20 md:flex-row 
+          className="flex flex-col justify-between gap-20 md:flex-row
             px-4 md:px-8 xl:px-20 2xl:px-40"
         >
           <p
-            className="max-w-3xl text-6xl md:text-[5.5rem] lg:text-[7rem] xl:text-[9rem] 
-              text-white font-normal md:leading-[8rem] lg:leading-[10rem] 
+            className="max-w-3xl text-6xl md:text-[5.5rem] lg:text-[7rem] xl:text-[9rem]
+              text-white font-normal md:leading-[8rem] lg:leading-[10rem]
               tracking-tighter md:tracking-[-0.2rem]"
           >
             Empower
