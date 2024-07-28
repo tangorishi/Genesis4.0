@@ -250,7 +250,7 @@ export default function Team() {
       <Navbar />
       <div
         className="bg-custom-gradient flex flex-col min-h-screen
-          px-4 md:px-10 lg:px-20 xl:px-10 2xl:px-48 py-40"
+          px-4 md:px-10 lg:px-20 xl:px-10 2xl:px-48 pt-40 flex-grow"
       >
         <div className="flex flex-col items-center gap-4 md:gap-6">
           <div className="flex flex-col items-center gap-1 md:gap-3">
@@ -293,7 +293,7 @@ export default function Team() {
           <TabsContent value="Executives">
             <div
               className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 
-                place-content-center place-items-center gap-10"
+                place-content-center place-items-center gap-10 pb-40"
             >
               {executiveData.map((human, index) => (
                 <HumansCard key={index} index={index} {...human} />
@@ -303,7 +303,7 @@ export default function Team() {
           <TabsContent value="Organizers">
             <div
               className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 
-                place-content-center place-items-center gap-10"
+                place-content-center place-items-center gap-10 pb-40"
             >
               {organizerData.map((human, index) => (
                 <HumansCard key={index} index={index} {...human} />
@@ -313,7 +313,7 @@ export default function Team() {
           <TabsContent value="Faculty">
             <div
               className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 
-                place-content-center place-items-center gap-10"
+                place-content-center place-items-center gap-10 pb-40"
             >
               {facultyData.map((human, index) => (
                 <HumansCard key={index} index={index} {...human} />
@@ -321,10 +321,12 @@ export default function Team() {
             </div>
           </TabsContent>
         </Tabs>
+        <div className="mt-auto">
+          <Footer />
+        </div>
       </div>
       {/* <div className="bg-black w-full h-full py-24 lg:py-40">
       </div> */}
-      <Footer />
     </>
   );
 }
