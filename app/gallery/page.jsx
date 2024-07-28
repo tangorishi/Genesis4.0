@@ -42,8 +42,8 @@ export default function Gallery() {
   return (
     <div className="bg-custom-gradient">
       <Navbar />
-      <div className="min-h-screen w-full p-4 md:px-8 xl:px-4 lg:px-8 py-40">
-        <p className="text-[#fffbe7] font-normal leading-none text-[3.5rem] sm:text-[4rem] md:text-[4.5rem] lg:text-[6rem] text-center pt-4 xl:pt-[100px] pb-4 sm:pb-8">
+      <div className="min-h-screen w-full sm:p-4 md:px-8 xl:px-4 lg:px-8 py-40">
+        <p className="text-[#fffbe7] font-normal leading-none text-[3.2rem] sm:text-[4rem] md:text-[4.5rem] lg:text-[6rem] text-center pt-4 sm:pt-[150px] xl:pt-[250px] pb-4 sm:pb-8">
           Our Memories
         </p>
         <Carousel />
