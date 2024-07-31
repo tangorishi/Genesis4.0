@@ -41,8 +41,9 @@ export default function RootLayout({ children }) {
         </Script>
       </head>
       <body>
-        <CustomCursor/>
-        {children}</body>
+        {/* <CustomCursor/> */}
+        {children}
+        </body>
     </html>
   );
 }
