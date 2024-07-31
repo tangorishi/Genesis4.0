@@ -40,6 +40,8 @@ const GridImage = () => {
 
       <div className="flex flex-row lg:gap-x-8 max-w-[700px] lg:max-w-full mx-auto justify-between lg:m-0 sm:gap-x-6">
         <div className="flex flex-col lg:gap-y-10 gap-y-8 flex-wrap sm:flex-nowrap">
+      <div className="flex flex-row lg:gap-x-8 max-w-[700px] lg:max-w-full mx-auto justify-between lg:m-0 sm:gap-x-6">
+        <div className="flex flex-col lg:gap-y-10 gap-y-8 flex-wrap sm:flex-nowrap">
           <Image
             src={image4}
             alt="1"
@@ -140,6 +142,7 @@ const Carousel = () => {
 
   return (
     <div className="mt:4 sm:mt-8 lg:mt-12 slider relative w-full h-[400px] sm:h-[320px] md:h-[350px] lg:h-[470px] xl:h-[570px] 2xl:h-[650px] flex items-center justify-center overflow-hidden">
+    <div className="mt:4 sm:mt-8 lg:mt-12 slider relative w-full h-[400px] sm:h-[320px] md:h-[350px] lg:h-[470px] xl:h-[570px] 2xl:h-[650px] flex items-center justify-center overflow-hidden">
       <button
         className={`absolute h-[30px]  bottom-0 left-12 pb-12 text-[50px] sm:bottom-auto sm:p-0 sm:h-fit sm:text-[150px] md:text-[200px] lg:text-[250px] xl:text-[270px] 2xl:text-[350px] text-customArrow bg-transparent border-none font-bold inline-block sm:left-[30px] md:left-[10px] xl:left-[50px] 2xl:left-[50px] ${styles["text-shadow-md"]}`}
         id="previous"
@@ -151,15 +154,17 @@ const Carousel = () => {
         src={image1}
         alt="1"
         className={`picture mb-4 sm:mb-0 absolute transform -translate-y-1/2 rounded-3xl h-[250px] sm:h-[270px] md:h-[300px] lg:h-[400px] xl:h-[520px] 2xl:h-[600px] ${styles["image-glow"]} w-fit`}
+        className={`picture mb-4 sm:mb-0 absolute transform -translate-y-1/2 rounded-3xl h-[250px] sm:h-[270px] md:h-[300px] lg:h-[400px] xl:h-[520px] 2xl:h-[600px] ${styles["image-glow"]} w-fit`}
       />
       <Image
         src={image5}
         alt="2"
-        className={`picture absolute  -translate-y-1/2 rounded-3xl h-[270px] md:h-[300px] lg:h-[400px] xl:h-[520px] 2xl:h-[600px] ${styles["image-glow"]} w-fit`}
+        className={`picture mb-4 sm:mb-0 absolute  -translate-y-1/2 rounded-3xl h-[250px] sm:h-[270px] md:h-[300px] lg:h-[400px] xl:h-[520px] 2xl:h-[600px] ${styles["image-glow"]} w-fit`}
       />
       <Image
         src={image6}
         alt="3"
+        className={`picture mb-4 sm:mb-0 absolute -translate-y-1/2 rounded-3xl h-[250px] sm:h-[270px] md:h-[300px] lg:h-[400px] xl:h-[520px] 2xl:h-[600px] ${styles["image-glow"]} w-fit`}
         className={`picture mb-4 sm:mb-0 absolute -translate-y-1/2 rounded-3xl h-[250px] sm:h-[270px] md:h-[300px] lg:h-[400px] xl:h-[520px] 2xl:h-[600px] ${styles["image-glow"]} w-fit`}
       />
       <Image
@@ -174,6 +179,7 @@ const Carousel = () => {
       />
 
       <button
+        className={`absolute h-[30px]  bottom-0 right-12 pb-12 text-[50px] sm:bottom-auto sm:p-0 sm:h-fit sm:text-[150px] md:text-[200px] lg:text-[250px] xl:text-[250px] 2xl:text-[350px] text-customArrow bg-transparent border-none font-bold inline-block sm:right-[30px] md:right-[10px] xl:right-[50px] 2xl:right-[50px] ${styles["text-shadow-md"]}`}
         className={`absolute h-[30px]  bottom-0 right-12 pb-12 text-[50px] sm:bottom-auto sm:p-0 sm:h-fit sm:text-[150px] md:text-[200px] lg:text-[250px] xl:text-[250px] 2xl:text-[350px] text-customArrow bg-transparent border-none font-bold inline-block sm:right-[30px] md:right-[10px] xl:right-[50px] 2xl:right-[50px] ${styles["text-shadow-md"]}`}
         id="next"
       >
