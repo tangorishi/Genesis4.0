@@ -42,8 +42,8 @@ export default function Gallery() {
   return (
     <div className="bg-custom-gradient">
       <Navbar />
-      <div className="min-h-screen w-full p-4 md:px-8 xl:px-4 lg:px-8 py-40">
-        <p className="text-[#fffbe7] font-normal leading-none text-[3.5rem] sm:text-[4rem] md:text-[4.5rem] lg:text-[6rem] text-center pt-4 xl:pt-[100px] pb-4 sm:pb-8">
+      <div className="min-h-screen w-full sm:p-4 md:px-8 xl:px-4 lg:px-8 py-40">
+        <p className="text-[#fffbe7] font-normal leading-none text-[3.2rem] sm:text-[4rem] md:text-[4.5rem] lg:text-[6rem] text-center pt-4 sm:pt-[150px] xl:pt-[320px] pb-4 sm:pb-8">
           Our Memories
         </p>
         <Carousel />
@@ -56,7 +56,7 @@ export default function Gallery() {
               <p className="w-full xl:max-w-[75%] text-[#C3C3C3] font-[Inter] text-center font-normal text-[1.25rem] md:text-[1.5rem] pb-8">
                 Explore our gallery of memorable moments from HackByte events at
                 IIITDMJ. Immerse in the vibrant coding community, witness
-                innovation, and get inspired.
+                innovation, and get inspired. <br></br> <br></br>fin.
               </p>
             </div>
           </div>
