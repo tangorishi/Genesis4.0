@@ -94,7 +94,7 @@ const HumansCard = ({
                 {name}
               </p>
               {role && (
-                <p className="font-[Inter] text-blue-600 text-lg sm:text-base leading-6">
+                <p className="font-[Inter] text-gray-300 text-center text-lg sm:text-base leading-6 ">
                   {role}
                 </p>
               )}

@@ -1,4 +1,6 @@
 // layout.jsx
+
+
 import React from "react";
 import Navbar from "@/components/Navbar";
 import FooterAnimation from "@/components/FooterAnimation";
@@ -9,9 +11,10 @@ const Layout = ({ children }) => {
     <div>
       <Navbar />
       <main>{children}</main>
-      <Footer />
+      
     </div>
   );
 };
 
 export default Layout;
+

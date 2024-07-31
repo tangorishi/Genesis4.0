@@ -1,4 +1,6 @@
 import { GridImage, Carousel } from "@/components/ImageGrid";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 // export const metadata = {
 //   title: "Gallery | Genesis IEEE",
@@ -19,11 +21,29 @@ import { GridImage, Carousel } from "@/components/ImageGrid";
 //   },
 // };
 
-const Gallery = () => {
+// // layout.jsx
+// import React from "react";
+// import Navbar from "@/components/Navbar";
+// import Footer from "@/components/Footer";
+
+// const Layout = ({ children }) => {
+//   return (
+//     <div>
+//       <Navbar />
+//       <main>{children}</main>
+//       <Footer />
+//     </div>
+//   );
+// };
+
+// export default Layout;
+
+export default function Gallery() {
   return (
-    <>
-      <div className="bg-custom-gradient min-h-screen w-full p-4 md:px-8 xl:px-4 lg:px-8 py-40">
-        <p className="text-[#fffbe7] font-normal text-[4rem] md:text-[4.5rem] lg:text-[6rem] text-center pt-4 xl:pt-[100px] pb-8">
+    <div className="bg-custom-gradient">
+      <Navbar />
+      <div className="min-h-screen w-full p-4 md:px-8 xl:px-4 lg:px-8 py-40">
+        <p className="text-[#fffbe7] font-normal leading-none text-[3.5rem] sm:text-[4rem] md:text-[4.5rem] lg:text-[6rem] text-center pt-4 xl:pt-[100px] pb-4 sm:pb-8">
           Our Memories
         </p>
         <Carousel />
@@ -34,16 +54,16 @@ const Gallery = () => {
                 Gallery
               </p>
               <p className="w-full xl:max-w-[75%] text-[#C3C3C3] font-[Inter] text-center font-normal text-[1.25rem] md:text-[1.5rem] pb-8">
-                Explore our gallery of memorable moments from HackByte events at
-                IIITDMJ. Immerse in the vibrant coding community, witness
-                innovation, and get inspired.
+              Explore our gallery of unforgettable moments from Genesis events at 
+              Manipal University Jaipur. Dive into the dynamic coding community, 
+              witness innovation firsthand, and find your inspiration.
               </p>
             </div>
           </div>
           <GridImage />
         </div>
       </div>
-    </>
+      <Footer />
+    </div>
   );
-};
-export default Gallery;
+}
