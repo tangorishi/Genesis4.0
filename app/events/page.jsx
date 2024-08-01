@@ -20,6 +20,7 @@ import Image from "next/image";
 
 import leftLeaf from "@/public/schedulePage/leftLeaf.svg";
 import rightLeaf from "@/public/schedulePage/rightLeaf.svg";
+import bb from "@/public/schedulePage/bb.jpg";
 
 import FooterAnimation from "@/components/FooterAnimation";
 import Footer from "@/components/Footer";
@@ -218,7 +219,7 @@ export default function Schedule() {
         <div className="w-full flex flex-col gap-6 xl:gap-8">
           <div className="flex flex-col items-center gap-4">
             <p className="text-[#F5F0D8] font-normal text-[2.25rem] md:text-[5rem]">
-              Run of Show
+              Our Upcoming Events 
             </p>
             <p
               className="w-full xl:max-w-[80%] text-[#C3C3C3] font-[Inter] 
@@ -235,43 +236,30 @@ export default function Schedule() {
           className="grid grid-cols-1 gap-6 md:gap-8 md:grid-cols-2 
             xl:grid-cols-3 pt-8 md:pt-16"
         >
-          {/* Day 1 */}
+          {/* Event 1 */}
           <Dialog>
             <DialogTrigger>
               <div
-                className="flex flex-col justify-start items-center h-[300px] md:h-[400px] 
-                  gap-6 md:gap-8 px-4 py-8 md:px-8 md:py-16 cursor-pointer rounded-[8px] 
-                  border border-[#E5FFF1] hover:scale-[1.01] transition-transform 
-                  duration-200 ease-in-out"
+                className="flex flex-col justify-start items-center h-[500px] md:h-[500px] 
+            gap-4 md:gap-6 px-2 py-2 md:px-4 md:py-8 cursor-pointer rounded-[4px] 
+            border border-[#E5FFF1] hover:scale-[1.01] transition-transform 
+            duration-200 ease-in-out"
                 style={{
                   background:
                     "radial-gradient(355.69% 132.99% at 0% 6.53%, rgba(128, 188, 255, 0.10) 0%, rgba(109, 160, 217, 0.02) 100%)",
                 }}
               >
-                <div className="flex flex-col items-center gap-4">
+                <div className="flex flex-col items-center gap-1">
                   <div className="flex justify-center items-center gap-0">
                     <Image
-                      src={leftLeaf}
+                      src={bb}
                       alt="leaf"
-                      className="w-12 h-12 md:w-16 md:h-16 lg:w-auto lg:h-auto"
+                       className="w-16 h-16 md:w-20 md:h-20 lg:w-60 lg:h-80"
                     />
-                    <p
-                      className="text-white text-center font-medium text-[3rem] 
-                        lg:text-[4.125rem]"
-                      style={{
-                        textShadow: "0px 0px 100px rgba(242, 210, 59, 0.80)",
-                      }}
-                    >
-                      Day 1
-                    </p>
-                    <Image
-                      src={rightLeaf}
-                      alt="leaf"
-                      className="w-12 h-12 md:w-16 md:h-16 lg:w-auto lg:h-auto"
-                    />
+                   
                   </div>
                   <p
-                    className="font-medium text-[1rem] md:text-[1.5rem]"
+                    className="font-medium text-[0.5rem] md:text-[1.5rem]"
                     style={{
                       background:
                         "linear-gradient(80deg, #D06D30 6.67%, #FFD887 28.13%, #FFDCAD 64.87%, #FAB858 95.66%)",
@@ -280,17 +268,19 @@ export default function Schedule() {
                       WebkitTextFillColor: "transparent",
                     }}
                   >
-                    Ideate and finalize your project
+                    Breaking Bug
                   </p>
+                  <p className="text-white">Lorem ipsum dolor sit amet consectetur </p>
                 </div>
 
-                <p
-                  className="text-[#D1CAC7] font-[Inter] text-center font-normal 
-                    text-[1rem] md:text[1.125rem]"
-                >
-                  Meet and network with fellow hackers, shortlist the techstack
-                  your team will be working on
-                </p>
+                <div className="flex gap-4 mt-0">
+                    <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-200">
+                      Know more 
+                    </button>
+                    <button className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition-colors duration-200">
+                      Register
+                  </button>
+               </div>
               </div>
             </DialogTrigger>
 
@@ -343,64 +333,52 @@ export default function Schedule() {
             </DialogContent>
           </Dialog>
 
-          {/* Day 2 */}
+          {/*Event 2*/}
           <Dialog>
             <DialogTrigger>
-              <div
-                className="flex flex-col justify-start items-center h-[300px] md:h-[400px] 
-                  gap-6 md:gap-8 px-4 py-8 md:px-8 md:py-16 cursor-pointer rounded-[8px] 
-                  border border-[#E5FFF1] hover:scale-[1.01] transition-transform 
-                  duration-200 ease-in-out"
-                style={{
-                  background:
-                    "radial-gradient(355.69% 132.99% at 0% 6.53%, rgba(128, 255, 183, 0.10) 0%, rgba(109, 217, 156, 0.02) 100%)",
-                }}
-              >
-                <div className="flex flex-col items-center gap-4">
-                  <div className="flex justify-center items-center gap-0">
-                    <Image
-                      src={leftLeaf}
-                      alt="leaf"
-                      className="w-12 h-12 md:w-16 md:h-16 lg:w-auto lg:h-auto"
-                    />
-                    <p
-                      className="text-white text-center font-medium text-[3rem] 
-                        lg:text-[4.125rem]"
-                      style={{
-                        textShadow: "0px 0px 100px rgba(242, 210, 59, 0.80)",
-                      }}
-                    >
-                      Day 2
-                    </p>
-                    <Image
-                      src={rightLeaf}
-                      alt="leaf"
-                      className="w-12 h-12 md:w-16 md:h-16 lg:w-auto lg:h-auto"
-                    />
-                  </div>
-                  <p
-                    className="font-medium text-[1rem] md:text-[1.5rem]"
+              <div className="flex flex-col justify-start items-center h-[500px] md:h-[500px] 
+                gap-4 md:gap-6 px-2 py-2 md:px-4 md:py-8 cursor-pointer rounded-[4px] 
+                border border-[#E5FFF1] hover:scale-[1.01] transition-transform 
+                duration-200 ease-in-out"
                     style={{
                       background:
-                        "linear-gradient(80deg, #D06D30 6.67%, #FFD887 28.13%, #FFDCAD 64.87%, #FAB858 95.66%)",
-                      backgroundClip: "text",
-                      WebkitBackgroundClip: "text",
-                      WebkitTextFillColor: "transparent",
+                        "radial-gradient(355.69% 132.99% at 0% 6.53%, rgba(128, 188, 255, 0.10) 0%, rgba(109, 160, 217, 0.02) 100%)",
                     }}
                   >
-                    Coffee, mini events and yes, the MVP
-                  </p>
-                </div>
-
-                <p
-                  className="text-[#D1CAC7] font-[Inter] text-center font-normal 
-                    text-[1rem] md:text[1.125rem]"
-                >
-                  Seek help from mentors to make an MVP, along with some really
-                  cool workshop sessions 👀
-                </p>
-              </div>
-            </DialogTrigger>
+                    <div className="flex flex-col items-center gap-1">
+                      <div className="flex justify-center items-center gap-0">
+                        <Image
+                          src={bb}
+                          alt="leaf"
+                           className="w-16 h-16 md:w-20 md:h-20 lg:w-60 lg:h-80"
+                        />
+                       
+                      </div>
+                      <p
+                        className="font-medium text-[0.5rem] md:text-[1.5rem]" 
+                        style={{
+                          background:
+                            "linear-gradient(80deg, #D06D30 6.67%, #FFD887 28.13%, #FFDCAD 64.87%, #FAB858 95.66%)",
+                          backgroundClip: "text",
+                          WebkitBackgroundClip: "text",
+                          WebkitTextFillColor: "transparent",
+                        }}
+                      >
+                        Breaking Bug
+                      </p>
+                      <p className="text-white">Lorem ipsum dolor sit amet consectetur </p>
+                    </div>
+    
+                    <div className="flex gap-4 mt-0">
+                        <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-200">
+                          Know more 
+                        </button>
+                        <button className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition-colors duration-200">
+                          Register
+                      </button>
+                   </div>
+                  </div>
+                </DialogTrigger>
             <DialogContent
               className="max-w-[90%] lg:max-w-[800px] py-6 md:py-12 px-0 md:px-[4.5rem] 
                 rounded-[8px] border border-[#E5FFF1] backdrop:filter backdrop-blur-[32px]"
@@ -451,42 +429,29 @@ export default function Schedule() {
           </Dialog>
 
           {/* Day 3 */}
-          <Dialog>
+         <Dialog>
             <DialogTrigger>
               <div
-                className="flex flex-col justify-start items-center h-[300px] md:h-[400px] 
-                  gap-6 md:gap-8 px-4 py-8 md:px-8 md:py-16 cursor-pointer rounded-[8px] 
-                  border border-[#FFFAEF] hover:scale-[1.01] transition-transform 
-                  duration-200 ease-in-out"
+                className="flex flex-col justify-start items-center h-[500px] md:h-[500px] 
+            gap-4 md:gap-6 px-2 py-2 md:px-4 md:py-8 cursor-pointer rounded-[4px] 
+            border border-[#E5FFF1] hover:scale-[1.01] transition-transform 
+            duration-200 ease-in-out"
                 style={{
                   background:
-                    "radial-gradient(129.97% 124.9% at 0% 6.52%, #38351C 0%, rgba(56, 53, 28, 0.17) 100%)",
+                    "radial-gradient(355.69% 132.99% at 0% 6.53%, rgba(128, 188, 255, 0.10) 0%, rgba(109, 160, 217, 0.02) 100%)",
                 }}
               >
-                <div className="flex flex-col items-center gap-4">
+                <div className="flex flex-col items-center gap-1">
                   <div className="flex justify-center items-center gap-0">
                     <Image
-                      src={leftLeaf}
+                      src={bb}
                       alt="leaf"
-                      className="w-12 h-12 md:w-16 md:h-16 lg:w-auto lg:h-auto"
+                       className="w-16 h-16 md:w-20 md:h-20 lg:w-60 lg:h-80"
                     />
-                    <p
-                      className="text-white text-center font-medium text-[3rem] 
-                        lg:text-[4.125rem]"
-                      style={{
-                        textShadow: "0px 0px 100px rgba(242, 210, 59, 0.80)",
-                      }}
-                    >
-                      Day 3
-                    </p>
-                    <Image
-                      src={rightLeaf}
-                      alt="leaf"
-                      className="w-12 h-12 md:w-16 md:h-16 lg:w-auto lg:h-auto"
-                    />
+                   
                   </div>
                   <p
-                    className="font-medium text-[1rem] md:text-[1.5rem]"
+                    className="font-medium text-[0.5rem] md:text-[1.5rem]"
                     style={{
                       background:
                         "linear-gradient(80deg, #D06D30 6.67%, #FFD887 28.13%, #FFDCAD 64.87%, #FAB858 95.66%)",
@@ -495,17 +460,19 @@ export default function Schedule() {
                       WebkitTextFillColor: "transparent",
                     }}
                   >
-                    The Final Sprint
+                    Breaking Bug
                   </p>
+                  <p className="text-white">Lorem ipsum dolor sit amet consectetur </p>
                 </div>
 
-                <p
-                  className="text-[#D1CAC7] font-[Inter] text-center font-normal 
-                    text-[1rem] md:text[1.125rem]"
-                >
-                  Improve upon the MVP, polish your elevator pitch and submit
-                  your project on Devfolio with documentation
-                </p>
+                <div className="flex gap-4 mt-0">
+                    <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-200">
+                      Know more 
+                    </button>
+                    <button className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition-colors duration-200">
+                      Register
+                  </button>
+               </div>
               </div>
             </DialogTrigger>
 
@@ -560,7 +527,7 @@ export default function Schedule() {
         </div>
       </div>
 
-      {/* <div className="bg-black w-full h-full py-24 lg:py-40">
+      {/*<div className="bg-black w-full h-full py-24 lg:py-40">
         <div
           className="flex flex-col justify-between gap-20 md:flex-row 
           px-4 md:px-8 xl:px-20 2xl:px-40"
@@ -580,6 +547,6 @@ export default function Schedule() {
       </div> */}
       
       <Footer />
-    </>
+    </> 
   );
 }
