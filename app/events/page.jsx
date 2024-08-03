@@ -225,9 +225,6 @@ export default function Schedule() {
               className="w-full xl:max-w-[80%] text-[#C3C3C3] font-[Inter] 
                 text-center font-normal text-[1.25rem] md:text-[1.5rem]"
             >
-              Join us for a day packed with coding challenges, workshops, and
-              networking. Elevate your skills and collaborate with fellow
-              hackers!
             </p>
           </div>
         </div>
