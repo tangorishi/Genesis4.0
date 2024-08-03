@@ -1,23 +1,22 @@
 import "./globals.css";
 import Script from "next/script";
-import "react-toastify/dist/ReactToastify.css";
 import "./clash_grotesk.css";
 import CustomCursor from "@/components/ui/Cursor";
 
 export const metadata = {
-  title: "Genesis",
+  title: "Genesis 4.0",
   description:
-    "HackByte is the IIITDMJ's student-run hackathon, which centers on bringing developers and problem solvers from different foundations together and enables them to develop projects that can bring out an impact.",
-  keywords: "hackathon, IIITDMJ, hackbyte, coding, programming, tech",
-  url: "https://hackbyte.in",
+    "Genesis is the largest technical fest of IEEE MUJ.",
+  keywords: "hackathon, IEEEMUJ, genesis, genesis4.0, coding, programming, tech",
+  url: "https://genesis.ieeemuj.com",
   openGraph: {
-    title: "HackByte - IIITDMJ Hackathon",
+    title: "Genesis 4.0",
     description:
-      "HackByte is the IIITDMJ's student-run hackathon, which centers on bringing developers and problem solvers from different foundations together and enables them to develop projects that can bring out an impact.",
-    url: "https://hackbyte.in",
+      "Genesis is the largest technical fest of IEEE MUJ.",
+    url: "https://genesis.ieeemuj.com",
     images:
       "https://res.cloudinary.com/drtmfrghg/image/upload/v1708016443/opengraph-image_vkiopn.jpg",
-    siteName: "HackByte - IIITDMJ Hackathon",
+    siteName: "Genesis 4.0",
     locale: "en_US",
     type: "website",
   },
