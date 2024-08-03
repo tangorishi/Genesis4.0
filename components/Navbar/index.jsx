@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import classes from "./index.module.css";
 import Link from "next/link";
-import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 
 const navigationItems = [
@@ -21,7 +20,7 @@ const NavItem = ({ label, href }) => {
   const pathname = usePathname();
   return (
     <div
-      className={`group relative text-white font-[500] px-6 py-2 rounded-full transition-all ease-in-out focus-visible:outline-2 hover:bg-black`}
+      className="group relative text-white font-[500] px-6 py-2 rounded-full transition-all ease-in-out focus-visible:outline-2 hover:bg-black"
     >
       <AnimatePresence initial={false} mode="wait">
         {pathname === href && (
@@ -55,13 +54,11 @@ export default function Navbar() {
   return (
     <>
       <div className="absolute z-[2] w-full flex items-center justify-between px-4 pt-8">
-        <Image src="/Navbar/genesis.png" alt="Genesis Logo" width={80} height={20} className="h-auto w-auto mb-5 md:mb-0 ml-8" />
-        <nav className="hidden xl:flex items-center h-10 justify-center px-3 py-8 rounded-full border-2 border-solid border-white bg-opacity-60 backdrop-blur-xl space-x-2">
+        <nav className="hidden xl:flex items-center h-10 justify-center px-3 py-8 mx-auto rounded-full border-2 border-solid border-white bg-opacity-60 backdrop-blur-xl space-x-2">
           {navigationItems.map(({ label, href }) => (
             <NavItem key={label} label={label} href={href} />
           ))}
         </nav>
-        <Image src="/Navbar/muj.png" alt="MUJ Logo" width={100} height={50} className="h-auto w-auto mb-5 md:mb-0 ml-8" />
         <div className="flex items-center justify-end xl:hidden">
           <button
             id="menu-btn"
