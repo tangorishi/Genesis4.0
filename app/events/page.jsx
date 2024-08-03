@@ -219,7 +219,7 @@ export default function Schedule() {
         <div className="w-full flex flex-col gap-6 xl:gap-8">
           <div className="flex flex-col items-center gap-4">
             <p className="text-[#F5F0D8] font-normal text-[2.25rem] md:text-[5rem]">
-              Our Upcoming Events 
+              Our Upcoming Events
             </p>
             <p
               className="w-full xl:max-w-[80%] text-[#C3C3C3] font-[Inter] 
@@ -230,17 +230,15 @@ export default function Schedule() {
         </div>
 
         <div
-          className="grid grid-cols-1 gap-6 md:gap-8 md:grid-cols-2 
-            xl:grid-cols-3 pt-8 md:pt-16"
+          className="grid grid-cols-1 gap-6 md:gap-6 md:grid-cols-2 
+            xl:grid-cols-3 pt-6 md:px-0 md:py- sm:px-20 lg:gap-0 lg:py-2 lg:px-6"
         >
           {/* Event 1 */}
           <Dialog>
             <DialogTrigger>
+            <div className="flex justify-center items-center min-h-screen">
               <div
-                className="flex flex-col justify-start items-center h-[500px] md:h-[500px] 
-            gap-4 md:gap-6 px-2 py-2 md:px-4 md:py-8 cursor-pointer rounded-[4px] 
-            border border-[#E5FFF1] hover:scale-[1.01] transition-transform 
-            duration-200 ease-in-out"
+                className="flex flex-col justify-start items-center w-[300px] h-[560px] sm:h-[500px] sm:w-[380px] sm:gap-5 md:w-[300px] md:h-[520px] gap-4 md:gap-6 px-4 py-4 md:px-2 md:py-6 cursor-pointer rounded-[4px] border border-[#E5FFF1] hover:scale-[1.01] transition-transform duration-200 ease-in-out"
                 style={{
                   background:
                     "radial-gradient(355.69% 132.99% at 0% 6.53%, rgba(128, 188, 255, 0.10) 0%, rgba(109, 160, 217, 0.02) 100%)",
@@ -250,13 +248,13 @@ export default function Schedule() {
                   <div className="flex justify-center items-center gap-0">
                     <Image
                       src={bb}
-                      alt="leaf"
-                       className="w-16 h-16 md:w-20 md:h-20 lg:w-60 lg:h-80"
+                      alt="Event poster "
+                      className="w-22 h-30 sm:w-60 sm:h-80 md:w-30 md:h-45 lg:w-60 lg:h-80"
                     />
-                   
                   </div>
                   <p
-                    className="font-medium text-[0.5rem] md:text-[1.5rem]"
+                    className="font-medium text-[1.5rem] md:text-[1.5rem]
+                    sm:text-[1.75rem]"
                     style={{
                       background:
                         "linear-gradient(80deg, #D06D30 6.67%, #FFD887 28.13%, #FFDCAD 64.87%, #FAB858 95.66%)",
@@ -267,172 +265,32 @@ export default function Schedule() {
                   >
                     Breaking Bug
                   </p>
-                  <p className="text-white">Lorem ipsum dolor sit amet consectetur </p>
+                  <p className="text-white">
+                    Lorem ipsum dolor sit amet consectetur{" "}
+                  </p>
                 </div>
 
                 <div className="flex gap-4 mt-0">
-                    <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-200">
-                      Know more 
-                    </button>
-                    <button className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition-colors duration-200">
-                      Register
+                  <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-200">
+                    Know more
                   </button>
-               </div>
+                  <button className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition-colors duration-200">
+                    Register
+                  </button>
+                </div>
               </div>
+            </div>
             </DialogTrigger>
 
-            <DialogContent
-              className="max-w-[90%] lg:max-w-[800px] py-6 md:py-12 px-0 md:px-[4.5rem] 
-                border border-[#E5F1FF] backdrop:filter backdrop-blur-[32px]"
-              style={{
-                borderRadius: "8px",
-                background:
-                  "radial-gradient(355.69% 132.99% at 0% 6.53%, rgba(128, 188, 255, 0.10) 0%, rgba(109, 160, 217, 0.02) 100%)",
-              }}
-            >
-              <DialogHeader>
-                <DialogTitle
-                  className="text-[#F5F0D8] text-center font-normal text-[2.25rem]
-                    md:text-[3rem]"
-                >
-                  Day 1 Timeline
-                </DialogTitle>
-                <DialogDescription className="text-white">
-                  <ScrollArea className="h-[500px] lg:h-[350px] w-full overflow-auto">
-                    <Table>
-                      <TableHeader className="bg-[#0275F6]">
-                        <TableRow className="text-[1rem] md:text-[1.5rem] font-medium">
-                          <TableHead>Event</TableHead>
-                          <TableHead>Time</TableHead>
-                          <TableHead>Duration</TableHead>
-                        </TableRow>
-                      </TableHeader>
-                      <TableBody>
-                        {day1.map((event, index) => (
-                          <TableRow
-                            key={index}
-                            className="text-[1rem] md:text-[1.125rem] font-normal"
-                          >
-                            <TableCell className="text-left">
-                              {event.event}
-                            </TableCell>
-                            <TableCell className="text-left">
-                              {event.time}
-                            </TableCell>
-                            <TableCell>{event.duration}</TableCell>
-                          </TableRow>
-                        ))}
-                      </TableBody>
-                    </Table>
-                  </ScrollArea>
-                </DialogDescription>
-              </DialogHeader>
-            </DialogContent>
+    
           </Dialog>
 
           {/*Event 2*/}
           <Dialog>
             <DialogTrigger>
-              <div className="flex flex-col justify-start items-center h-[500px] md:h-[500px] 
-                gap-4 md:gap-6 px-2 py-2 md:px-4 md:py-8 cursor-pointer rounded-[4px] 
-                border border-[#E5FFF1] hover:scale-[1.01] transition-transform 
-                duration-200 ease-in-out"
-                    style={{
-                      background:
-                        "radial-gradient(355.69% 132.99% at 0% 6.53%, rgba(128, 188, 255, 0.10) 0%, rgba(109, 160, 217, 0.02) 100%)",
-                    }}
-                  >
-                    <div className="flex flex-col items-center gap-1">
-                      <div className="flex justify-center items-center gap-0">
-                        <Image
-                          src={bb}
-                          alt="leaf"
-                           className="w-16 h-16 md:w-20 md:h-20 lg:w-60 lg:h-80"
-                        />
-                       
-                      </div>
-                      <p
-                        className="font-medium text-[0.5rem] md:text-[1.5rem]" 
-                        style={{
-                          background:
-                            "linear-gradient(80deg, #D06D30 6.67%, #FFD887 28.13%, #FFDCAD 64.87%, #FAB858 95.66%)",
-                          backgroundClip: "text",
-                          WebkitBackgroundClip: "text",
-                          WebkitTextFillColor: "transparent",
-                        }}
-                      >
-                        Breaking Bug
-                      </p>
-                      <p className="text-white">Lorem ipsum dolor sit amet consectetur </p>
-                    </div>
-    
-                    <div className="flex gap-4 mt-0">
-                        <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-200">
-                          Know more 
-                        </button>
-                        <button className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition-colors duration-200">
-                          Register
-                      </button>
-                   </div>
-                  </div>
-                </DialogTrigger>
-            <DialogContent
-              className="max-w-[90%] lg:max-w-[800px] py-6 md:py-12 px-0 md:px-[4.5rem] 
-                rounded-[8px] border border-[#E5FFF1] backdrop:filter backdrop-blur-[32px]"
-              style={{
-                borderRadius: "8px",
-                background:
-                  "radial-gradient(355.69% 132.99% at 0% 6.53%, rgba(128, 255, 183, 0.10) 0%, rgba(109, 217, 156, 0.02) 100%)",
-              }}
-            >
-              <DialogHeader>
-                <DialogTitle
-                  className="text-[#F5F0D8] text-center font-normal text-[2.25rem]
-                    md:text-[3rem]"
-                >
-                  Day 2 Timeline
-                </DialogTitle>
-                <DialogDescription className="text-white">
-                  <ScrollArea className="h-[500px] lg:h-[350px] w-full overflow-auto">
-                    <Table>
-                      <TableHeader className="bg-[#1FD26C]">
-                        <TableRow className="text-[1rem] md:text-[1.5rem] font-medium">
-                          <TableHead>Event</TableHead>
-                          <TableHead>Time</TableHead>
-                          <TableHead>Duration</TableHead>
-                        </TableRow>
-                      </TableHeader>
-                      <TableBody>
-                        {day2.map((event, index) => (
-                          <TableRow
-                            key={index}
-                            className="text-[1rem] md:text-[1.125rem] font-normal"
-                          >
-                            <TableCell className="text-left">
-                              {event.event}
-                            </TableCell>
-                            <TableCell className="text-left">
-                              {event.time}
-                            </TableCell>
-                            <TableCell>{event.duration}</TableCell>
-                          </TableRow>
-                        ))}
-                      </TableBody>
-                    </Table>
-                  </ScrollArea>
-                </DialogDescription>
-              </DialogHeader>
-            </DialogContent>
-          </Dialog>
-
-          {/* Day 3 */}
-         <Dialog>
-            <DialogTrigger>
+            <div className="flex justify-center items-center min-h-screen">
               <div
-                className="flex flex-col justify-start items-center h-[500px] md:h-[500px] 
-            gap-4 md:gap-6 px-2 py-2 md:px-4 md:py-8 cursor-pointer rounded-[4px] 
-            border border-[#E5FFF1] hover:scale-[1.01] transition-transform 
-            duration-200 ease-in-out"
+               className="flex flex-col justify-start items-center w-[300px] h-[560px] sm:h-[500px] sm:w-[380px] sm:gap-5 md:w-[300px] md:h-[520px] gap-4 md:gap-6 px-4 py-4 md:px-2 md:py-6 cursor-pointer rounded-[4px] border border-[#E5FFF1] hover:scale-[1.01] transition-transform duration-200 ease-in-out"
                 style={{
                   background:
                     "radial-gradient(355.69% 132.99% at 0% 6.53%, rgba(128, 188, 255, 0.10) 0%, rgba(109, 160, 217, 0.02) 100%)",
@@ -443,12 +301,12 @@ export default function Schedule() {
                     <Image
                       src={bb}
                       alt="leaf"
-                       className="w-16 h-16 md:w-20 md:h-20 lg:w-60 lg:h-80"
+                       className="w-25 h-30 sm:w-60 sm:h-80 md:w-30 md:h-45 lg:w-60 lg:h-80"
                     />
-                   
                   </div>
                   <p
-                    className="font-medium text-[0.5rem] md:text-[1.5rem]"
+                  className="font-medium text-[1.5rem] md:text-[1.5rem]
+                    sm:text-[1.75rem]"
                     style={{
                       background:
                         "linear-gradient(80deg, #D06D30 6.67%, #FFD887 28.13%, #FFDCAD 64.87%, #FAB858 95.66%)",
@@ -459,67 +317,74 @@ export default function Schedule() {
                   >
                     Breaking Bug
                   </p>
-                  <p className="text-white">Lorem ipsum dolor sit amet consectetur </p>
+                  <p className="text-white">
+                    Lorem ipsum dolor sit amet consectetur{" "}
+                  </p>
                 </div>
 
                 <div className="flex gap-4 mt-0">
-                    <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-200">
-                      Know more 
-                    </button>
-                    <button className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition-colors duration-200">
-                      Register
+                  <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-200">
+                    Know more
                   </button>
-               </div>
+                  <button className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition-colors duration-200">
+                    Register
+                  </button>
+                </div>
+              </div>
+              </div>
+            </DialogTrigger>
+       
+          </Dialog>
+
+          {/* Day 3 */}
+          <Dialog>
+            <DialogTrigger>
+            <div className="flex justify-center items-center min-h-screen">
+              <div
+              className="flex flex-col justify-start items-center w-[300px] h-[560px] sm:h-[500px] sm:w-[380px] sm:gap-5 md:w-[300px] md:h-[520px] gap-4 md:gap-6 px-4 py-4 md:px-2 md:py-6 cursor-pointer rounded-[4px] border border-[#E5FFF1] hover:scale-[1.01] transition-transform duration-200 ease-in-out"
+                style={{
+                  background:
+                    "radial-gradient(355.69% 132.99% at 0% 6.53%, rgba(128, 188, 255, 0.10) 0%, rgba(109, 160, 217, 0.02) 100%)",
+                }}
+              >
+                <div className="flex flex-col items-center gap-1">
+                  <div className="flex justify-center items-center gap-0">
+                    <Image
+                      src={bb}
+                      alt="leaf"
+                      className="w-25 h-30 sm:w-60 sm:h-80 md:w-30 md:h-45 lg:w-60 lg:h-80"
+                    />
+                  </div>
+                  <p
+                    className="font-medium text-[1.5rem] md:text-[1.5rem]
+                    sm:text-[1.75rem]"
+                    style={{
+                      background:
+                        "linear-gradient(80deg, #D06D30 6.67%, #FFD887 28.13%, #FFDCAD 64.87%, #FAB858 95.66%)",
+                      backgroundClip: "text",
+                      WebkitBackgroundClip: "text",
+                      WebkitTextFillColor: "transparent",
+                    }}
+                  >
+                    Breaking Bug
+                  </p>
+                  <p className="text-white">
+                    Lorem ipsum dolor sit amet consectetur{" "}
+                  </p>
+                </div>
+
+                <div className="flex gap-4 mt-0">
+                  <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-200">
+                    Know more
+                  </button>
+                  <button className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition-colors duration-200">
+                    Register
+                  </button>
+                </div>
+              </div>
               </div>
             </DialogTrigger>
 
-            <DialogContent
-              className="max-w-[90%] lg:max-w-[800px] py-6 md:py-12 px-0 md:px-[4.5rem] 
-                rounded-[8px] border border-[#FFFAEF] backdrop:filter backdrop-blur-[32px]"
-              style={{
-                borderRadius: "8px",
-                background:
-                  "radial-gradient(129.97% 124.9% at 0% 6.52%, #38351C 0%, rgba(56, 53, 28, 0.17) 100%)",
-              }}
-            >
-              <DialogHeader>
-                <DialogTitle
-                  className="text-[#F5F0D8] text-center font-normal text-[2.25rem]
-                    md:text-[3rem]"
-                >
-                  Day 3 Timeline
-                </DialogTitle>
-                <DialogDescription className="text-white">
-                  <ScrollArea className="h-[500px] lg:h-[350px] w-full overflow-auto">
-                    <Table>
-                      <TableHeader className="bg-[#F2D23B]">
-                        <TableRow className="text-[1rem] md:text-[1.5rem] font-medium">
-                          <TableHead>Event</TableHead>
-                          <TableHead>Time</TableHead>
-                          <TableHead>Duration</TableHead>
-                        </TableRow>
-                      </TableHeader>
-                      <TableBody>
-                        {day3.map((event, index) => (
-                          <TableRow
-                            key={index}
-                            className="text-[1rem] md:text-[1.125rem] font-normal"
-                          >
-                            <TableCell className="text-left">
-                              {event.event}
-                            </TableCell>
-                            <TableCell className="text-left">
-                              {event.time}
-                            </TableCell>
-                            <TableCell>{event.duration}</TableCell>
-                          </TableRow>
-                        ))}
-                      </TableBody>
-                    </Table>
-                  </ScrollArea>
-                </DialogDescription>
-              </DialogHeader>
-            </DialogContent>
           </Dialog>
         </div>
       </div>
@@ -542,8 +407,8 @@ export default function Schedule() {
           <FooterAnimation />
         </div>
       </div> */}
-      
+
       <Footer />
-    </> 
+    </>
   );
 }
