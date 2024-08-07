@@ -2,10 +2,6 @@ import Navbar from "@/components/Navbar";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import HumansCard from "@/components/HumansCard";
 
-// Organizers
-import bhavik from "@/public/humansPage/bhavik.jpg";
-import samyak from "@/public/humansPage/samyak.jpeg";
-
 import FooterAnimation from "@/components/FooterAnimation";
 import Footer from "@/components/Footer";
 
@@ -1228,7 +1224,7 @@ export default function Team() {
     {
       name: "Bhavik Agrawal",
       role: "Head of Department- Computer Science and Engineering(AIML)",
-      profilepic: bhavik,
+      profilepic: "",
       linkedin: "https://www.linkedin.com/in/bhavikagarwal2001/",
       twitter: "https://twitter.com/BhavikAgarwal13",
       github: "https://github.com/Bhavik-ag",
@@ -1237,37 +1233,11 @@ export default function Team() {
     {
       name: "Samyak Bhargava",
       role: "Event Coordinator",
-      profilepic: samyak,
+      profilepic: "",
       linkedin: "https://www.linkedin.com/in/sammybh6/",
       twitter: "#",
       github: "https://github.com/sammybh6",
-    },
-    {
-      name: "Bhavik Agrawal",
-      role: "Event Coordinator",
-      profilepic: bhavik,
-      linkedin: "https://www.linkedin.com/in/bhavikagarwal2001/",
-      twitter: "https://twitter.com/BhavikAgarwal13",
-      github: "https://github.com/Bhavik-ag",
-      instagram:"https://instagram.com/johndoe",
-    },
-    {
-      name: "Samyak Bhargava",
-      role: "Event Coordinator",
-      profilepic: samyak,
-      linkedin: "https://www.linkedin.com/in/sammybh6/",
-      twitter: "#",
-      github: "https://github.com/sammybh6",
-    },
-    {
-      name: "Bhavik Agrawal",
-      role: "Event Coordinator",
-      profilepic: bhavik,
-      linkedin: "https://www.linkedin.com/in/bhavikagarwal2001/",
-      twitter: "https://twitter.com/BhavikAgarwal13",
-      github: "https://github.com/Bhavik-ag",
-      instagram:"https://instagram.com/johndoe",
-    },
+    }
   ];
 
   return (
