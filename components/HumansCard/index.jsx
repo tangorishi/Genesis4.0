@@ -69,8 +69,9 @@ const HumansCard = ({
               <div className="relative w-[240px] h-[300px]">
                 <Image
                   src={profilepic}
+                  width={260}
+                  height={300}
                   className="w-full h-full outline-none object-cover transition-shadow duration-300 group-hover:shadow-lg group-hover:shadow-black border-8 border-blue-900 border-opacity-0"
-                  placeholder="blur"
                   alt="Profile Picture"
                 />
                 <div
