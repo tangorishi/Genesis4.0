@@ -126,6 +126,12 @@ export default function Team() {
       profilepic: "https://images.prismic.io/ieeemuj/ZnHJepm069VX12yE_WhatsAppImage2024-06-17at11.23.56-VrishaanTaneja.jpeg?auto=format,compress",
     },
     {
+      name: "Kartikeya Chaturvedi",
+      team: "Media",
+      role: "",
+      profilepic: "https://images.prismic.io/ieeemuj/ZnHU8pm069VX123q_IMG_20240605_161925_731-KartikeyaChaturvedi.jpg?auto=format,compress",
+    },
+    {
       name: "Prakhar Mahant",
       team: "Graphic Design",
       role: "",
@@ -639,6 +645,12 @@ export default function Team() {
       team: "Content",
       role: "",
       profilepic: "https://images.prismic.io/ieeemuj/ZoRLOh5LeNNTwumA_LakshitaTuli_seniorcoordinator_editorial.jpg?auto=format,compress",
+    },
+    {
+      name: "Anusha Mittal",
+      team: "Social Media",
+      role: "",
+      profilepic: "https://images.prismic.io/ieeemuj/ZnHT1Jm069VX123L_Anusha_pic-AnushaMittal.jpg?auto=format,compress",
     },
     {
       name: "Amique Khan",
