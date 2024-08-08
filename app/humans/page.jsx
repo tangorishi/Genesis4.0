@@ -1121,6 +1121,13 @@ export default function Team() {
       instagram: "https://www.instagram.com/joy_khanna11/"
     },
     {
+      name: "Shreya Saihgal",
+      role: "Director",
+      profilepic: "https://images.prismic.io/ieeemuj/3b73b918-8182-45ce-b764-18791e7bf44f_Shreya+Saihgal.jpg?auto=format,compress",
+      linkedin: "https://www.linkedin.com/in/shreya-saihgal-16a834261/",
+      instagram: "https://www.instagram.com/s.saihgal/"
+    },
+    {
       name: "Shristi Krishna",
       role: "Director",
       profilepic: "https://images.prismic.io/ieeemuj/8a647216-f4e2-4258-9879-5d90ed10fd0c_SHRISTI+KRISHNA.jpg",
