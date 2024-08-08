@@ -126,6 +126,12 @@ export default function Team() {
       profilepic: "https://images.prismic.io/ieeemuj/ZnHJepm069VX12yE_WhatsAppImage2024-06-17at11.23.56-VrishaanTaneja.jpeg?auto=format,compress",
     },
     {
+      name: "Kartikeya Chaturvedi",
+      team: "Media",
+      role: "",
+      profilepic: "https://images.prismic.io/ieeemuj/ZnHU8pm069VX123q_IMG_20240605_161925_731-KartikeyaChaturvedi.jpg?auto=format,compress",
+    },
+    {
       name: "Prakhar Mahant",
       team: "Graphic Design",
       role: "",
@@ -641,6 +647,12 @@ export default function Team() {
       profilepic: "https://images.prismic.io/ieeemuj/ZoRLOh5LeNNTwumA_LakshitaTuli_seniorcoordinator_editorial.jpg?auto=format,compress",
     },
     {
+      name: "Anusha Mittal",
+      team: "Social Media",
+      role: "",
+      profilepic: "https://images.prismic.io/ieeemuj/ZnHT1Jm069VX123L_Anusha_pic-AnushaMittal.jpg?auto=format,compress",
+    },
+    {
       name: "Amique Khan",
       team: "Logistics",
       role: "",
@@ -1119,6 +1131,13 @@ export default function Team() {
       profilepic: "https://images.prismic.io/ieeemuj/ZnHa-Zm069VX125x_WhatsAppImage2024-06-19at00.36.57_762311f2.jpg?auto=format,compress",
       linkedin: "https://www.linkedin.com/in/harshneet-khanna-031505236",
       instagram: "https://www.instagram.com/joy_khanna11/"
+    },
+    {
+      name: "Shreya Saihgal",
+      role: "Director",
+      profilepic: "https://images.prismic.io/ieeemuj/3b73b918-8182-45ce-b764-18791e7bf44f_Shreya+Saihgal.jpg?auto=format,compress",
+      linkedin: "https://www.linkedin.com/in/shreya-saihgal-16a834261/",
+      instagram: "https://www.instagram.com/s.saihgal/"
     },
     {
       name: "Shristi Krishna",
