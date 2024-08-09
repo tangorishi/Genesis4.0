@@ -99,7 +99,7 @@ export default function Home() {
           alt="grid"
           className="absolute w-full h-full object-cover text-white mix-blend-overlay opacity-5 blur-sm"
         />
-        <div className=" pt-10"></div>
+        <div className="pt-24"></div>
         <div
           className="relative flex flex-col min-h-fit
             md:px-12 xl:px-20  "

@@ -12,8 +12,7 @@ const navigationItems = [
     { label: "Gallery", href: "/gallery" },
     { label: "Partners", href: "/partners" },
     { label: "Prizes", href: "/prizes" },
-
-    { label: "Humans", href: "/humans" },
+    { label: "Team", href: "/team" },
     { label: "FAQs", href: "/faq" },
     { label: "Contact", href: "/contact" },
 ];
