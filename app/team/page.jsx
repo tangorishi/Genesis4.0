@@ -43,7 +43,7 @@ export default function Team() {
                 md:text-[4rem] xl:text-[5rem] md:leading-[4.5rem] xl:leading-[5.25rem]"
             >
               Unveiling the minds behind
-              <br /> Genesis
+              <br /> Genesis 4.0
             </p>
           </div>
         </div>
