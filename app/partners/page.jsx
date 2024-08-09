@@ -7,7 +7,7 @@ import codingNinjas from "@/public/partnersPage/codingNinjas.png";
 import codechef from "@/public/partnersPage/codechef.png";
 import ieeeRajasthan from "@/public/partnersPage/ieeeRajasthan.jpg";
 import guvi from "@/public/partnersPage/guvi.webp";
-import geeksForGeeks from "@/public/partnersPage/geeksForGeeks.png";
+import geeksForGeeks from "@/public/partnersPage/geeksforGeeks.png";
 import starbucks from "@/public/partnersPage/starbucks.webp";
 import decathlon from "@/public/partnersPage/decathlon.webp";
 import paradyes from "@/public/partnersPage/paradyes.jpg";
