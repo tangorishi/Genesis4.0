@@ -1,16 +1,4 @@
-type EventData = {
-  name: string;
-  description: string;
-  image: string;
-  poster: string;
-  registerUrl: string;
-  longDescription: string;
-  dateAndTime: string;
-  teamSize: string;
-  venue: string;
-}
-
-const data: EventData[] = [
+const data = [
   {
     name: 'Breaking Bug',
     description: 'An exciting challenge where even the tiniest bugs can be game changers, and hold up! Is that an secret trove of easter bugs? 🐞',

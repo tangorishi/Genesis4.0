@@ -1,6 +1,5 @@
 'use client';
 import Image from "next/image";
-import bb from "@/public/bb.png";
 import {useRouter} from "next/navigation";
 
 function EventCard({event}) {
