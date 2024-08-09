@@ -2,24 +2,23 @@ import { GridImage, Carousel } from "@/components/ImageGrid";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
-// export const metadata = {
-//   title: "Gallery | Genesis IEEE",
-//   description:
-//     "Discover memorable moments from past HackByte events at IIITDMJ, explore images, and feel the excitement of the coding community.",
-//   keywords:
-//     "Hackathon, IIITDMJ, Hackbyte, Coding, Programming, Tech, Gallery, Photos, Videos, Past Events, Previous Events",
-//   openGraph: {
-//     title: "Gallery | HackByte",
-//     description:
-//       "Discover memorable moments from past HackByte events at IIITDMJ, explore images, and feel the excitement of the coding community.",
-//     url: "https://hackbyte.in/gallery",
-//     images:
-//       "https://res.cloudinary.com/drtmfrghg/image/upload/v1708016443/opengraph-image_vkiopn.jpg",
-//     siteName: "HackByte - IIITDMJ Hackathon",
-//     type: "website",
-//     locale: "en_US",
-//   },
-// };
+export const metadata = {
+  title: "Gallery | Genesis 4.0",
+  description:
+    "Discover memorable moments from past Genesis 3.0 at IEEE MUJ, explore images, and feel the excitement of the coding community.",
+  keywords: "hackathon, IEEEMUJ, genesis, genesis4.0, coding, programming, tech",
+  openGraph: {
+    title: "Gallery | Genesis 4.0",
+    description:
+      "Discover memorable moments from past Genesis 3.0 at IEEE MUJ, explore images, and feel the excitement of the coding community.",
+    url: "https://genesis.ieeemuj.com/gallery",
+    images:
+      "https://images.prismic.io/ieeemuj/Zral1EaF0TcGI1jj_thumb.jpg?auto=format,compress",
+    siteName: "Gallery | Genesis 4.0",
+    type: "website",
+    locale: "en_US",
+  },
+};
 
 // // layout.jsx
 // import React from "react";

@@ -15,7 +15,7 @@ export const metadata = {
       "Genesis is the largest technical fest of IEEE MUJ.",
     url: "https://genesis.ieeemuj.com",
     images:
-      "https://res.cloudinary.com/drtmfrghg/image/upload/v1708016443/opengraph-image_vkiopn.jpg",
+      "https://images.prismic.io/ieeemuj/Zral1EaF0TcGI1jj_thumb.jpg?auto=format,compress",
     siteName: "Genesis 4.0",
     locale: "en_US",
     type: "website",

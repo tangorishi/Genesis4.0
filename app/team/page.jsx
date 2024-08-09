@@ -7,24 +7,24 @@ import facultyData from "@/app/team/FacultyData";
 
 import Footer from "@/components/Footer";
 
-// export const metadata = {
-//   title: "Humans | HackByte",
-//   description:
-//     "Meet the team behind HackByte 2.0! Discover the faces and roles of the passionate individuals who are working tirelessly to make the hackathon a grand success. Join us and be a part of the team!",
-//   keywords:
-//     "Humans, Team, Hackathon, IIITDMJ, Hackbyte, Coding, Programming, Tech",
-//   openGraph: {
-//     title: "Humans | HackByte",
-//     description:
-//       "Meet the team behind HackByte 2.0! Discover the faces and roles of the passionate individuals who are working tirelessly to make the hackathon a grand success. Join us and be a part of the team!",
-//     url: "https://hackbyte.in/humans",
-//     images:
-//       "https://res.cloudinary.com/drtmfrghg/image/upload/v1708016443/opengraph-image_vkiopn.jpg",
-//     siteName: "HackByte - IIITDMJ Hackathon",
-//     type: "website",
-//     locale: "en_US",
-//   },
-// };
+export const metadata = {
+  title: "Team | Genesis 4.0",
+  description:
+    "Meet the team behind Genesis 4.0! Discover the faces and roles of the passionate individuals who are working tirelessly to make the event a grand success.",
+  keywords:
+    "Humans, Team, Hackathon, IEEEMUJ, Genesis, Coding, Programming, Tech",
+  openGraph: {
+    title: "Team | Genesis 4.0",
+    description:
+      "Meet the team behind Genesis 4.0! Discover the faces and roles of the passionate individuals who are working tirelessly to make the event a grand success.",
+    url: "https://genesis.ieeemuj.in/team",
+    images:
+      "https://images.prismic.io/ieeemuj/Zral1EaF0TcGI1jj_thumb.jpg?auto=format,compress",
+    siteName: "Team | Genesis 4.0",
+    type: "website",
+    locale: "en_US",
+  },
+};
 
 export default function Team() {
 

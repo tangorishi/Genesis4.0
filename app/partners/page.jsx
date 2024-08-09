@@ -20,18 +20,18 @@ import xyz from "@/public/partnersPage/xyz.jpg";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Partners | Genesis",
+  title: "Partners | Genesis 4.0",
   description:
-    "Explore the invaluable support from our esteemed sponsors at HackByte – the premier hackathon hosted by IEEE MUJ. Discover their contributions and partnerships, playing a pivotal role in empowering the coding community.",
+    "Explore the invaluable support from our esteemed sponsors at Genesis 4.0 hosted by IEEE MUJ. Discover their contributions and partnerships, playing a pivotal role in empowering the coding community.",
   keywords: "contact, genesis, reach us, get in touch",
   openGraph: {
-    title: "Partners | Genesis",
+    title: "Partners | Genesis 4.0",
     description:
-      "Explore the invaluable support from our esteemed sponsors at HackByte – the premier hackathon hosted by IEEE MUJ. Discover their contributions and partnerships, playing a pivotal role in empowering the coding community.",
+      "Explore the invaluable support from our esteemed sponsors at Genesis hosted by IEEE MUJ. Discover their contributions and partnerships, playing a pivotal role in empowering the coding community.",
     url: "https://genesis.muj/partners",
     images:
-      "https://res.cloudinary.com/drtmfrghg/image/upload/v1708016443/opengraph-image_vkiopn.jpg",
-    siteName: "Genesis - IEEE MUJ Event",
+      "https://images.prismic.io/ieeemuj/Zral1EaF0TcGI1jj_thumb.jpg?auto=format,compress",
+    siteName: "Partners | Genesis 4.0",
     type: "website",
     locale: "en_US",
   },

@@ -3,18 +3,18 @@ import TextAnimation from "@/components/TextAnimation";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Contact | Genesis",
+  title: "Contact | Genesis 4.0",
   description:
     "Connect with us at IEEE's Genesis! Reach out for assistance, questions, or just to say hello. Find information on reaching Manipal University Jaipur, including travel options.",
   keywords: "contact, genesis, reach us, get in touch",
   openGraph: {
-    title: "Contact | Genesis",
+    title: "Contact | Genesis 4.0",
     description:
       "Connect with us at IEEE's Genesis! Reach out for assistance, questions, or just to say hello. Find information on reaching Manipal University Jaipur, including travel options.",
     url: "https://genesis.muj/contact",
     images:
-      "https://res.cloudinary.com/drtmfrghg/image/upload/v1708016443/opengraph-image_vkiopn.jpg",
-    siteName: "Genesis - IEEE MUJ Event",
+      "https://images.prismic.io/ieeemuj/Zral1EaF0TcGI1jj_thumb.jpg?auto=format,compress",
+    siteName: "Contact | Genesis 4.0",
     type: "website",
     locale: "en_US",
   },
