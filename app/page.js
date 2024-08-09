@@ -130,7 +130,7 @@ export default function Home() {
             <div
               className="2xl:h-[80rem] 2xl:mt-[-16rem] xl:h-[70rem] xl:mt-[-14rem] lg:mt-[-12rem] lg:h-[60rem] md:mt-[-10rem] md:h-[50rem] sm:h-[40rem] sm:mt-[-7rem] h-[30rem] mt-[-4rem] w-auto max-w-screen-xl mx-auto px-2 sm:px-0">
               <Image
-                src="https://images.prismic.io/ieeemuj/ZrahfUaF0TcGI1it_genesismascot.png?auto=format,compress"
+                src="https://s3-alpha-sig.figma.com/img/e22a/e5af/28f38cae7afd544d9e8c5cf6ac6b911b?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=F6Zd~CUMbaNCmAVd3N-2FngI2lYO~oiqmm6JWfc9im2BnpWyC14IgkInillqXYHZlFGGYj-qDMonkL12n~g2MmA5qp0DInbW6M2jEqXTzWKieTlq5b1GRhscoSed4vLD2CctAij-~FHA~Xs8fLC8ZOaQuCynF9s9~f~0aOzemx5oFF4bZmwDKEs9tQC27N8ZVczCnGgyt0swX~Z2ahWKY2AuIOTclQihEHBsyMOVNifgKtXNpubTBL3bc619opYTl4uXCAdIEWn0baYQf3ASpc0MqpBy2DddCafCnDQRPvCz3pB1bAQRRmQ40NA3PT6WOuPN0PvRRYZgmiP7T7NJDw__"
                 alt="Mascot Image"
                 height={1500}
                 width={1500}
