@@ -237,12 +237,6 @@ const CCData = [
     profilepic: "https://images.prismic.io/ieeemuj/ZnHPv5m069VX120i_WhatsAppImage2024-06-15at22.32.22-VibheshMishra.jpeg?auto=format,compress",
   },
   {
-    name: "Mritunjay Singh",
-    team: "Curations",
-    role: "",
-    profilepic: "https://images.prismic.io/ieeemuj/ZnHP_5m069VX120v_Screenshot_2024-06-17-10-16-04-93_6012fa4d4ddec268fc5c7112cbb265e7-SangyaSingh.jpg?auto=format,compress",
-  },
-  {
     name: "Parth Bajaj",
     team: "Curations",
     role: "",
