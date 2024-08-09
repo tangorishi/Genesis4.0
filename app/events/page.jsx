@@ -7,6 +7,8 @@ import Image from "next/image";
 import bb from "@/public/bb.png";
 import Footer from "@/components/Footer";
 import EventCard from "@/components/EventCard";
+import EventData from "@/app/events/EventData";
+import eventData from "@/app/events/EventData";
 
 export const metadata = {
   title: "Genesis 4.0",
@@ -32,9 +34,7 @@ export default function Schedule() {
   return (
     <>
       <Navbar />
-      <div
-        className="bg-custom-gradient flex flex-col min-h-screen py-40"
-      >
+      <div className="bg-custom-gradient flex flex-col min-h-screen py-40">
         <div className="w-full flex flex-col gap-6 xl:gap-8">
           <div className="flex flex-col items-center gap-4">
             <p className="text-[#F5F0D8] font-normal text-center text-[3rem] sm:text-[4rem] md:text-[5rem]">
@@ -51,8 +51,8 @@ export default function Schedule() {
         <div
           className="flex flex-row flex-wrap justify-center gap-12 2xl:gap-12 px-8"
         >
-          {[1, 2, 3].map((value, index) => (
-            <EventCard key={index} />
+          {eventData.map((value, index) => (
+            <EventCard key={index} event={value} />
           ))}
 
         </div>

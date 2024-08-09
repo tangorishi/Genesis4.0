@@ -14,6 +14,7 @@ const Footer = () => {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center",
+        backgroundColor: "#19234a"
       }}
     >
       <div className="flex flex-col lg:flex-row justify-between items-center">
@@ -108,6 +109,7 @@ const WebsiteLink = ({ name, href }) => (
   <Link
     href={href}
     className="flex items-center text-white mb-4 hover:underline"
+    target={"_blank"}
   >
     {name}
   </Link>
@@ -117,6 +119,7 @@ const InstagramLink = ({ name, href }) => (
   <Link
     href={href}
     className="flex items-center text-white hover:text-gray-300 transition-colors w-1/2 pl-[16%] sm:pl-0 sm:w-1/4 sm:justify-center"
+    target={"_blank"}
   >
     <InstagramLogoIcon className="w-6 h-6 mr-2" />
     <span>{name}</span>
