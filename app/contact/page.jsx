@@ -1,9 +1,6 @@
 import Navbar from "@/components/Navbar";
 import TextAnimation from "@/components/TextAnimation";
-
-import FooterAnimation from "@/components/FooterAnimation";
 import Footer from "@/components/Footer";
-import "./page.css";
 
 export const metadata = {
   title: "Contact | Genesis",
@@ -32,21 +29,21 @@ export default function Contact() {
           p-4 md:pb-64 lg:px-0 md:pt-24 pt-16"
       >
         <div
-          className="w-full h-full flex flex-col gap-24 px-4 pt-20 
+          className="w-full h-full flex flex-col gap-24 px-4 pt-20
             md:px-8 lg:px-16 xl:px-20 2xl:px-40"
         >
           <div
-            className="flex flex-col justify-between items-start sm:items-center 
+            className="flex flex-col justify-between items-start sm:items-center
               gap-12 md:gap-0 md:flex-row md:items-start"
           >
             <div className="flex flex-col items-start gap-8">
               <TextAnimation text="How can we help you? " />
               <p
-                className="w-full text-[#C3C3C3] font-['Inter'] font-normal 
-                  text-[1.25rem] sm:max-w-[32rem] lg:max-w-[40rem] xl:max-w-[50rem] 
+                className="w-full text-[#C3C3C3] font-['Inter'] font-normal
+                  text-[1.25rem] sm:max-w-[32rem] lg:max-w-[40rem] xl:max-w-[50rem]
                   2xl:max-w-[55rem] md:text-[1rem] xl:text-[1.5rem]"
               >
-                At IEEE Genesis, we prioritize the experience! Whether you have questions, need assistance, or simply want to connect, don’t hesitate to reach out. 
+                At IEEE Genesis, we prioritize the experience! Whether you have questions, need assistance, or simply want to connect, don’t hesitate to reach out.
                 Join us at IEEE's biggest technical fest at Manipal University Jaipur, featuring a variety of events from fun activities to coding challenges.
               </p>
             </div>
@@ -61,12 +58,12 @@ export default function Contact() {
               className="w-full h-full md:h-[25rem] border-0 rounded-[1rem]"
 
              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            
+
           </div>
 
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
             <div
-              className="flex flex-col items-start p-6 gap-8 
+              className="flex flex-col items-start p-6 gap-8
                 rounded-[1rem] border border-[rgba(255,255,255,0.5)]"
               style={{
                 background:
@@ -83,16 +80,16 @@ export default function Contact() {
                   By Train
                 </p>
                 <p className="text-[#D1CAC7] font-['Inter'] text-[1rem] font-normal md:text-[1.125rem]">
-                  Book tickets from IRCTC : The campus is 
+                  Book tickets from IRCTC : The campus is
                   <span className="font-[600]" > 25kms from Jaipur Railway </span>
-                  Terminal and auto fare is usually around 
+                  Terminal and auto fare is usually around
                   <span className="font-[600]"> ₹500-₹600. </span>
                 </p>
               </div>
             </div>
 
             <div
-              className="flex flex-col items-start p-6 gap-8 
+              className="flex flex-col items-start p-6 gap-8
                 rounded-[1rem] border border-[rgba(255,255,255,0.5)]"
               style={{
                 background:
@@ -111,7 +108,7 @@ export default function Contact() {
                 <p className="text-[#D1CAC7] font-['Inter'] text-[1rem] font-normal md:text-[1.125rem]">
                   Daily flights from{" "}
                   <span className="font-[600]">
-                    Delhi, Mumbai, Hyderabad, and Bangalore. 
+                    Delhi, Mumbai, Hyderabad, and Bangalore.
                   </span>
                   The campus is approximately 35kms from Jaipur International Airport.
                 </p>
@@ -119,7 +116,7 @@ export default function Contact() {
             </div>
 
             <div
-              className="flex flex-col items-start p-6 gap-8 
+              className="flex flex-col items-start p-6 gap-8
                 rounded-[1rem] border border-[rgba(255,255,255,0.5)]"
               style={{
                 background:
@@ -137,9 +134,9 @@ export default function Contact() {
                 </p>
                 <p className="text-[#D1CAC7] font-['Inter'] text-[1rem] font-normal md:text-[1.125rem]">
                   Only suggested if you live around{" "}
-                  <span className="font-[600]">8-10hrs</span> from Jaipur. 
-                  <span className="font-[600]"> Sindhi Camp Bus Stand </span> 
-                  is around 30km from the venue, auto fare is usually around 
+                  <span className="font-[600]">8-10hrs</span> from Jaipur.
+                  <span className="font-[600]"> Sindhi Camp Bus Stand </span>
+                  is around 30km from the venue, auto fare is usually around
                   <span className="font-[600]"> ₹400-₹450</span>.
                 </p>
               </div>
@@ -156,13 +153,13 @@ export default function Contact() {
               font-normal text-[1rem] md:flex-row lg:text-[1.5rem]"
               >
                 <div className="flex flex-col items-start gap-2">
-                <p>+91 XXXXXXXXXX</p>
-                <p>Will update</p>
+                <p>+91 95699 13103</p>
+                <p>Rishi Joshi</p>
                 </div>
                 <div className="flex flex-col items-start gap-2">
 
-                  <p>+91 XXXXXXXXXX</p>
-                  <p>Will update</p>
+                  <p>+91 93129 41940</p>
+                  <p>Lakshita Agarwal</p>
                 </div>
               </div>
             </div>
@@ -171,10 +168,10 @@ export default function Contact() {
                 Address
               </p>
               <p
-                className="max-w-full md:max-w-[18rem] lg:max-w-[25rem] text-white 
+                className="max-w-full md:max-w-[18rem] lg:max-w-[25rem] text-white
               font-normal text-[1rem] lg:text-[1.5rem]"
               >
-                Manipal University Jaipur, Dahmi Kalan, Jaipur, Rajasthan 303007
+                Manipal University Jaipur, Jaipur-Ajmer Express Highway, Dahmi Kalan, Near GVK Toll Plaza, Jaipur, Rajasthan 303007
               </p>
             </div>
           </div>

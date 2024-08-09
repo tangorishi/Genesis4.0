@@ -13,7 +13,6 @@ const navigationItems = [
     { label: "Partners", href: "/partners" },
     { label: "Prizes", href: "/prizes" },
     { label: "Team", href: "/team" },
-    { label: "FAQs", href: "/faq" },
     { label: "Contact", href: "/contact" },
 ];
 
