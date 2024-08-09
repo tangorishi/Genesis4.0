@@ -5,7 +5,6 @@ import CCData from "@/app/team/CCData";
 import ECData from "@/app/team/ECData";
 import facultyData from "@/app/team/FacultyData";
 
-import FooterAnimation from "@/components/FooterAnimation";
 import Footer from "@/components/Footer";
 
 // export const metadata = {

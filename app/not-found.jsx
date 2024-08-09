@@ -3,7 +3,6 @@ import { Button } from "../components/ui/button";
 import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 
-import FooterAnimation from "../components/FooterAnimation";
 import Footer from "../components/Footer";
 
 export default function NotFound() {
@@ -50,24 +49,6 @@ export default function NotFound() {
               <ArrowTopRightIcon className="w-5 h-5 ml-1" />
             </Button>
           </Link>
-        </div>
-      </div>
-      <div className="bg-black w-full h-full py-24 lg:py-40">
-        <div
-          className="flex flex-col justify-between gap-20 md:flex-row
-            px-4 md:px-8 xl:px-20 2xl:px-40"
-        >
-          <p
-            className="max-w-3xl text-6xl md:text-[5.5rem] lg:text-[7rem] xl:text-[9rem]
-              text-white font-normal md:leading-[8rem] lg:leading-[10rem]
-              tracking-tighter md:tracking-[-0.2rem]"
-          >
-            Empower
-            <br /> Your Digital
-            <br /> Odyssey!
-          </p>
-
-          <FooterAnimation />
         </div>
       </div>
       <Footer />

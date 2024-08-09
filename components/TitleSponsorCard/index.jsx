@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import geeksforGeeks from "@/public/partnersPage/geeksforGeeks.png";
+import vivo from "@/public/partnersPage/vivo.jpg";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { Tilt } from "react-tilt";
 
@@ -22,7 +22,7 @@ export default function TitleSponsorCard() {
 
   return (
     <a
-      href="https://www.geeksforgeeks.org"
+      href="https://www.vivo.com"
       target="_blank"
       rel="noreferrer"
       className="w-full xl:max-w-[95%] 2xl:max-w-[90%] flex justify-center"
@@ -32,7 +32,7 @@ export default function TitleSponsorCard() {
           className="flex flex-col md:flex-row shadow rounded-[8px]"
           style={{
             background:
-              "radial-gradient(116.96% 115.94% at 9.81% 9.24%, #383300 0%, rgba(56, 50, 0, 0.17) 100%)",
+              "radial-gradient(116.96% 115.94% at 9.81% 9.24%, #1381cf 0%, rgba(56, 50, 0, 0.17) 100%)",
           }}
           onMouseEnter={(e) => {
             setIsHovered(true);
@@ -42,21 +42,21 @@ export default function TitleSponsorCard() {
           }}
         >
           <Image
-            className="w-full md:w-[300px] lg:w-[350px] xl:w-[450px] rounded-t-[8px] 
+            className="w-full md:w-[300px] lg:w-[350px] xl:w-[450px] rounded-t-[8px]
               md:rounded-r-none md:rounded-l-[8px]"
-            src={geeksforGeeks}
-            alt="GeeksforGeeks"
+            src={vivo}
+            alt="Vivo"
             placeholder="blur"
           />
           <div
-            className="flex flex-col justify-center items-start px-4 
-              xl:px-8 py-8 md:py-4 gap-2 rounded-b-[8px] md:rounded-l-none 
-              md:rounded-r-[8px] border-x border-b md:border-l-0 md:border-y 
+            className="flex flex-col justify-center items-start px-4
+              xl:px-8 py-8 md:py-4 gap-2 rounded-b-[8px] md:rounded-l-none
+              md:rounded-r-[8px] border-x border-b md:border-l-0 md:border-y
               md:border-r border-[#FFFAEF]"
           >
             <div className="w-full flex justify-between items-center">
               <p className="font-medium text-[2rem] xl:text-[2.25rem]">
-                GeeksforGeeks
+                Vivo
               </p>
               <div className="hover:bg-[#1B1B1B] mt-1 p-1">
                 <ArrowRightIcon
@@ -69,8 +69,8 @@ export default function TitleSponsorCard() {
               Title Sponsor
             </p>
             <p className="text-[#EAECF0] font-normal font-[Inter] text-[1rem] md:text[1.125rem]">
-            GeeksforGeeks is a comprehensive resource for tech enthusiasts, providing tools and tutorials to master coding skills 
-            and excel in competitive programming challenges.
+              Vivo Communication Technology Co. Ltd. is a Chinese multinational technology company headquartered in Dongguan,
+              Guangdong that designs and develops smartphones, smartphone accessories, software and online services.
             </p>
           </div>
         </div>

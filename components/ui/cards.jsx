@@ -67,14 +67,11 @@ const SponsorCard = ({ index, sponsor, category, sponsorimgsrc, site }) => {
                 placeholder="blur"
               />
               <div
-                className="flex justify-between items-start p-6 rounded-b-[8px] 
+                className="flex justify-between items-start p-6 rounded-b-[8px]
                   border-b border-x border-[#FFFAEF]"
               >
                 <div className="flex flex-col gap-2">
                   <p className="sm:text-2xl text-xl">{sponsor}</p>
-                  <p className="text-[#C3C3C3] sm:text-2xl text-xl leading-9 font-[Inter]">
-                    {category}
-                  </p>
                 </div>
                 <div className="hover:bg-[#1B1B1B] mt-1 p-1">
                   <ArrowRightIcon

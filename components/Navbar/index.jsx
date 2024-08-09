@@ -11,7 +11,6 @@ const navigationItems = [
     { label: "Events", href: "/events" },
     { label: "Gallery", href: "/gallery" },
     { label: "Partners", href: "/partners" },
-    { label: "Prizes", href: "/prizes" },
     { label: "Team", href: "/team" },
     { label: "Contact", href: "/contact" },
 ];
