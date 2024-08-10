@@ -19,7 +19,7 @@ function EventCard({event}) {
           <div className="flex flex-col items-center justify-start gap-1 p-4 pb-0">
             <div className="flex justify-start items-start gap-0">
               <Image
-                src={event.image}
+                src={event.banner}
                 alt="Event poster "
                 className="w-full rounded-2xl"
                 width={500}
