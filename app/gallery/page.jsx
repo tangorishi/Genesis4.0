@@ -53,9 +53,9 @@ export default function Gallery() {
                 Gallery
               </p>
               <p className="w-full xl:max-w-[75%] text-[#C3C3C3] font-[Inter] text-center font-normal text-[1.25rem] md:text-[1.5rem] pb-8">
-                Explore our gallery of memorable moments from HackByte events at
-                IIITDMJ. Immerse in the vibrant coding community, witness
-                innovation, and get inspired. <br></br> <br></br>fin.
+                Explore our gallery of unforgettable moments from Genesis events at 
+              Manipal University Jaipur. Dive into the dynamic coding community, 
+              witness innovation firsthand, and find your inspiration. <br></br> <br></br>fin.
               </p>
             </div>
           </div>
