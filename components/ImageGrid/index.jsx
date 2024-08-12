@@ -75,13 +75,13 @@ const GridImage = () => {
         />
         <div className="flex flex-col lg:gap-y-10 gap-y-8">
           <Image
-            src={img6}
+            src={image10}
             alt="1"
             className="hidden sm:block lg:flex-1 2xl:flex-none 2xl:block lg:h-[550px] lg:w-[550px] 2xl:w-[420px] 2xl:h-[300px] w-[250px] h-[230px] rounded-3xl object-cover"
             placeholder="blur"
           />
           <Image
-            src={img6}
+            src={image11}
             alt="1"
             className="hidden sm:block lg:hidden 2xl:block 2xl:w-[420px] 2xl:h-[300px] lg:h-[250px] lg:w-[280px] w-[250px] h-[230px] rounded-3xl object-cover"
             placeholder="blur"
