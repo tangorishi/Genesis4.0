@@ -13,34 +13,24 @@ import styles from "./styles.module.css";
 
 const GridImage = () => {
   return (
-    // <div className="max-w-8xl mx-auto py-16">
-    //   <div className="flex flex-col gap-5 md:flex-row">
-    //     <div className="flex flex-col gap-5">
-    //       <div>
-    //
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
-
     <div className="w-full my-8 flex flex-col gap-y-10 ">
       <div className="flex flex-row flex-wrap lg:flex-nowrap justify-center gap-y-8 gap-x-8">
         <Image
           src={img6}
           alt="1"
-          className="2xl:w-[340px] 2xl:h-[310px] lg:w-[280px] max-w-[700px] h-[250px] rounded-3xl object-cover"
+          className="2xl:w-[340px] 2xl:h-[310px] lg:w-[280px] w-[250px] max-w-[700px] h-[250px] rounded-3xl object-cover"
           placeholder="blur"
         />
         <Image
           src={img6}
           alt="1"
-          className="2xl:w-[340px] 2xl:h-[310px] lg:w-[280px] max-w-[700px] h-[250px] rounded-3xl object-cover"
+          className="2xl:w-[340px] 2xl:h-[310px] lg:w-[280px] w-[250px] max-w-[700px] h-[250px] rounded-3xl object-cover"
           placeholder="blur"
         />
         <Image
           src={img6}
           alt="1"
-          className="2xl:h-[310px] lg:w-[320px] h-[250px] rounded-3xl object-cover lg:flex-1 lg:max-w-[880px] max-w-[700px]"
+          className="2xl:h-[310px] lg:w-[320px] h-[250px] w-[250px] rounded-3xl object-cover lg:flex-1 lg:max-w-[880px] max-w-[700px]"
           placeholder="blur"
         />
       </div>
@@ -70,13 +60,13 @@ const GridImage = () => {
           <Image
             src={img6}
             alt="1"
-            className="hidden sm:block lg:flex-1 2xl:flex-none 2xl:block lg:h-[550px] lg:w-[550px] 2xl:w-[420px] 2xl:h-[300px] w-[300px] h-[230px] rounded-3xl object-cover"
+            className="hidden sm:block lg:flex-1 2xl:flex-none 2xl:block lg:h-[550px] lg:w-[550px] 2xl:w-[420px] 2xl:h-[300px] w-[250px] h-[230px] rounded-3xl object-cover"
             placeholder="blur"
           />
           <Image
             src={img6}
             alt="1"
-            className="hidden sm:block lg:hidden 2xl:block 2xl:w-[420px] 2xl:h-[300px] lg:h-[250px] lg:w-[280px] w-[300px] h-[230px] rounded-3xl object-cover"
+            className="hidden sm:block lg:hidden 2xl:block 2xl:w-[420px] 2xl:h-[300px] lg:h-[250px] lg:w-[280px] w-[250px] h-[230px] rounded-3xl object-cover"
             placeholder="blur"
           />
         </div>
@@ -86,19 +76,19 @@ const GridImage = () => {
         <Image
           src={img6}
           alt="1"
-          className="2xl:h-[310px] lg:w-[320px] h-[250px] rounded-3xl object-cover lg:flex-1 lg:max-w-[880px] max-w-[700px]"
+          className="2xl:h-[310px] lg:w-[320px] h-[250px] rounded-3xl object-cover lg:flex-1 lg:max-w-[880px] w-[250px] max-w-[700px]"
           placeholder="blur"
         />
         <Image
           src={img6}
           alt="1"
-          className="2xl:w-[340px] 2xl:h-[310px] lg:w-[280px] h-[250px] rounded-3xl object-cover max-w-[700px]"
+          className="2xl:w-[340px] 2xl:h-[310px] lg:w-[280px] h-[250px] rounded-3xl object-cover max-w-[700px] w-[250px]"
           placeholder="blur"
         />
         <Image
           src={img6}
           alt="1"
-          className="2xl:w-[340px] 2xl:h-[310px] lg:w-[280px] h-[250px] rounded-3xl object-cover max-w-[700px]"
+          className="2xl:w-[340px] 2xl:h-[310px] lg:w-[280px] h-[250px] rounded-3xl object-cover max-w-[700px] w-[250px]"
           placeholder="blur"
         />
       </div>
