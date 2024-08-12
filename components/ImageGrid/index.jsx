@@ -3,103 +3,99 @@ import Image from "next/image";
 
 import React, { useRef, useEffect } from "react";
 
-import img1 from "@/public/galleryPage/img1.webp";
-import img2 from "@/public/galleryPage/img2.webp";
-import img3 from "@/public/galleryPage/img3.webp";
-import img4 from "@/public/galleryPage/img4.webp";
-import img6 from "@/public/galleryPage/img6.webp";
+import image1 from "@/public/galleryPage/image1.jpeg";
+import image2 from "@/public/galleryPage/image2.jpeg";
+import image3 from "@/public/galleryPage/image3.jpeg";
+import image4 from "@/public/galleryPage/image4.jpg";
+import image5 from "@/public/galleryPage/image5.jpeg";
+import image6 from "@/public/galleryPage/image6.jpeg";
+import image7 from "@/public/galleryPage/image7.jpeg";
+import image8 from "@/public/galleryPage/image8.JPG";
+import image9 from "@/public/galleryPage/image9.JPG";
+import image10 from "@/public/galleryPage/image10.jpeg";
+import image11 from "@/public/galleryPage/image11.jpeg";
+import image12 from "@/public/galleryPage/image12.jpeg";
+import image13 from "@/public/galleryPage/image13.jpg";
+import image14 from "@/public/galleryPage/image14.jpeg";
+import image15 from "@/public/galleryPage/image15.jpeg";
+import image16 from "@/public/galleryPage/image16.JPG";
 
 import styles from "./styles.module.css";
 
 const GridImage = () => {
   return (
-    // <div className="max-w-8xl mx-auto py-16">
-    //   <div className="flex flex-col gap-5 md:flex-row">
-    //     <div className="flex flex-col gap-5">
-    //       <div>
-    //
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
-
-    <div className="w-full my-8 flex flex-col gap-y-10 ">
+    <div className="w-full my-8 flex flex-col gap-y-10">
       <div className="flex flex-row flex-wrap lg:flex-nowrap justify-center gap-y-8 gap-x-8">
         <Image
-          src={img6}
+          src={image1}
           alt="1"
           className="2xl:w-[340px] 2xl:h-[310px] lg:w-[280px] max-w-[700px] h-[250px] rounded-3xl object-cover"
           placeholder="blur"
+          blurDataURL="data:image/jpeg;base64,[YOUR_BLUR_DATA_URL]"
         />
         <Image
-          src={img6}
+          src={image2}
           alt="1"
           className="2xl:w-[340px] 2xl:h-[310px] lg:w-[280px] max-w-[700px] h-[250px] rounded-3xl object-cover"
           placeholder="blur"
+          blurDataURL="data:image/jpeg;base64,[YOUR_BLUR_DATA_URL]"
         />
         <Image
-          src={img6}
+          src={image3}
           alt="1"
           className="2xl:h-[310px] lg:w-[320px] h-[250px] rounded-3xl object-cover lg:flex-1 lg:max-w-[880px] max-w-[700px]"
           placeholder="blur"
+          blurDataURL="data:image/jpeg;base64,[YOUR_BLUR_DATA_URL]"
         />
       </div>
 
       <div className="flex flex-row lg:gap-x-8 max-w-[700px] lg:max-w-full mx-auto justify-between lg:m-0 sm:gap-x-6">
         <div className="flex flex-col lg:gap-y-10 gap-y-8 flex-wrap sm:flex-nowrap">
           <Image
-            src={img6}
+            src={image4}
             alt="1"
             className="flex:1 2xl:flex-none 2xl:w-[420px] 2xl:h-[300px] lg:h-[550px] w-full h-[250px] sm:h-[500px] rounded-3xl object-cover lg:w-max-[700px]"
             placeholder="blur"
+            blurDataURL="data:image/jpeg;base64,[YOUR_BLUR_DATA_URL]"
           />
           <Image
-            src={img6}
+            src={image5}
             alt="1"
             className="block sm:hidden 2xl:block 2xl:w-[420px] 2xl:h-[300px] lg:h-[250px] lg:w-[280px] h-[250px] rounded-3xl object-cover"
             placeholder="blur"
+            blurDataURL="data:image/jpeg;base64,[YOUR_BLUR_DATA_URL]"
           />
         </div>
         <Image
-          src={img6}
+          src={image6}
           alt="1"
           className="hidden 2xl:block 2xl:flex-1 2xl:h-[650px] 2xl:w-[716px] lg:h-[550px] lg:w-[400px] w-[280px] h-[200px] rounded-3xl object-cover"
           placeholder="blur"
+          blurDataURL="data:image/jpeg;base64,[YOUR_BLUR_DATA_URL]"
         />
-        <div className="flex flex-col lg:gap-y-10 gap-y-8">
-          <Image
-            src={img6}
-            alt="1"
-            className="hidden sm:block lg:flex-1 2xl:flex-none 2xl:block lg:h-[550px] lg:w-[550px] 2xl:w-[420px] 2xl:h-[300px] w-[300px] h-[230px] rounded-3xl object-cover"
-            placeholder="blur"
-          />
-          <Image
-            src={img6}
-            alt="1"
-            className="hidden sm:block lg:hidden 2xl:block 2xl:w-[420px] 2xl:h-[300px] lg:h-[250px] lg:w-[280px] w-[300px] h-[230px] rounded-3xl object-cover"
-            placeholder="blur"
-          />
-        </div>
       </div>
 
       <div className="flex flex-row flex-wrap lg:flex-nowrap justify-center gap-y-8 gap-x-8">
         <Image
-          src={img6}
+          src={image7}
           alt="1"
           className="2xl:h-[310px] lg:w-[320px] h-[250px] rounded-3xl object-cover lg:flex-1 lg:max-w-[880px] max-w-[700px]"
           placeholder="blur"
+          blurDataURL="data:image/jpeg;base64,[YOUR_BLUR_DATA_URL]"
         />
         <Image
-          src={img6}
+          src={image8}
           alt="1"
           className="2xl:w-[340px] 2xl:h-[310px] lg:w-[280px] h-[250px] rounded-3xl object-cover max-w-[700px]"
           placeholder="blur"
+          blurDataURL="data:image/jpeg;base64,[YOUR_BLUR_DATA_URL]"
         />
         <Image
-          src={img6}
+          src={image9}
           alt="1"
           className="2xl:w-[340px] 2xl:h-[310px] lg:w-[280px] h-[250px] rounded-3xl object-cover max-w-[700px]"
           placeholder="blur"
+          blurDataURL="data:image/jpeg;base64,[YOUR_BLUR_DATA_URL]"
         />
       </div>
     </div>
@@ -166,24 +162,39 @@ const Carousel = () => {
         </button>
 
         <Image
-          src={img3}
+          src={image5}
           alt="1"
           className={`picture mb-4 sm:mb-0 absolute transform -translate-y-1/2 rounded-2xl sm:rounded-3xl h-[250px] sm:h-[270px] md:h-[300px] lg:h-[400px] xl:h-[520px] 2xl:h-[600px] ${styles["image-glow"]} w-fit`}
+          placeholder="blur"
+          blurDataURL="data:image/jpeg;base64,[YOUR_BLUR_DATA_URL]"
         />
         <Image
-          src={img4}
+          src={image16}
           alt="2"
           className={`picture mb-4 sm:mb-0 absolute  -translate-y-1/2 rounded-2xl sm:rounded-3xl h-[250px] sm:h-[270px] md:h-[300px] lg:h-[400px] xl:h-[520px] 2xl:h-[600px] ${styles["image-glow"]} w-fit`}
+          placeholder="blur"
+          blurDataURL="data:image/jpeg;base64,[YOUR_BLUR_DATA_URL]"
         />
         <Image
-          src={img3}
+          src={image12}
           alt="3"
           className={`picture mb-4 sm:mb-0 absolute -translate-y-1/2 rounded-2xl sm:rounded-3xl h-[250px] sm:h-[270px] md:h-[300px] lg:h-[400px] xl:h-[520px] 2xl:h-[600px] ${styles["image-glow"]} w-fit`}
+          placeholder="blur"
+          blurDataURL="data:image/jpeg;base64,[YOUR_BLUR_DATA_URL]"
         />
         <Image
-          src={img4}
+          src={image1}
           alt="4"
           className={`picture mb-4 sm:mb-0 absolute -translate-y-1/2 rounded-2xl sm:rounded-3xl h-[250px] sm:h-[270px] md:h-[300px] lg:h-[400px] xl:h-[520px] 2xl:h-[600px] w-fit ${styles["image-glow"]}`}
+          placeholder="blur"
+          blurDataURL="data:image/jpeg;base64,[YOUR_BLUR_DATA_URL]"
+        />
+         <Image
+          src={image4}
+          alt="4"
+          className={`picture mb-4 sm:mb-0 absolute -translate-y-1/2 rounded-2xl sm:rounded-3xl h-[250px] sm:h-[270px] md:h-[300px] lg:h-[400px] xl:h-[520px] 2xl:h-[600px] w-fit ${styles["image-glow"]}`}
+          placeholder="blur"
+          blurDataURL="data:image/jpeg;base64,[YOUR_BLUR_DATA_URL]"
         />
 
         <button
