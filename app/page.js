@@ -105,7 +105,7 @@ export default function Home() {
             md:px-12 xl:px-20  "
         >
           <div className="flex items-center gap-4 flex-col justify-between relative">
-            <div className="flex flex-row cursor:pointer flex-nowrap font-bold tracking-normal">
+            <div className="flex flex-row cursor:pointer flex-nowrap font-bold tracking-normal select-none">
               <div
                 className="2xl:text-[19.7rem] xl:text-[15.7rem] lg:text-[12rem] md:text-[10rem] text-white sm:text-[8rem] text-[4rem]">
                 GENESIS
