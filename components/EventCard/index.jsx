@@ -8,8 +8,8 @@ function EventCard({event}) {
     <>
       <div className="flex justify-center items-center">
         <div
-          className="flex flex-col justify-start items-center w-[20rem] h-[21rem] sm:w-[28rem] sm:h-[25rem]
-            md:w-[30rem] md:h-[28rem] xl:w-[35rem] xl:h-[28rem] gap-4 md:gap-6 rounded-2xl transition-transform
+          className="flex flex-col justify-start items-center w-[20rem] h-[17.5rem] sm:w-[28rem] sm:h-[10rem]
+            md:w-[30rem] md:h-[28rem] xl:w-[35rem] xl:h-[22rem] gap-4 md:gap-6 rounded-2xl transition-transform
             duration-200 ease-in-out"
           style={{
             background:
