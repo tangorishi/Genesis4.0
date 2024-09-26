@@ -22,6 +22,13 @@ const ECData = [
     instagram: "https://www.instagram.com/at_1920_28?igsh=OGQ5ZDc2ODk2ZA==",
   },
   {
+    name: "Satvika Arora",
+    role: "Convenor",
+    profilepic: "https://images.prismic.io/ieeemuj/ZnkWFpbWFboweynT_profile_placeholder.png?auto=format,compress",
+    linkedin: "",
+    instagram: "",
+  },
+  {
     name: "Pranav Bhardwaj",
     role: "Director",
     profilepic: "https://images.prismic.io/ieeemuj/ZqoHjh5LeNNTxpJj_pranavbhaiya.png?auto=format,compress",
@@ -47,7 +54,7 @@ const ECData = [
     role: "Director",
     profilepic: "https://images.prismic.io/ieeemuj/3b73b918-8182-45ce-b764-18791e7bf44f_Shreya+Saihgal.jpg?auto=format,compress",
     linkedin: "https://www.linkedin.com/in/shreya-saihgal-16a834261/",
-    instagram: "https://www.instagram.com/s.saihgal/"
+    instagram: ""
   },
   {
     name: "Shristi Krishna",
@@ -153,6 +160,41 @@ const ECData = [
     profilepic: "https://images.prismic.io/ieeemuj/ZvU4zrVsGrYSwBsg_IMG_8066.JPG?auto=format,compress",
     linkedin: "https://www.linkedin.com/in/ayush-agrawal-50717124a/",
     instagram: "https://www.instagram.com/_ayush.agrawal_/",
+  },
+  {
+    name: "Rohan Arora",
+    role: "Director",
+    profilepic: "https://images.prismic.io/ieeemuj/ZnkWFpbWFboweynT_profile_placeholder.png?auto=format,compress",
+    linkedin: "",
+    instagram: "",
+  },
+  {
+    name: "Aditi Sharma",
+    role: "Director",
+    profilepic: "https://images.prismic.io/ieeemuj/ZnkWFpbWFboweynT_profile_placeholder.png?auto=format,compress",
+    linkedin: "",
+    instagram: "",
+  },
+  {
+    name: "Mithilesh Mudaliar",
+    role: "Director",
+    profilepic: "https://images.prismic.io/ieeemuj/ZnkWFpbWFboweynT_profile_placeholder.png?auto=format,compress",
+    linkedin: "",
+    instagram: "",
+  },
+  {
+    name: "Aryan Jhammnani",
+    role: "Director",
+    profilepic: "https://images.prismic.io/ieeemuj/ZnkWFpbWFboweynT_profile_placeholder.png?auto=format,compress",
+    linkedin: "",
+    instagram: "",
+  },
+  {
+    name: "Pavni Jain",
+    role: "Director",
+    profilepic: "https://images.prismic.io/ieeemuj/ZnkWFpbWFboweynT_profile_placeholder.png?auto=format,compress",
+    linkedin: "",
+    instagram: "",
   }
 ];
 
