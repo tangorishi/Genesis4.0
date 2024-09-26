@@ -75,18 +75,18 @@ const data = [
     teamSize: '1',
     venue: 'TMA PAI',
     registerUrl: ''
-  },
+  },*/
   {
     name: 'Network With WIE',
-    description: 'NWWIE is an overnight women only event ,filled with technical and non-technical programs to engage the participants with fellow women in STEM',
-    banner: 'https://images.prismic.io/ieeemuj/Zqu58B5LeNNTxuyE_BreakingBugBanner.png?auto=format,compress',
+    description: 'NWWIE is an overnight women only event ,filled with technical and non-technical programs.',
+    banner: 'https://images.prismic.io/ieeemuj/ZvVnT7VsGrYSwCY6_NetworkingNight.png?auto=format,compress',
     poster: 'https://images.prismic.io/ieeemuj/d9eedf50-249b-4404-967b-25c48494cf28_code_poster.png?auto=compress,format',
-    longDescription: 'NWWIE is an overnight women only event ,filled with technical and non-technical programs to engage the participants with fellow women in STEM',
+    longDescription: 'NWWIE is an overnight women only event ,filled with technical and non-technical programs to engage the participants with fellow women',
     dateAndTime: '6th -7th October | 9:00PM to 6:00AM',
     teamSize: '1',
     venue: 'AB1 328',
     registerUrl: ''
-  },*/
+  },
   {
     name: 'Pixel Forge',
     description: 'Pixel Forge is a hands-on game development workshop featuring a guest speaker from IGDC. ',
