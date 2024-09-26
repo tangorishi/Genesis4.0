@@ -1,6 +1,7 @@
 'use client';
 import Image from "next/image";
 import {useRouter} from "next/navigation";
+import Link from "next/Link";
 
 function EventCard({event}) {
   const router = useRouter();
@@ -48,10 +49,13 @@ function EventCard({event}) {
               className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-200">
               Know more
             </button>
+            <Link href="https://linktr.ee/Genesis4.0">
             <button
-              className="bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600 transition-colors duration-200">
+              className="bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600 transition-colors duration-200"
+              onclick>
               Register
             </button>
+            </Link>
           </div>
         </div>
       </div>

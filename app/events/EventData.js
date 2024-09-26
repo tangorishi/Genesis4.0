@@ -8,7 +8,7 @@ const data = [
     dateAndTime: '6th October | 10:00am onwards',
     teamSize: 'N/A',
     venue: 'Campus',
-    registerUrl: ''
+    registerUrl: 'https://linktr.ee/Genesis4.0'
   },
   /*{
     name: 'Bit to Byte: Hackathon',
@@ -30,7 +30,7 @@ const data = [
     dateAndTime: ' 27th September | 2:00PM to 5:00PM',
     teamSize: '1',
     venue: 'Grand Staircase',
-    registerUrl: ''
+    registerUrl: 'https://linktr.ee/Genesis4.0'
   },
   /*{
     name: 'Ballistic',
@@ -85,7 +85,7 @@ const data = [
     dateAndTime: '6th -7th October | 9:00PM to 6:00AM',
     teamSize: '1',
     venue: 'AB1 328',
-    registerUrl: ''
+    registerUrl: 'https://linktr.ee/Genesis4.0'
   },
   {
     name: 'Pixel Forge',
@@ -96,7 +96,7 @@ const data = [
     dateAndTime: '3rd October | 2:00PM to 5:00PM ',
     teamSize: '1',
     venue: 'AB1 307',
-    registerUrl: ''
+    registerUrl: 'https://linktr.ee/Genesis4.0'
   },
   {
     name: 'Write it Right',
@@ -107,7 +107,7 @@ const data = [
     dateAndTime: '26th September | 1:00PM to 4:00PM ',
     teamSize: '1',
     venue: 'AB1 307',
-    registerUrl: ''
+    registerUrl: 'https://linktr.ee/Genesis4.0'
   },
 ]
 
