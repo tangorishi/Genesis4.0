@@ -99,7 +99,7 @@ const ECData = [
     instagram:"https://www.instagram.com/devishiiimahajann?igsh=MW",
   },
   {
-    name: "Shivanvi Singh",
+    name: "Shivangi Singh",
     role: "Director",
     profilepic: "https://images.prismic.io/ieeemuj/ZrPzMEaF0TcGIw6T_wie_hrd.jpg?auto=format,compress",
     linkedin: "https://www.linkedin.com/in/competitiveblood/",

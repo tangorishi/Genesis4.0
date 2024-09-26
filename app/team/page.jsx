@@ -66,13 +66,13 @@ export default function Team() {
             >
               Core
             </TabsTrigger>
-            <TabsTrigger
-              value="Faculty"
-              className="sm:p-2 p-0 sm:w-1/3 w-1/3 sm:text-2xl text-sm min-[400px]:text-xl min-[300px]:my-1 leading-7
-              font-bold text-center border-none mx-2 my-2 rounded-full hover:bg-blue-900"
-            >
-              Faculty
-            </TabsTrigger>
+            {/*<TabsTrigger*/}
+            {/*  value="Faculty"*/}
+            {/*  className="sm:p-2 p-0 sm:w-1/3 w-1/3 sm:text-2xl text-sm min-[400px]:text-xl min-[300px]:my-1 leading-7*/}
+            {/*  font-bold text-center border-none mx-2 my-2 rounded-full hover:bg-blue-900"*/}
+            {/*>*/}
+            {/*  Faculty*/}
+            {/*</TabsTrigger>*/}
           </TabsList>
 
 
