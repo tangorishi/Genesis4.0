@@ -6,6 +6,10 @@ import classes from "./index.module.css";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 
+import GenesisLogo from "../../public/genesislogo.png";
+import GenesisLogoBlank from "../../public/genesislogo_blank.png";
+import Image from "next/image";
+
 const navigationItems = [
     { label: "Home", href: "/" },
     { label: "Events", href: "/events" },
@@ -57,7 +61,10 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className="absolute sm:z-[2] w-full flex items-center xl:justify-center px-4 pt-8">
+            <nav className="absolute sm:z-[2] w-full flex items-center xl:justify-between px-4 pt-8">
+                <div>
+                    <Image src={GenesisLogo} alt={"Genesis Logo"} className="w-40" />
+                </div>
                 <div
                     className="hidden h-10 xl:flex xl:justify-center xl:items-center
             px-3 py-8 rounded-full border-2 border-solid border-gray-800
@@ -67,9 +74,12 @@ export default function Navbar() {
                         <NavItem key={label} label={label} href={href} />
                     ))}
                 </div>
+                <div>
+                    <Image src={GenesisLogoBlank} alt={"Genesis Logo"} className="w-40"/>
+                </div>
                 <div className="flex items-center justify-end w-full xl:hidden">
                     <button
-                        id="menu-btn"
+                      id="menu-btn"
                         aria-label="Toggle Menu"
                         type="button"
                         className={`z-40 hamburger xl:hidden focus:outline-none ${
