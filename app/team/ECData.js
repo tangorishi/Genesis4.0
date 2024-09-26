@@ -99,7 +99,7 @@ const ECData = [
     instagram:"https://www.instagram.com/devishiiimahajann?igsh=MW",
   },
   {
-    name: "Shivanvi Singh",
+    name: "Shivangi Singh",
     role: "Director",
     profilepic: "https://images.prismic.io/ieeemuj/ZrPzMEaF0TcGIw6T_wie_hrd.jpg?auto=format,compress",
     linkedin: "https://www.linkedin.com/in/competitiveblood/",
@@ -147,6 +147,13 @@ const ECData = [
     linkedin: "https://www.linkedin.com/in/ayana-takshak-4a609324b",
     instagram:"https://instagram.com/ayaannaa.t?igshid=MmIzYWVlNDQ5Yg==",
   },
+  {
+    name: "Ayush Agrawal",
+    role: "Director",
+    profilepic: "https://images.prismic.io/ieeemuj/ZvU4zrVsGrYSwBsg_IMG_8066.JPG?auto=format,compress",
+    linkedin: "https://www.linkedin.com/in/ayush-agrawal-50717124a/",
+    instagram: "https://www.instagram.com/_ayush.agrawal_/",
+  }
 ];
 
 export default ECData;
