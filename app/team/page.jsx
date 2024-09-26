@@ -113,9 +113,9 @@ export default function Team() {
               </div>
               {/* Social Media Section */}
               <div className="w-full">
-                <h2 className="text-4xl font-[600] underline mb-4 text-center">Social Media Team</h2>
+                <h2 className="text-4xl font-[600] underline mb-4 text-center">Graphic Design Team</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-content-center place-items-center gap-10">
-                  {CCData.filter(human => human.team === "Social Media").map((human, index) => (
+                  {CCData.filter(human => human.team === "Graphic Design").map((human, index) => (
                     <HumansCard key={index} index={index} {...human} />
                   ))}
                 </div>
@@ -209,9 +209,9 @@ export default function Team() {
 
               {/* GD Section */}
               <div className="w-full">
-                <h2 className="text-4xl font-[600] underline mb-4 text-center">Graphic Design Team</h2>
+                <h2 className="text-4xl font-[600] underline mb-4 text-center">Social Media Team</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-content-center place-items-center gap-10">
-                  {CCData.filter(human => human.team === "Graphic Design").map((human, index) => (
+                  {CCData.filter(human => human.team === "Social Media").map((human, index) => (
                     <HumansCard key={index} index={index} {...human} />
                   ))}
                 </div>
