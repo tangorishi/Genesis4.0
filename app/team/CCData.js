@@ -70,6 +70,9 @@ const CCData = [
     team: "WebDev",
     role: "",
     profilepic: "https://images.prismic.io/ieeemuj/ZnHJC5m069VX12xt_WhatsAppImage2024-06-17at13.31.31_ff2d9755-KanishkaBhatia.jpg?auto=format,compress",
+    linkedin: "https://www.linkedin.com/in/kanishka-bhatia-198294312/",
+    github: "https://github.com/cookiesandcoding/",
+    instagram:"https://www.instagram.com/kkanishkaaa/"
   },
   {
     name: "Tamanna Yadav",
