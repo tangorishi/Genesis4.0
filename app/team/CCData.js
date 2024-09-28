@@ -762,7 +762,7 @@ const CCData = [
   },
   {
     name: "Khushi Bhatia",
-    team: "Corporate",
+    team: "Curations",
     role: "",
     profilepic: "https://images.prismic.io/ieeemuj/ZoRLNx5LeNNTwul9_Khushibhatia_seniorcoordinatorcurations.JPG?auto=format,compress",
   },

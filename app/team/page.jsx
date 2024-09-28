@@ -146,6 +146,32 @@ export default function Team() {
                   )}
                 </div>
               </div>
+              {/* GD Section */}
+              <div className="w-full">
+                <h2 className="text-4xl font-[600]  mb-4 text-center">
+                  Social Media Team
+                </h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-content-center place-items-center gap-10">
+                  {CCData.filter((human) => human.team === "Social Media").map(
+                    (human, index) => (
+                      <HumansCard key={index} index={index} {...human} />
+                    )
+                  )}
+                </div>
+              </div>
+              {/* Media Section */}
+              <div className="w-full">
+                <h2 className="text-4xl font-[600]  mb-4 text-center">
+                  Media & Coverage Team
+                </h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-content-center place-items-center gap-10">
+                  {CCData.filter((human) => human.team === "Media").map(
+                    (human, index) => (
+                      <HumansCard key={index} index={index} {...human} />
+                    )
+                  )}
+                </div>
+              </div>
 
               {/* Logistics Section */}
               <div className="w-full">
@@ -255,32 +281,7 @@ export default function Team() {
                 </div>
               </div>
 
-              {/* GD Section */}
-              <div className="w-full">
-                <h2 className="text-4xl font-[600]  mb-4 text-center">
-                  Social Media Team
-                </h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-content-center place-items-center gap-10">
-                  {CCData.filter((human) => human.team === "Social Media").map(
-                    (human, index) => (
-                      <HumansCard key={index} index={index} {...human} />
-                    )
-                  )}
-                </div>
-              </div>
-              {/* Media Section */}
-              <div className="w-full">
-                <h2 className="text-4xl font-[600]  mb-4 text-center">
-                  Media & Coverage Team
-                </h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-content-center place-items-center gap-10">
-                  {CCData.filter((human) => human.team === "Media").map(
-                    (human, index) => (
-                      <HumansCard key={index} index={index} {...human} />
-                    )
-                  )}
-                </div>
-              </div>
+              
               {/* Finance Section */}
               <div className="w-full">
                 <h2 className="text-4xl font-[600]  mb-4 text-center">

@@ -4,7 +4,7 @@ import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
 import { usePathname, notFound } from "next/navigation";
 import EventData from "@/app/events/EventData";
-import Image from "next/image";
+
 
 const Details = () => {
   const slug = decodeURIComponent(
