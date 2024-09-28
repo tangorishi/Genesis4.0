@@ -7,7 +7,7 @@ export const metadata = {
   title: "Events | Genesis 4.0",
   description: "Genesis is the largest technical fest of IEEE MUJ.",
   keywords:
-    "hackathon, IEEEMUJ, genesis, genesis4.0, coding, programming, tech",
+    "hackathon, IEEEMUJ, genesis, genesis4.0, coding, programming, tech , techfest",
   url: "https://genesis.ieeemuj.com",
   openGraph: {
     title: "Events | Genesis 4.0",
