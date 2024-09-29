@@ -1,10 +1,8 @@
 import Navbar from "@/components/Navbar";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import TitleSponsorCard from "@/components/TitleSponsorCard";
 import SponsorCard from "@/components/ui/cards";
 
 import starbucks from "@/public/partnersPage/starbucks.png";
-import bookmyshow from "@/public/partnersPage/bms.png";
 import tribevibe from "@/public/partnersPage/tribevibe.png";
 import unstop from "@/public/partnersPage/unstop.png";
 import decathalon from "@/public/partnersPage/decathalon.png";
@@ -15,7 +13,6 @@ import spice from "@/public/partnersPage/spice.png";
 import lwt from "@/public/partnersPage/LWT.png";
 import ieeeRajasthan from "@/public/partnersPage/ieeeRajasthan.jpg";
 import armadio from "@/public/partnersPage/armadio.png";
-import mehboba from "@/public/partnersPage/mehboba.jpg";
 
 import Footer from "@/components/Footer";
 
@@ -100,7 +97,7 @@ const sponsorsData = [
   },
   {
     sponsor: "Mehboba",
-    sponsorimgsrc: mehboba,
+    sponsorimgsrc: 'https://images.prismic.io/ieeemuj/ZvlwurVsGrYSwG9a_mehboba.jpg?auto=format,compress',
     site: "",
   },
 ];
