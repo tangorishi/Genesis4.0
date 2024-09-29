@@ -59,6 +59,8 @@ module.exports = {
           "linear-gradient(to bottom, #69c4ed 10%, #224d95 40%, #19234a 80%)",
         "custom-footer":
           "linear-gradient(to bottom, #19234a 20%, #004a89 50%, #FFFFFF 100%)",
+        "custom-gradient2":
+          "linear-gradient(to bottom, #1eaef0 10%, #224d95 40%, #19234a 80%)",
       },
 
       borderRadius: {
@@ -84,4 +86,3 @@ module.exports = {
   },
   plugins: [require("tailwindcss-animate")],
 };
-

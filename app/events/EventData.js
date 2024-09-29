@@ -21,6 +21,7 @@ const data = [
     venue: 'Grand Staircase',
     registerUrl: 'https://linktr.ee/Genesis4.0'
   },
+  /*
   {
     name: 'Ballistic',
     description: 'It is a gaming event where the shortlisted PC and mobile games are Fifa, BGMI and Mortal Kombat. ',
@@ -31,7 +32,7 @@ const data = [
     teamSize: '3',
     venue: 'GHS (TedX Chowk)',
     registerUrl: ''
-  },
+  },/*
   {
     name: 'Tech Summit',
     description: 'A workshop event where speakers, mostly tech enthusiasts and industry professionals are called to give insights in the field of tech.',
@@ -42,11 +43,11 @@ const data = [
     teamSize: '1',
     venue: 'TMA PAI',
     registerUrl: ''
-  },
+  },*/
   {
     name: 'Bit to Byte: Hackathon',
     description: 'A 24 hour Hackathon with exhilarating problem statements and a platform to present innovation',
-    banner: 'https://images.prismic.io/ieeemuj/ZvMXabVsGrYSv4Pe_bannerwir-01.png?auto=format,compress',
+    banner: 'https://images.prismic.io/ieeemuj/ZvgnGLVsGrYSwGoH_BiTtobyte.png?auto=format,compress',
     poster: 'https://images.prismic.io/ieeemuj/167aa084-16c4-40de-9d22-604bd2390e37_breacout-with-qr.png?auto=compress,format',
     longDescription: 'A 24 hour Hackathon with exhilarating problem statements and a platform to present innovation',
     dateAndTime: '5th-7th October |  Phase-1: 9PM to 8AM (5/10/24) Phase-2: 8AM to 9PM (6/10/24) Phase-3 (judging): 2:30PM to 4:30PM (7/10/24)',
@@ -79,7 +80,7 @@ const data = [
   },
   
   
-  
+  /*
   {
     name: 'MadMax',
     description: 'A robot obstacle course where the participants are supposed to bring their own wired or wireless robots.',
@@ -90,11 +91,11 @@ const data = [
     teamSize: '1',
     venue: 'N/A',
     registerUrl: ''
-  },
+  },*/
   {
     name: 'Tech Expo',
     description: 'A showcase event in which projects of all or any domains will be showcased.',
-    banner: 'https://images.prismic.io/ieeemuj/ZvMXabVsGrYSv4Pe_bannerwir-01.png?auto=format,compress',
+    banner: 'https://images.prismic.io/ieeemuj/ZvgmALVsGrYSwGn6_Tech-1600x400px-.png?auto=format,compress',
     poster: 'https://images.prismic.io/ieeemuj/ZvXUWLVsGrYSwDcF_techexpomainposter.png?auto=format,compress',
     longDescription: 'Ballistic is where you show that the controller is just an extension of your being. Show-of your reaction times, and demonstrate unparalleled precision. With Mortal Kombat and FIFA, may ruthless be your fatalities, and your passes brim with finesse.',
     dateAndTime: '7th October | 9:00AM to 5:00PM',
