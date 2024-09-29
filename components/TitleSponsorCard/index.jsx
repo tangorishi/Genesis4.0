@@ -5,6 +5,7 @@ import Image from "next/image";
 import vivo from "@/public/partnersPage/vivo.jpg";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { Tilt } from "react-tilt";
+import bms from "@/public/partnersPage/bms.png"
 
 export default function TitleSponsorCard() {
   const [isHovered, setIsHovered] = useState(false);
@@ -22,7 +23,7 @@ export default function TitleSponsorCard() {
 
   return (
     <a
-      href="https://www.vivo.com"
+      href="https://www.bookmyshow.com"
       target="_blank"
       rel="noreferrer"
       className="w-full xl:max-w-[95%] 2xl:max-w-[90%] flex justify-center"
@@ -44,8 +45,8 @@ export default function TitleSponsorCard() {
           <Image
             className="w-full md:w-[300px] lg:w-[350px] xl:w-[450px] rounded-t-[8px]
               md:rounded-r-none md:rounded-l-[8px]"
-            src={vivo}
-            alt="Vivo"
+            src={bms}
+            alt="Book My Show"
             placeholder="blur"
           />
           <div
@@ -56,7 +57,7 @@ export default function TitleSponsorCard() {
           >
             <div className="w-full flex justify-between items-center">
               <p className="font-medium text-[2rem] xl:text-[2.25rem]">
-                Vivo
+                Book My Show
               </p>
               <div className="hover:bg-[#1B1B1B] mt-1 p-1">
                 <ArrowRightIcon
@@ -69,8 +70,7 @@ export default function TitleSponsorCard() {
               Title Sponsor
             </p>
             <p className="text-[#EAECF0] font-normal font-[Inter] text-[1rem] md:text[1.125rem]">
-              Vivo Communication Technology Co. Ltd. is a Chinese multinational technology company headquartered in Dongguan,
-              Guangdong that designs and develops smartphones, smartphone accessories, software and online services.
+              BookMyShow offers showtimes, movie tickets, reviews, trailers, concert tickets and events.
             </p>
           </div>
         </div>

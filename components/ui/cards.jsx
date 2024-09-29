@@ -63,9 +63,9 @@ const SponsorCard = ({ index, sponsor, category, sponsorimgsrc, site }) => {
             >
               <Image
                 src={sponsorimgsrc}
-                className="w-full h-[181px] xl:h-[207px] rounded-t-[8px] outline-none"
+                className="h-[10rem] object-contain rounded-t-[8px] outline-none"
                 placeholder="blur"
-              />
+               alt="sponsor image"/>
               <div
                 className="flex justify-between items-start p-6 rounded-b-[8px]
                   border-b border-x border-[#FFFAEF]"
