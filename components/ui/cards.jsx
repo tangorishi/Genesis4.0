@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { Tilt } from "react-tilt";
 
-const SponsorCard = ({ index, sponsor, category, sponsorimgsrc, site }) => {
+const SponsorCard = ({ index, sponsor, sponsorimgsrc, site }) => {
   const [isHovered, setIsHovered] = useState(false);
   const defaultOptions = {
     reverse: false,
@@ -63,8 +63,10 @@ const SponsorCard = ({ index, sponsor, category, sponsorimgsrc, site }) => {
             >
               <Image
                 src={sponsorimgsrc}
-                className="w-full h-[181px] xl:h-[207px] rounded-t-[8px] outline-none"
-                placeholder="blur"
+                className="h-[10rem] object-contain rounded-t-[8px] outline-none"
+                alt="sponsor image"
+                width={400}
+                height={400}
               />
               <div
                 className="flex justify-between items-start p-6 rounded-b-[8px]

@@ -1,21 +1,18 @@
 import Navbar from "@/components/Navbar";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import TitleSponsorCard from "@/components/TitleSponsorCard";
 import SponsorCard from "@/components/ui/cards";
 
-import codingNinjas from "@/public/partnersPage/codingNinjas.png";
-import codechef from "@/public/partnersPage/codechef.png";
-import ieeeRajasthan from "@/public/partnersPage/ieeeRajasthan.jpg";
-import guvi from "@/public/partnersPage/guvi.webp";
-import geeksForGeeks from "@/public/partnersPage/geeksforGeeks.png";
-import starbucks from "@/public/partnersPage/starbucks.webp";
-import decathlon from "@/public/partnersPage/decathlon.webp";
-import paradyes from "@/public/partnersPage/paradyes.jpg";
-import unstop from "@/public/partnersPage/unstop.jpg";
+import starbucks from "@/public/partnersPage/starbucks.png";
 import tribevibe from "@/public/partnersPage/tribevibe.png";
-import axure from "@/public/partnersPage/axure.jpg";
-import siuk from "@/public/partnersPage/siuk.png";
-import xyz from "@/public/partnersPage/xyz.jpg";
+import unstop from "@/public/partnersPage/unstop.png";
+import decathalon from "@/public/partnersPage/decathalon.png";
+import hp from "@/public/partnersPage/HP LOGO.png";
+import monster from "@/public/partnersPage/monster.png";
+import stepnex from "@/public/partnersPage/stepnex.png";
+import spice from "@/public/partnersPage/spice.png";
+import lwt from "@/public/partnersPage/LWT.png";
+import ieeeRajasthan from "@/public/partnersPage/ieeeRajasthan.jpg";
+import armadio from "@/public/partnersPage/armadio.png";
 
 import Footer from "@/components/Footer";
 
@@ -39,14 +36,14 @@ export const metadata = {
 
 const sponsorsData = [
   {
-    sponsor: "Coding Ninjas",
-    sponsorimgsrc: codingNinjas,
-    site: "https://www.codingninjas.com",
+    sponsor: "HP",
+    sponsorimgsrc: hp,
+    site: "https://www.hp.com",
   },
   {
-    sponsor: "Codechef",
-    sponsorimgsrc: codechef,
-    site: "https://www.codechef.com",
+    sponsor: "Monster",
+    sponsorimgsrc: monster,
+    site: "https://www.monsterenergy.com/en-in/",
   },
   {
     sponsor: "IEEE Rajasthan",
@@ -54,14 +51,9 @@ const sponsorsData = [
     site: "https://www.ieeerajasthan.org",
   },
   {
-    sponsor: "Guvi",
-    sponsorimgsrc: guvi,
-    site: "https://www.guvi.in",
-  },
-  {
-    sponsor: "GeeksForGeeks",
-    sponsorimgsrc: geeksForGeeks,
-    site: "https://www.geeksforgeeks.org",
+    sponsor: "TribeVibe",
+    sponsorimgsrc: tribevibe,
+    site: "https://www.tribevibe.live/",
   },
   {
     sponsor: "Starbucks",
@@ -70,13 +62,13 @@ const sponsorsData = [
   },
   {
     sponsor: "Decathlon",
-    sponsorimgsrc: decathlon,
+    sponsorimgsrc: decathalon,
     site: "https://www.decathlon.in",
   },
   {
-    sponsor: "Paradyes",
-    sponsorimgsrc: paradyes,
-    site: "https://www.paradyes.com",
+    sponsor: "StepNex",
+    sponsorimgsrc: stepnex,
+    site: "https://www.stepnex.tech/",
   },
   {
     sponsor: "Unstop",
@@ -89,19 +81,24 @@ const sponsorsData = [
     site: "https://www.tribevibe.live",
   },
   {
-    sponsor: "Axure",
-    sponsorimgsrc: axure,
+    sponsor: "Spice",
+    sponsorimgsrc: spice,
     site: "https://www.axure.com",
   },
   {
-    sponsor: "SI UK",
-    sponsorimgsrc: siuk,
-    site: "https://www.studyin-uk.com",
+    sponsor: "Learning While Travelling (LWT)",
+    sponsorimgsrc: lwt,
+    site: "https://learningwhiletravelling.com/",
   },
   {
-    sponsor: ".xyz",
-    sponsorimgsrc: xyz,
-    site: "https://gen.xyz",
+    sponsor: "Armadio",
+    sponsorimgsrc: armadio,
+    site: "https://armadio.in/",
+  },
+  {
+    sponsor: "Mehboba",
+    sponsorimgsrc: 'https://images.prismic.io/ieeemuj/ZvlwurVsGrYSwG9a_mehboba.jpg?auto=format,compress',
+    site: "",
   },
 ];
 

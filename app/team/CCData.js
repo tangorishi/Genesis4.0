@@ -60,12 +60,6 @@ const CCData = [
     instagram:"https://www.instagram.com/samaksh.gupta04?igsh=c252dTcwNjZldWRp",
   },
   {
-    name: "Krishnav Kanoi",
-    team: "WebDev",
-    role: "",
-    profilepic: "https://images.prismic.io/ieeemuj/ZnJu6Zm069VX13Uv_WhatsAppImage2024-06-19at00.43.32_c5367913.jpg?auto=format,compress",
-  },
-  {
     name: "Kanishka Bhatia",
     team: "WebDev",
     role: "",
@@ -73,6 +67,12 @@ const CCData = [
     linkedin: "https://www.linkedin.com/in/kanishka-bhatia-198294312/",
     github: "https://github.com/cookiesandcoding/",
     instagram:"https://www.instagram.com/kkanishkaaa/"
+  },
+  {
+    name: "Krishnav Kanoi",
+    team: "WebDev",
+    role: "",
+    profilepic: "https://images.prismic.io/ieeemuj/ZnJu6Zm069VX13Uv_WhatsAppImage2024-06-19at00.43.32_c5367913.jpg?auto=format,compress",
   },
   {
     name: "Tamanna Yadav",
@@ -125,7 +125,7 @@ const CCData = [
     role: "",
     profilepic: "https://images.prismic.io/ieeemuj/ZnJjKJm069VX13Sy_WhatsAppImage2024-06-19at02.43.18_efac9c58.jpg?auto=format,compress",
   },
-  
+
   {
     name: "Ayush Garg",
     team: "Media",
@@ -425,7 +425,7 @@ const CCData = [
     role: "",
     profilepic: "https://images.prismic.io/ieeemuj/ZoRLVh5LeNNTwumZ_TanishaMathur_Jointhead_CommunityRelations.jpeg?auto=format,compress",
   },
- 
+
   {
     name: "Pranav Joshi",
     team: "Media",
@@ -768,7 +768,7 @@ const CCData = [
     role: "",
     profilepic: "https://images.prismic.io/ieeemuj/ZoRLNx5LeNNTwul9_Khushibhatia_seniorcoordinatorcurations.JPG?auto=format,compress",
     linkedin:""
-    
+
   },
   {
     name: "Siddharth Mandal",
