@@ -45,7 +45,7 @@ const data = [
     registerUrl: ''
   },*/
   {
-    name: 'Bit to Byte: Hackathon',
+    name: 'Bit to Byte ',
     description: 'A 24 hour Hackathon with exhilarating problem statements and a platform to present innovation',
     banner: 'https://images.prismic.io/ieeemuj/ZvgnGLVsGrYSwGoH_BiTtobyte.png?auto=format,compress',
     poster: 'https://images.prismic.io/ieeemuj/167aa084-16c4-40de-9d22-604bd2390e37_breacout-with-qr.png?auto=compress,format',
