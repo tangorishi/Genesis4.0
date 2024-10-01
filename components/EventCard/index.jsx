@@ -45,7 +45,8 @@ function EventCard({event}) {
 
           <div className="flex gap-4 mt-0 pb-4 text-[0.85rem] sm:text-[0.85rem] md:text-[1rem]">
             <button
-              onClick={() => router.push(`events/${event.name}`)}
+              onClick={() => router.push(`events/${encodeURIComponent(event.name)}`)}
+
               className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-200">
               Know more
             </button>
