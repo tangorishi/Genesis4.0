@@ -75,11 +75,7 @@ const sponsorsData = [
     sponsorimgsrc: unstop,
     site: "https://unstop.com",
   },
-  {
-    sponsor: "Tribevibe",
-    sponsorimgsrc: tribevibe,
-    site: "https://www.tribevibe.live",
-  },
+ 
   {
     sponsor: "Spice",
     sponsorimgsrc: spice,

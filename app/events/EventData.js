@@ -1,25 +1,33 @@
 const data = [
   {
-    name: 'Write it Right',
-    description: 'Write it Right is a comprehensive session on research paper writing, led by an expert speaker. ',
-    banner: 'https://images.prismic.io/ieeemuj/ZvMXabVsGrYSv4Pe_bannerwir-01.png?auto=format,compress',
-    poster: 'https://images.prismic.io/ieeemuj/ZvMbF7VsGrYSv4gJ_writeitrightnew-01.png?auto=format,compress',
-    longDescription: 'Write it Right is a comprehensive session on research paper writing, led by an expert speaker. The event will cover essential tips and guidelines for crafting a well-structured research paper, ideal for both beginners and experienced writers.',
-    dateAndTime: '26th September | 1:00PM to 4:00PM ',
-    teamSize: '1',
-    venue: 'AB1 307',
-    registerUrl: 'https://linktr.ee/Genesis4.0'
+    name: "Write it Right",
+    description:
+      "Write it Right is a comprehensive session on research paper writing, led by an expert speaker. ",
+    banner:
+      "https://images.prismic.io/ieeemuj/ZvMXabVsGrYSv4Pe_bannerwir-01.png?auto=format,compress",
+    poster:
+      "https://images.prismic.io/ieeemuj/ZvMbF7VsGrYSv4gJ_writeitrightnew-01.png?auto=format,compress",
+    longDescription:
+      "Write it Right is a comprehensive session on research paper writing, led by an expert speaker. The event will cover essential tips and guidelines for crafting a well-structured research paper, ideal for both beginners and experienced writers.",
+    dateAndTime: "26th September | 1:00PM to 4:00PM ",
+    teamSize: "1",
+    venue: "AB1 307",
+    registerUrl: "https://linktr.ee/Genesis4.0",
   },
   {
-    name: 'For the record',
-    description: 'An IEEE community exclusive event where the participants will try to break existing world records.',
-    banner: 'https://images.prismic.io/ieeemuj/ZvMXWbVsGrYSv4PM_FTRgoogleform.png?auto=format,compress',
-    poster: 'https://images.prismic.io/ieeemuj/ZvMYbbVsGrYSv4Tr_FTRMAINPOSTER.png?auto=format,compress',
-    longDescription: 'An IEEE community exclusive event where the participants will try to break existing world records.',
-    dateAndTime: ' 27th September | 2:00PM to 5:00PM',
-    teamSize: '1',
-    venue: 'Grand Staircase',
-    registerUrl: 'https://linktr.ee/Genesis4.0'
+    name: "For the record",
+    description:
+      "An IEEE community exclusive event where the participants will try to break existing world records.",
+    banner:
+      "https://images.prismic.io/ieeemuj/ZvMXWbVsGrYSv4PM_FTRgoogleform.png?auto=format,compress",
+    poster:
+      "https://images.prismic.io/ieeemuj/ZvMYbbVsGrYSv4Tr_FTRMAINPOSTER.png?auto=format,compress",
+    longDescription:
+      "An IEEE community exclusive event where the participants will try to break existing world records.",
+    dateAndTime: " 27th September | 2:00PM to 5:00PM",
+    teamSize: "1",
+    venue: "Grand Staircase",
+    registerUrl: "https://linktr.ee/Genesis4.0",
   },
   /*
   {
@@ -45,41 +53,53 @@ const data = [
     registerUrl: ''
   },*/
   {
-    name: 'Bit to Byte ',
-    description: 'A 24 hour Hackathon with exhilarating problem statements and a platform to present innovation',
-    banner: 'https://images.prismic.io/ieeemuj/ZvgnGLVsGrYSwGoH_BiTtobyte.png?auto=format,compress',
-    poster: 'https://images.prismic.io/ieeemuj/167aa084-16c4-40de-9d22-604bd2390e37_breacout-with-qr.png?auto=compress,format',
-    longDescription: 'A 24 hour Hackathon with exhilarating problem statements and a platform to present innovation',
-    dateAndTime: '5th-7th October |  Phase-1: 9PM to 8AM (5/10/24) Phase-2: 8AM to 9PM (6/10/24) Phase-3 (judging): 2:30PM to 4:30PM (7/10/24)',
-    teamSize: '4',
-    venue: 'Whole campus. Start from old mess.',
-    registerUrl: ''
+    name: "Bit to Byte ",
+    description:
+      "A 24 hour Hackathon with exhilarating problem statements and a platform to present innovation",
+    banner:
+      "https://images.prismic.io/ieeemuj/ZvgnGLVsGrYSwGoH_BiTtobyte.png?auto=format,compress",
+    poster:
+      "https://images.prismic.io/ieeemuj/ZvxgwLVsGrYSwQfi_BIDTOBYTE.png?auto=format,compress",
+    longDescription:
+      "A 24 hour Hackathon with exhilarating problem statements and a platform to present innovation",
+    dateAndTime:
+      "5th-7th October |  Phase-1: 9PM to 8AM (5/10/24) ,   Phase-2: 8AM to 9PM (6/10/24) ,  Phase-3 (judging): 2:30PM to 4:30PM (7/10/24)",
+    teamSize: "4",
+    venue: "Whole campus. Start from old mess.",
+    registerUrl: "https://linktr.ee/Genesis4.0",
   },
-  
+
   {
-    name: 'Breacout 5.0',
-    description: 'A Harry Potter themed treasure hunt where the participants will follow a specific storyline to reach the final treasure.',
-    banner: 'https://images.prismic.io/ieeemuj/ZvMXULVsGrYSv4PD_breacoutgoogleform.png?auto=format,compress',
-    poster: 'https://images.prismic.io/ieeemuj/ZvMbJLVsGrYSv4gW_BREACOUTMAINPOSTER-1-.png?auto=format,compress',
-    longDescription: 'A Harry Potter themed treasure hunt where the participants will be divided into four groups and each group will follow a specific storyline to reach the final treasure. Scripts, clues, and mini games will be a major part of the event.',
-    dateAndTime: '6th October | 10:00am onwards',
-    teamSize: 'N/A',
-    venue: 'Campus',
-    registerUrl: 'https://linktr.ee/Genesis4.0'
+    name: "Breacout 5.0",
+    description:
+      "A Harry Potter themed treasure hunt where the participants will follow a specific storyline to reach the final treasure.",
+    banner:
+      "https://images.prismic.io/ieeemuj/ZvMXULVsGrYSv4PD_breacoutgoogleform.png?auto=format,compress",
+    poster:
+      "https://images.prismic.io/ieeemuj/ZvMbJLVsGrYSv4gW_BREACOUTMAINPOSTER-1-.png?auto=format,compress",
+    longDescription:
+      "A Harry Potter themed treasure hunt where the participants will be divided into four groups and each group will follow a specific storyline to reach the final treasure. Scripts, clues, and mini games will be a major part of the event.",
+    dateAndTime: "6th October | 10:00am onwards",
+    teamSize: "N/A",
+    venue: "Campus",
+    registerUrl: "https://linktr.ee/Genesis4.0",
   },
   {
-    name: 'Network With WIE',
-    description: 'NWWIE is an overnight women only event ,filled with technical and non-technical programs.',
-    banner: 'https://images.prismic.io/ieeemuj/ZvVnT7VsGrYSwCY6_NetworkingNight.png?auto=format,compress',
-    poster: 'https://images.prismic.io/ieeemuj/ZvXUHrVsGrYSwDcE_NWWMAINPOSTER.png?auto=format,compress',
-    longDescription: 'NWWIE is an overnight women only event ,filled with technical and non-technical programs to engage the participants with fellow women',
-    dateAndTime: '6th -7th October | 9:00PM to 6:00AM',
-    teamSize: '1',
-    venue: 'AB1 328',
-    registerUrl: 'https://linktr.ee/Genesis4.0'
+    name: "Network With WIE",
+    description:
+      "NWWIE is an overnight women only event ,filled with technical and non-technical programs.",
+    banner:
+      "https://images.prismic.io/ieeemuj/ZvVnT7VsGrYSwCY6_NetworkingNight.png?auto=format,compress",
+    poster:
+      "https://images.prismic.io/ieeemuj/ZvXUHrVsGrYSwDcE_NWWMAINPOSTER.png?auto=format,compress",
+    longDescription:
+      "NWWIE is an overnight women only event ,filled with technical and non-technical programs to engage the participants with fellow women",
+    dateAndTime: "6th -7th October | 9:00PM to 6:00AM",
+    teamSize: "1",
+    venue: "AB1 328",
+    registerUrl: "https://linktr.ee/Genesis4.0",
   },
-  
-  
+
   /*
   {
     name: 'MadMax',
@@ -93,29 +113,36 @@ const data = [
     registerUrl: ''
   },*/
   {
-    name: 'Tech Expo',
-    description: 'A showcase event in which projects of all or any domains will be showcased.',
-    banner: 'https://images.prismic.io/ieeemuj/ZvgmALVsGrYSwGn6_Tech-1600x400px-.png?auto=format,compress',
-    poster: 'https://images.prismic.io/ieeemuj/ZvXUWLVsGrYSwDcF_techexpomainposter.png?auto=format,compress',
-    longDescription: 'Ballistic is where you show that the controller is just an extension of your being. Show-of your reaction times, and demonstrate unparalleled precision. With Mortal Kombat and FIFA, may ruthless be your fatalities, and your passes brim with finesse.',
-    dateAndTime: '7th October | 9:00AM to 5:00PM',
-    teamSize: '1',
-    venue: 'AB1 Lobby',
-    registerUrl: ''
-  },
-  
-  {
-    name: 'Pixel Forge',
-    description: 'Pixel Forge is a hands-on game development workshop featuring a guest speaker from IGDC. ',
-    banner: 'https://images.prismic.io/ieeemuj/ZvMexbVsGrYSv4u__PixelForgeBanner.png?auto=format,compress',
-    poster: 'https://images.prismic.io/ieeemuj/ZvXT9LVsGrYSwDcC_pixelforgemainposter.png?auto=format,compress',
-    longDescription: 'Pixel Forge is a hands-on game development workshop featuring a guest speaker from IGDC. Participants will be introduced to key tools and techniques for game development, followed by an exciting game jam to put their skills to the test and create their own games.',
-    dateAndTime: '3rd October | 2:00PM to 5:00PM ',
-    teamSize: '1',
-    venue: 'AB1 307',
-    registerUrl: 'https://linktr.ee/Genesis4.0'
+    name: "Tech Expo",
+    description:
+      "A showcase event in which projects of all or any domains will be showcased.",
+    banner:
+      "https://images.prismic.io/ieeemuj/ZvgmALVsGrYSwGn6_Tech-1600x400px-.png?auto=format,compress",
+    poster:
+      "https://images.prismic.io/ieeemuj/ZvXUWLVsGrYSwDcF_techexpomainposter.png?auto=format,compress",
+    longDescription:
+      "A showcase event where participants from various domains come together to present their innovative projects. This event provides a platform for individuals and teams to demonstrate their creativity, technical expertise, and problem-solving skills across a wide range of fields including technology, design, business, engineering, and more. ",
+    dateAndTime: "7th October | 9:00AM to 5:00PM",
+    teamSize: "1",
+    venue: "AB1 Lobby",
+    registerUrl: "",
   },
 
-]
+  {
+    name: "Pixel Forge",
+    description:
+      "Pixel Forge is a hands-on game development workshop featuring a guest speaker from IGDC. ",
+    banner:
+      "https://images.prismic.io/ieeemuj/ZvMexbVsGrYSv4u__PixelForgeBanner.png?auto=format,compress",
+    poster:
+      "https://images.prismic.io/ieeemuj/ZvXT9LVsGrYSwDcC_pixelforgemainposter.png?auto=format,compress",
+    longDescription:
+      "Pixel Forge is a hands-on game development workshop featuring a guest speaker from IGDC. Participants will be introduced to key tools and techniques for game development, followed by an exciting game jam to put their skills to the test and create their own games.",
+    dateAndTime: "3rd October | 2:00PM to 5:00PM ",
+    teamSize: "1",
+    venue: "AB1 307",
+    registerUrl: "https://linktr.ee/Genesis4.0",
+  },
+];
 
 export default data;
