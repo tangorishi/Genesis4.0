@@ -167,7 +167,7 @@ export default function Home() {
             <div className="w-full flex flex-col items-center gap-5">
               <div className="flex flex-col items-start gap-3">
                 <p
-                  className="self-stretch text-center text-[#7A7A7A] text-sm md:text-sm
+                  className="self-stretch text-center text-[#F5F0D8] text-sm md:text-sm
                     lg:text-base font-semibold leading-normal"
                 >
                   Opportunities for Participants
