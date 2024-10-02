@@ -53,7 +53,7 @@ const data = [
     registerUrl: ''
   },*/
   {
-    name: "Bit to Byte ",
+    name: "Bit to Byte",
     description:
       "A 24 hour Hackathon with exhilarating problem statements and a platform to present innovation",
     banner:
