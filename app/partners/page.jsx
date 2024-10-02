@@ -112,8 +112,8 @@ const Partners = () => {
           </p>
           <div className="flex flex-col items-center gap-3 md:gap-4">
             <p
-              className="w-full lg:max-w-[80%] text-white font-[Inter]
-                text-center font-normal text-[1.25rem] md:text-[1.5rem]"
+              className="w-full lg:max-w-[80%] text-white 
+                text-center font-medium text-[1.25rem] md:text-[1.5rem]"
             >
               We are proud to collaborate with visionary organizations that
               share our passion for innovation and technology. These esteemed
