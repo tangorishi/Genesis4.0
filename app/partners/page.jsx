@@ -126,7 +126,7 @@ const Partners = () => {
 
         <div className="w-full flex flex-col items-center gap-8 xl:gap-12">
           <TitleSponsorCard name={"Book My Show"} logo={bms} url={"https://bookmyshow.com"} type={"Title Sponsor"} description={"BookMyShow offers showtimes, movie tickets, reviews, trailers, concert tickets and events."} />
-          <TitleSponsorCard name={"VisionIAS"} logo={visionias} url={"https://visionias.in/"} type={"Ed-Tech Partner"} description={"BookMyShow offers showtimes, movie tickets, reviews, trailers, concert tickets and events."} />
+          <TitleSponsorCard name={"VisionIAS"} logo={visionias} url={"https://visionias.in/"} type={"Ed-Tech Partner"} description={"Vision IAS is India's premier Research and Training Institute for UPSC Civil Services Examination."} />
 
           <div
             className="w-full xl:max-w-[95%] 2xl:max-w-[90%] grid grid-cols-1
