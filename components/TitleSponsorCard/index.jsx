@@ -5,7 +5,7 @@ import Image from "next/image";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { Tilt } from "react-tilt";
 
-export default function TitleSponsorCard({name, url, logo, type}) {
+export default function TitleSponsorCard({name, url, logo, type, description}) {
   const [isHovered, setIsHovered] = useState(false);
   const defaultOptions = {
     reverse: false,
@@ -67,7 +67,7 @@ export default function TitleSponsorCard({name, url, logo, type}) {
               {type}
             </p>
             <p className="text-[#EAECF0] font-normal text-[1rem] md:text[1.125rem]">
-              BookMyShow offers showtimes, movie tickets, reviews, trailers, concert tickets and events.
+              {description}
             </p>
           </div>
         </div>
