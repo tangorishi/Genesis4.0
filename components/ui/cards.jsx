@@ -47,7 +47,7 @@ const SponsorCard = ({ index, sponsor, sponsorimgsrc, site }) => {
         <a href={site} target="_blank" rel="noreferrer">
           <Tilt options={defaultOptions}>
             <div
-              className="w-full shadow text-white rounded-[8px]"
+              className="w-full shadow text-white rounded-[8px] flex flex-col items-center"
               style={{
                 "--default-gradient": defaultGradient,
                 "--hover-gradient": hoverGradient,
@@ -70,7 +70,7 @@ const SponsorCard = ({ index, sponsor, sponsorimgsrc, site }) => {
               />
               <div
                 className="flex justify-between items-start p-6 rounded-b-[8px]
-                  border-b border-x border-[#FFFAEF]"
+                  border-b border-x border-[#FFFAEF] w-full"
               >
                 <div className="flex flex-col gap-2">
                   <p className="sm:text-2xl text-xl">{sponsor}</p>

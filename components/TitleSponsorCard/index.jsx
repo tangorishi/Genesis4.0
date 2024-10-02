@@ -2,12 +2,10 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import vivo from "@/public/partnersPage/vivo.jpg";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { Tilt } from "react-tilt";
-import bms from "@/public/partnersPage/bms.png"
 
-export default function TitleSponsorCard() {
+export default function TitleSponsorCard({name, url, logo, type}) {
   const [isHovered, setIsHovered] = useState(false);
   const defaultOptions = {
     reverse: false,
@@ -23,41 +21,40 @@ export default function TitleSponsorCard() {
 
   return (
     <a
-      href="https://www.bookmyshow.com"
+      href={url}
       target="_blank"
       rel="noreferrer"
       className="w-full xl:max-w-[95%] 2xl:max-w-[90%] flex justify-center"
     >
       <Tilt options={defaultOptions}>
         <div
-          className="flex flex-col md:flex-row shadow rounded-[8px]"
+          className="flex flex-col md:flex-row shadow rounded-[8px] border md:h-[15rem]"
           style={{
             background:
               "radial-gradient(116.96% 115.94% at 9.81% 9.24%, #1381cf 0%, rgba(56, 50, 0, 0.17) 100%)",
           }}
-          onMouseEnter={(e) => {
+          onMouseEnter={() => {
             setIsHovered(true);
           }}
-          onMouseLeave={(e) => {
+          onMouseLeave={() => {
             setIsHovered(false);
           }}
         >
           <Image
             className="w-full md:w-[300px] lg:w-[350px] xl:w-[450px] rounded-t-[8px]
-              md:rounded-r-none md:rounded-l-[8px]"
-            src={bms}
-            alt="Book My Show"
+              md:rounded-r-none md:rounded-l-[8px] object-contain"
+            src={logo}
+            alt={name}
             placeholder="blur"
           />
           <div
             className="flex flex-col justify-center items-start px-4
               xl:px-8 py-8 md:py-4 gap-2 rounded-b-[8px] md:rounded-l-none
-              md:rounded-r-[8px] border-x border-b md:border-l-0 md:border-y
-              md:border-r border-[#FFFAEF]"
+              md:rounded-r-[8px]"
           >
             <div className="w-full flex justify-between items-center">
               <p className="font-medium text-[2rem] xl:text-[2.25rem]">
-                Book My Show
+                {name}
               </p>
               <div className="hover:bg-[#1B1B1B00] mt-1 p-1">
                 <ArrowRightIcon
@@ -66,8 +63,8 @@ export default function TitleSponsorCard() {
                 />
               </div>
             </div>
-            <p className="text-[#C3C3C3] font-medium text-[1.25rem] text-white md:text-[1.5rem] ">
-              Title Sponsor
+            <p className="font-medium text-[1.25rem] text-white md:text-[1.5rem] ">
+              {type}
             </p>
             <p className="text-[#EAECF0] font-normal text-[1rem] md:text[1.125rem]">
               BookMyShow offers showtimes, movie tickets, reviews, trailers, concert tickets and events.

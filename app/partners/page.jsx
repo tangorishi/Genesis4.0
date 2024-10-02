@@ -11,8 +11,10 @@ import monster from "@/public/partnersPage/monster.png";
 import stepnex from "@/public/partnersPage/stepnex.png";
 import spice from "@/public/partnersPage/spice.png";
 import lwt from "@/public/partnersPage/LWT.png";
-import ieeeRajasthan from "@/public/partnersPage/ieeeRajasthan.jpg";
+import ieeeRajasthan from "@/public/partnersPage/ieeerajasthan.png";
 import armadio from "@/public/partnersPage/armadio.png";
+import bms from "@/public/partnersPage/bms.png";
+import visionias from "@/public/partnersPage/visionias.png";
 
 import Footer from "@/components/Footer";
 
@@ -75,7 +77,7 @@ const sponsorsData = [
     sponsorimgsrc: unstop,
     site: "https://unstop.com",
   },
- 
+
   {
     sponsor: "Spice",
     sponsorimgsrc: spice,
@@ -112,7 +114,7 @@ const Partners = () => {
           </p>
           <div className="flex flex-col items-center gap-3 md:gap-4">
             <p
-              className="w-full lg:max-w-[80%] text-white 
+              className="w-full lg:max-w-[80%] text-white
                 text-center font-medium text-[1.25rem] md:text-[1.5rem]"
             >
               We are proud to collaborate with visionary organizations that
@@ -123,7 +125,8 @@ const Partners = () => {
         </div>
 
         <div className="w-full flex flex-col items-center gap-8 xl:gap-12">
-          <TitleSponsorCard />
+          <TitleSponsorCard name={"Book My Show"} logo={bms} url={"https://bookmyshow.com"} type={"Title Sponsor"} />
+          <TitleSponsorCard name={"VisionIAS"} logo={visionias} url={"https://visionias.in/"} type={"Ed-Tech Partner"} />
 
           <div
             className="w-full xl:max-w-[95%] 2xl:max-w-[90%] grid grid-cols-1
