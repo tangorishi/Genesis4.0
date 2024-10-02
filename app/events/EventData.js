@@ -15,7 +15,7 @@ const data = [
     registerUrl: "https://linktr.ee/Genesis4.0",
   },
   {
-    name: "For the record",
+    name: "For The Record",
     description:
       "An IEEE community exclusive event where the participants will try to break existing world records.",
     banner:
@@ -29,35 +29,34 @@ const data = [
     venue: "Grand Staircase",
     registerUrl: "https://linktr.ee/Genesis4.0",
   },
-  /*
   {
     name: 'Ballistic',
     description: 'It is a gaming event where the shortlisted PC and mobile games are Fifa, BGMI and Mortal Kombat. ',
-    banner: 'https://images.prismic.io/ieeemuj/ZvMXabVsGrYSv4Pe_bannerwir-01.png?auto=format,compress',
-    poster: 'https://images.prismic.io/ieeemuj/0036a184-0f3c-4ffb-b317-9c52bf3ac0e1_Lights+camera+auction+%283%29.png?auto=compress,format',
+    banner: 'https://images.prismic.io/ieeemuj/Zv24erVsGrYSwUTh_Ballisticgoogleform.png?auto=format,compress',
+    poster: 'https://images.prismic.io/ieeemuj/Zv26D7VsGrYSwUT-_BALLISTICMAINPOSTER-1-.png?auto=format,compress',
     longDescription: 'It is a gaming event where the shortlisted PC and mobile games are Fifa, BGMI and Mortal Kombat. Participants will progressively reach further rounds and the winners will bag the prize pool.',
     dateAndTime: 'Phase 1 : 2nd October | 6:00PM to 9:00PM , Phase 2 : 5th October | 6:00PM to 9:00PM',
     teamSize: '3',
     venue: 'GHS (TedX Chowk)',
-    registerUrl: ''
-  },/*
+    registerUrl: 'https://linktr.ee/Genesis4.0'
+  },
   {
     name: 'Tech Summit',
     description: 'A workshop event where speakers, mostly tech enthusiasts and industry professionals are called to give insights in the field of tech.',
-    banner: 'https://images.prismic.io/ieeemuj/ZvMXabVsGrYSv4Pe_bannerwir-01.png?auto=format,compress',
+    banner: 'https://images.prismic.io/ieeemuj/Zv26j7VsGrYSwUUU_TECHSUMMITgoogleform.png?auto=format,compress',
     poster: 'https://images.prismic.io/ieeemuj/23c8f45f-cb3a-4c5c-9832-c7d258ad8a82_WhatsApp+Image+2023-09-14+at+5.17.16+PM.jpeg?auto=compress,format',
     longDescription: 'A workshop event where speakers, mostly tech enthusiasts and industry professionals are called to give insights in the field of tech. It fosters networking opportunities among industry professionals and educates the students about the emerging trends and possibilities',
     dateAndTime: '5th October | 2:00PM to 5:00PM',
     teamSize: '1',
     venue: 'TMA PAI',
-    registerUrl: ''
-  },*/
+    registerUrl: 'https://linktr.ee/Genesis4.0'
+  },
   {
     name: "Bit to Byte",
     description:
       "A 24 hour Hackathon with exhilarating problem statements and a platform to present innovation",
     banner:
-      "https://images.prismic.io/ieeemuj/ZvgnGLVsGrYSwGoH_BiTtobyte.png?auto=format,compress",
+      "https://images.prismic.io/ieeemuj/Zv27qrVsGrYSwUUl_b2bgoogleform-1-.png?auto=format,compress",
     poster:
       "https://images.prismic.io/ieeemuj/ZvxgwLVsGrYSwQfi_BIDTOBYTE.png?auto=format,compress",
     longDescription:
@@ -68,7 +67,6 @@ const data = [
     venue: "Whole campus. Start from old mess.",
     registerUrl: "https://linktr.ee/Genesis4.0",
   },
-
   {
     name: "Breacout 5.0",
     description:
@@ -89,7 +87,7 @@ const data = [
     description:
       "NWWIE is an overnight women only event ,filled with technical and non-technical programs.",
     banner:
-      "https://images.prismic.io/ieeemuj/ZvVnT7VsGrYSwCY6_NetworkingNight.png?auto=format,compress",
+      "https://images.prismic.io/ieeemuj/Zv28BLVsGrYSwUU0_nwwgoogleform.png?auto=format,compress",
     poster:
       "https://images.prismic.io/ieeemuj/ZvXUHrVsGrYSwDcE_NWWMAINPOSTER.png?auto=format,compress",
     longDescription:
@@ -99,25 +97,23 @@ const data = [
     venue: "AB1 328",
     registerUrl: "https://linktr.ee/Genesis4.0",
   },
-
-  /*
   {
     name: 'MadMax',
     description: 'A robot obstacle course where the participants are supposed to bring their own wired or wireless robots.',
-    banner: 'https://images.prismic.io/ieeemuj/ZvMXabVsGrYSv4Pe_bannerwir-01.png?auto=format,compress',
+    banner: 'https://images.prismic.io/ieeemuj/Zv2617VsGrYSwUUX_madmaxgoogleform.png?auto=format,compress',
     poster: 'https://images.prismic.io/ieeemuj/ZvXTx7VsGrYSwDb__MADMAXMAINPOSTER.png?auto=format,compress',
     longDescription: 'A robot obstacle course where the participants are supposed to bring their own wired or wireless robots. They have to control their robots through the obstacle course and complete tasks along the way.',
     dateAndTime: '7th October | 11:30AM to 1:30PM',
     teamSize: '1',
     venue: 'N/A',
     registerUrl: ''
-  },*/
+  },
   {
     name: "Tech Expo",
     description:
       "A showcase event in which projects of all or any domains will be showcased.",
     banner:
-      "https://images.prismic.io/ieeemuj/ZvgmALVsGrYSwGn6_Tech-1600x400px-.png?auto=format,compress",
+      "https://images.prismic.io/ieeemuj/Zv270rVsGrYSwUUv_TECHEXPOgoogleform.png?auto=format,compress",
     poster:
       "https://images.prismic.io/ieeemuj/ZvXUWLVsGrYSwDcF_techexpomainposter.png?auto=format,compress",
     longDescription:

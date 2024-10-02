@@ -29,7 +29,7 @@ export default function Schedule() {
         <div className="w-full flex flex-col gap-6 xl:gap-8">
           <div className="flex flex-col items-center gap-4">
             <p className="text-[#F5F0D8] font-normal text-center text-[3rem] sm:text-[4rem] md:text-[5rem]">
-              Our Upcoming Events
+              Our Events
             </p>
             <p
               className="w-full xl:max-w-[80%] text-[#C3C3C3] font-[Inter]
