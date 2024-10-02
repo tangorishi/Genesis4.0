@@ -44,7 +44,7 @@ const data = [
     name: 'Tech Summit',
     description: 'A workshop event where speakers, mostly tech enthusiasts and industry professionals are called to give insights in the field of tech.',
     banner: 'https://images.prismic.io/ieeemuj/Zv26j7VsGrYSwUUU_TECHSUMMITgoogleform.png?auto=format,compress',
-    poster: 'https://images.prismic.io/ieeemuj/23c8f45f-cb3a-4c5c-9832-c7d258ad8a82_WhatsApp+Image+2023-09-14+at+5.17.16+PM.jpeg?auto=compress,format',
+    poster: 'https://images.prismic.io/ieeemuj/Zv3IhLVsGrYSwUYq_TECHSUMMITMAINPOSTER.png?auto=format,compress',
     longDescription: 'A workshop event where speakers, mostly tech enthusiasts and industry professionals are called to give insights in the field of tech. It fosters networking opportunities among industry professionals and educates the students about the emerging trends and possibilities',
     dateAndTime: '5th October | 2:00PM to 5:00PM',
     teamSize: '1',
