@@ -36,7 +36,7 @@ const data = [
     poster: 'https://images.prismic.io/ieeemuj/Zv26D7VsGrYSwUT-_BALLISTICMAINPOSTER-1-.png?auto=format,compress',
     longDescription: 'It is a gaming event where the shortlisted PC and mobile games are Fifa, BGMI and Mortal Kombat. Participants will progressively reach further rounds and the winners will bag the prize pool.',
     dateAndTime: 'Phase 1 : 3rd October | 6:00PM to 9:00PM , Phase 2 : 5th October | 6:00PM to 9:00PM',
-    teamSize: '3',
+    teamSize: 'FIFA: 1, Tekken: 1, BGMI: 4',
     venue: 'GHS (TedX Chowk)',
     registerUrl: 'https://linktr.ee/Genesis4.0'
   },
@@ -48,7 +48,7 @@ const data = [
     longDescription: 'A workshop event where speakers, mostly tech enthusiasts and industry professionals are called to give insights in the field of tech. It fosters networking opportunities among industry professionals and educates the students about the emerging trends and possibilities',
     dateAndTime: '5th October | 2:00PM to 5:00PM',
     teamSize: '1',
-    venue: 'TMA PAI',
+    venue: 'Vasanti R PAI',
     registerUrl: 'https://linktr.ee/Genesis4.0'
   },
   {
@@ -78,7 +78,7 @@ const data = [
     longDescription:
       "A Harry Potter themed treasure hunt where the participants will be divided into four groups and each group will follow a specific storyline to reach the final treasure. Scripts, clues, and mini games will be a major part of the event.",
     dateAndTime: "6th October | 10:00am onwards",
-    teamSize: "N/A",
+    teamSize: "1 to 4",
     venue: "Campus",
     registerUrl: "https://linktr.ee/Genesis4.0",
   },
