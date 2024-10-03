@@ -62,8 +62,8 @@ const data = [
     longDescription:
       "A 24 hour Hackathon with exhilarating problem statements and a platform to present innovation",
     dateAndTime:
-      "5th-7th October |  Phase-1: 10PM to 6AM (05/10/24) , Phase-2 (Judging): 2PM to 5PM (7/10/24)",
-    teamSize: "4",
+      "4th-7th October |  Phase-1: 9AM to 6PM (04/10/24) , Phase-2: 9PM TO 6AM (04/10/24 - 05/10/24) , Phase-3 (Judging): 2:30PM to 4:30PM (07/10/24)",
+    teamSize: "2 to 4",
     venue: "Campus",
     registerUrl: "https://linktr.ee/Genesis4.0",
   },
