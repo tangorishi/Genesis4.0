@@ -24,7 +24,7 @@ const data = [
       "https://images.prismic.io/ieeemuj/ZvMYbbVsGrYSv4Tr_FTRMAINPOSTER.png?auto=format,compress",
     longDescription:
       "An IEEE community exclusive event where the participants will try to break existing world records.",
-    dateAndTime: " 27th September | 2:00PM to 5:00PM",
+    dateAndTime: "27th September | 2:00PM to 5:00PM",
     teamSize: "1",
     venue: "Grand Staircase",
     registerUrl: "https://linktr.ee/Genesis4.0",
@@ -35,8 +35,8 @@ const data = [
     banner: 'https://images.prismic.io/ieeemuj/Zv24erVsGrYSwUTh_Ballisticgoogleform.png?auto=format,compress',
     poster: 'https://images.prismic.io/ieeemuj/Zv26D7VsGrYSwUT-_BALLISTICMAINPOSTER-1-.png?auto=format,compress',
     longDescription: 'It is a gaming event where the shortlisted PC and mobile games are Fifa, BGMI and Mortal Kombat. Participants will progressively reach further rounds and the winners will bag the prize pool.',
-    dateAndTime: 'Phase 1 : 2nd October | 6:00PM to 9:00PM , Phase 2 : 5th October | 6:00PM to 9:00PM',
-    teamSize: '3',
+    dateAndTime: 'Phase 1 : 3rd October | 6:00PM to 9:00PM , Phase 2 : 5th October | 6:00PM to 9:00PM',
+    teamSize: 'FIFA: 1, Tekken: 1, BGMI: 4',
     venue: 'GHS (TedX Chowk)',
     registerUrl: 'https://linktr.ee/Genesis4.0'
   },
@@ -48,7 +48,7 @@ const data = [
     longDescription: 'A workshop event where speakers, mostly tech enthusiasts and industry professionals are called to give insights in the field of tech. It fosters networking opportunities among industry professionals and educates the students about the emerging trends and possibilities',
     dateAndTime: '5th October | 2:00PM to 5:00PM',
     teamSize: '1',
-    venue: 'TMA PAI',
+    venue: 'Vasanti R PAI',
     registerUrl: 'https://linktr.ee/Genesis4.0'
   },
   {
@@ -58,13 +58,13 @@ const data = [
     banner:
       "https://images.prismic.io/ieeemuj/Zv27qrVsGrYSwUUl_b2bgoogleform-1-.png?auto=format,compress",
     poster:
-      "https://images.prismic.io/ieeemuj/ZvxgwLVsGrYSwQfi_BIDTOBYTE.png?auto=format,compress",
+      "https://images.prismic.io/ieeemuj/Zv5karVsGrYSwVDK_B2BPOSTER-1-.png?auto=format,compress",
     longDescription:
       "A 24 hour Hackathon with exhilarating problem statements and a platform to present innovation",
     dateAndTime:
-      "5th-7th October |  Phase-1: 9PM to 8AM (5/10/24) ,   Phase-2: 8AM to 9PM (6/10/24) ,  Phase-3 (judging): 2:30PM to 4:30PM (7/10/24)",
-    teamSize: "4",
-    venue: "Whole campus. Start from old mess.",
+      "4th-7th October |  Phase-1: 9AM to 6PM (04/10/24) , Phase-2: 9PM TO 6AM (04/10/24 - 05/10/24) , Phase-3 (Judging): 2:30PM to 4:30PM (07/10/24)",
+    teamSize: "2 to 4",
+    venue: "Campus",
     registerUrl: "https://linktr.ee/Genesis4.0",
   },
   {
@@ -78,7 +78,7 @@ const data = [
     longDescription:
       "A Harry Potter themed treasure hunt where the participants will be divided into four groups and each group will follow a specific storyline to reach the final treasure. Scripts, clues, and mini games will be a major part of the event.",
     dateAndTime: "6th October | 10:00am onwards",
-    teamSize: "N/A",
+    teamSize: "1 to 4",
     venue: "Campus",
     registerUrl: "https://linktr.ee/Genesis4.0",
   },
@@ -97,17 +97,17 @@ const data = [
     venue: "AB1 328",
     registerUrl: "https://linktr.ee/Genesis4.0",
   },
-  {
-    name: 'MadMax',
-    description: 'A robot obstacle course where the participants are supposed to bring their own wired or wireless robots.',
-    banner: 'https://images.prismic.io/ieeemuj/Zv2617VsGrYSwUUX_madmaxgoogleform.png?auto=format,compress',
-    poster: 'https://images.prismic.io/ieeemuj/ZvXTx7VsGrYSwDb__MADMAXMAINPOSTER.png?auto=format,compress',
-    longDescription: 'A robot obstacle course where the participants are supposed to bring their own wired or wireless robots. They have to control their robots through the obstacle course and complete tasks along the way.',
-    dateAndTime: '7th October | 11:30AM to 1:30PM',
-    teamSize: '1',
-    venue: 'N/A',
-    registerUrl: ''
-  },
+  // {
+  //   name: 'MadMax',
+  //   description: 'A robot obstacle course where the participants are supposed to bring their own wired or wireless robots.',
+  //   banner: 'https://images.prismic.io/ieeemuj/Zv2617VsGrYSwUUX_madmaxgoogleform.png?auto=format,compress',
+  //   poster: 'https://images.prismic.io/ieeemuj/ZvXTx7VsGrYSwDb__MADMAXMAINPOSTER.png?auto=format,compress',
+  //   longDescription: 'A robot obstacle course where the participants are supposed to bring their own wired or wireless robots. They have to control their robots through the obstacle course and complete tasks along the way.',
+  //   dateAndTime: '7th October | 11:30AM to 1:30PM',
+  //   teamSize: '1',
+  //   venue: 'N/A',
+  //   registerUrl: ''
+  // },
   {
     name: "Tech Expo",
     description:
