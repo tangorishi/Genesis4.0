@@ -43,22 +43,26 @@ export default function Contact() {
                   text-[1.25rem] sm:max-w-[32rem] lg:max-w-[40rem] xl:max-w-[50rem]
                   2xl:max-w-[55rem] md:text-[1rem] xl:text-[1.5rem]"
               >
-                At IEEE Genesis, we prioritize the experience! Whether you have questions, need assistance, or simply want to connect, don’t hesitate to reach out.
-                Join us at IEEE's biggest technical fest at Manipal University Jaipur, featuring a variety of events from fun activities to coding challenges.
+                At IEEE Genesis, we prioritize the experience! Whether you have
+                questions, need assistance, or simply want to connect, don’t
+                hesitate to reach out. Join us at IEEE's biggest technical fest
+                at Manipal University Jaipur, featuring a variety of events from
+                fun activities to coding challenges.
               </p>
             </div>
-
           </div>
 
           <div className="flex flex-col items-start gap-8 md:gap-12">
             <p className="text-[#F5F0D8] font-normal font-['Inter'] text-[1.5rem] md:text-[1.875rem]">
               Reaching Manipal University Jaipur
             </p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5086.387345091763!2d75.5675908396371!3d26.841597323992485!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4850e1a5a723%3A0x85186d7bad10eac4!2sManipal%20University%20Library!5e0!3m2!1sen!2sin!4v1720507553431!5m2!1sen!2sin"
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5086.387345091763!2d75.5675908396371!3d26.841597323992485!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4850e1a5a723%3A0x85186d7bad10eac4!2sManipal%20University%20Library!5e0!3m2!1sen!2sin!4v1720507553431!5m2!1sen!2sin"
               className="w-full h-full md:h-[25rem] border-0 rounded-[1rem]"
-
-             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
 
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
@@ -81,7 +85,10 @@ export default function Contact() {
                 </p>
                 <p className="text-[#D1CAC7] font-['Inter'] text-[1rem] font-normal md:text-[1.125rem]">
                   Book tickets from IRCTC : The campus is
-                  <span className="font-[600]" > 25kms from Jaipur Railway </span>
+                  <span className="font-[600]">
+                    {" "}
+                    25kms from Jaipur Railway{" "}
+                  </span>
                   Terminal and auto fare is usually around
                   <span className="font-[600]"> ₹500-₹600. </span>
                 </p>
@@ -110,7 +117,8 @@ export default function Contact() {
                   <span className="font-[600]">
                     Delhi, Mumbai, Hyderabad, and Bangalore.
                   </span>
-                  The campus is approximately 35kms from Jaipur International Airport.
+                  The campus is approximately 35kms from Jaipur International
+                  Airport.
                 </p>
               </div>
             </div>
@@ -153,13 +161,12 @@ export default function Contact() {
               font-normal text-[1rem] md:flex-row lg:text-[1.5rem]"
               >
                 <div className="flex flex-col items-start gap-2">
-                <p>+91 95699 13103</p>
-                <p>Rishi Joshi</p>
+                  <p>+91 98713 40076</p>
+                  <p>Samaksh Gupta</p>
                 </div>
                 <div className="flex flex-col items-start gap-2">
-
-                  <p>+91 93129 41940</p>
-                  <p>Lakshita Agarwal</p>
+                  <p>+91 70273 45159</p>
+                  <p>Aditya Rajawat</p>
                 </div>
               </div>
             </div>
@@ -171,15 +178,13 @@ export default function Contact() {
                 className="max-w-full md:max-w-[18rem] lg:max-w-[25rem] text-white
               font-normal text-[1rem] lg:text-[1.5rem]"
               >
-                Manipal University Jaipur, Jaipur-Ajmer Express Highway, Dahmi Kalan, Near GVK Toll Plaza, Jaipur, Rajasthan 303007
+                Manipal University Jaipur, Jaipur-Ajmer Express Highway, Dahmi
+                Kalan, Near GVK Toll Plaza, Jaipur, Rajasthan 303007
               </p>
             </div>
           </div>
         </div>
       </div>
-
-
-
 
       <Footer />
     </>
