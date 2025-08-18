@@ -32,6 +32,7 @@ export default function Contact() {
           className="w-full h-full flex flex-col gap-24 px-4 pt-20
             md:px-8 lg:px-16 xl:px-20 2xl:px-40"
         >
+          {/* Hero Section */}
           <div
             className="flex flex-col justify-between items-start sm:items-center
               gap-12 md:gap-0 md:flex-row md:items-start"
@@ -52,6 +53,7 @@ export default function Contact() {
             </div>
           </div>
 
+          {/* Map Section */}
           <div className="flex flex-col items-start gap-8 md:gap-12">
             <p className="text-[#F5F0D8] font-normal font-['Inter'] text-[1.5rem] md:text-[1.875rem]">
               Reaching Manipal University Jaipur
@@ -59,12 +61,13 @@ export default function Contact() {
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5086.387345091763!2d75.5675908396371!3d26.841597323992485!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4850e1a5a723%3A0x85186d7bad10eac4!2sManipal%20University%20Library!5e0!3m2!1sen!2sin!4v1720507553431!5m2!1sen!2sin"
               className="w-full h-full md:h-[25rem] border-0 rounded-[1rem]"
-              allowfullscreen=""
+              allowFullScreen=""
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
 
+          {/* Transport Section */}
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
             <div
               className="flex flex-col items-start p-6 gap-8
@@ -151,25 +154,26 @@ export default function Contact() {
             </div>
           </div>
 
+          {/* Call Us + Address Section */}
           <div className="flex flex-col items-start gap-12 md:gap-20 md:flex-row">
+            {/* Call Us */}
             <div className="flex flex-col items-start gap-4 md:gap-8">
               <p className="text-[#F5F0D8] font-[500] text-[1.5rem] md:text-[1.875rem]">
                 Call Us
               </p>
-              <div
-                className="flex flex-col gap-12 text-white
-              font-normal text-[1rem] md:flex-row lg:text-[1.5rem]"
-              >
-                <div className="flex flex-col items-start gap-2">
-                  <p>+91 98713 40076</p>
+              <div className="flex flex-col gap-8 text-white font-normal text-[1rem] lg:text-[1.5rem]">
+                <div className="flex flex-col items-start text-left">
+                  <p className="font-medium">+91 98713 40076</p>
                   <p>Samaksh Gupta</p>
                 </div>
-                <div className="flex flex-col items-start gap-2">
-                  <p>+91 70273 45159</p>
+                <div className="flex flex-col items-start text-left">
+                  <p className="font-medium">+91 70273 45159</p>
                   <p>Aditya Rajawat</p>
                 </div>
               </div>
             </div>
+
+            {/* Address */}
             <div className="flex flex-col items-start gap-4 md:gap-8">
               <p className="text-[#F5F0D8] font-[500] text-[1.5rem] md:text-[1.875rem]">
                 Address
