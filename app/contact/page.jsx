@@ -39,7 +39,7 @@ export default function Contact() {
             <div className="flex flex-col items-start gap-8">
               <TextAnimation text="How can we help you? " />
               <p
-                className="w-full text-white font-['Inter'] font-normal
+                className="w-full text-white font-normal
                   text-[1.25rem] sm:max-w-[32rem] lg:max-w-[40rem] xl:max-w-[50rem]
                   2xl:max-w-[55rem] md:text-[1rem] xl:text-[1.5rem]"
               >
@@ -51,7 +51,7 @@ export default function Contact() {
           </div>
 
           <div className="flex flex-col items-start gap-8 md:gap-12">
-            <p className="text-[#F5F0D8] font-normal font-['Inter'] text-[1.5rem] md:text-[1.875rem]">
+            <p className="text-[#F5F0D8] font-medium text-[1.5rem] md:text-[1.875rem]">
               Reaching Manipal University Jaipur
             </p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5086.387345091763!2d75.5675908396371!3d26.841597323992485!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4850e1a5a723%3A0x85186d7bad10eac4!2sManipal%20University%20Library!5e0!3m2!1sen!2sin!4v1720507553431!5m2!1sen!2sin"
@@ -79,7 +79,7 @@ export default function Contact() {
                 <p className="text-white text-[1.125rem] font-[600] md:text-[1.25rem]">
                   By Train
                 </p>
-                <p className="text-[#D1CAC7] font-['Inter'] text-[1rem] font-normal md:text-[1.125rem]">
+                <p className="text-[#D1CAC7]  text-[1rem] font-normal md:text-[1.125rem]">
                   Book tickets from IRCTC : The campus is
                   <span className="font-[600]" > 25kms from Jaipur Railway </span>
                   Terminal and auto fare is usually around
@@ -105,7 +105,7 @@ export default function Contact() {
                 <p className="text-white text-[1.125rem] font-[600] md:text-[1.25rem]">
                   By Air
                 </p>
-                <p className="text-[#D1CAC7] font-['Inter'] text-[1rem] font-normal md:text-[1.125rem]">
+                <p className="text-[#D1CAC7]  text-[1rem] font-normal md:text-[1.125rem]">
                   Daily flights from{" "}
                   <span className="font-[600]">
                     Delhi, Mumbai, Hyderabad, and Bangalore.
@@ -132,7 +132,7 @@ export default function Contact() {
                 <p className="text-white text-[1.125rem] font-[600] md:text-[1.25rem]">
                   By Bus
                 </p>
-                <p className="text-[#D1CAC7] font-['Inter'] text-[1rem] font-normal md:text-[1.125rem]">
+                <p className="text-[#D1CAC7] text-[1rem] font-normal md:text-[1.125rem]">
                   Only suggested if you live around{" "}
                   <span className="font-[600]">8-10hrs</span> from Jaipur.
                   <span className="font-[600]"> Sindhi Camp Bus Stand </span>
