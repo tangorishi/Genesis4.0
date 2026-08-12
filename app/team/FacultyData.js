@@ -1,21 +1,30 @@
 const facultyData=[
   {
-    name: "Bhavik Agrawal",
-    role: "Head of Department- Computer Science and Engineering(AIML)",
-    profilepic: "",
-    linkedin: "https://www.linkedin.com/in/bhavikagarwal2001/",
-    twitter: "https://twitter.com/BhavikAgarwal13",
-    github: "https://github.com/Bhavik-ag",
-    instagram:"https://instagram.com/johndoe",
+    name: "Dr. Mahesh Jangid",
+    role: "Branch Counselor (IEEE MUJ), Faculty Coordinator (IEEE SB), Faculty Advisor (IEEE CS,WIE)",
+    profilepic: "https://images.prismic.io/ieeemuj/aLk4xWGNHVfTOpBl_1.jpg?auto=format,compress",
+    instagram:"https://www.instagram.com/mahesh_seelak",
   },
   {
-    name: "Samyak Bhargava",
-    role: "Event Coordinator",
-    profilepic: "",
-    linkedin: "https://www.linkedin.com/in/sammybh6/",
-    twitter: "#",
-    github: "https://github.com/sammybh6",
-  }
+    name: "Dr Shishir Singh Chauhan",
+    role: "Faculty Advisor (IEEE CS)",
+    profilepic: "https://images.prismic.io/ieeemuj/aLk4xmGNHVfTOpBm_2.png?auto=format,compress",
+  },
+  {
+    name: "Dr. Sumit Srivastava",
+    role: "IEEE Student Branch (Advisor)",
+    profilepic: "https://images.prismic.io/ieeemuj/aLk4x2GNHVfTOpBn_3.jpg?auto=format,compress",
+  },
+  {
+    name: "Ms. Juhi Singh",
+    role: "Faculty Co-coordinator (IEEE WIE)",
+    profilepic: "https://images.prismic.io/ieeemuj/aLk4yGGNHVfTOpBo_4.png?auto=format,compress",
+  },
+  {
+    name: "Dr Sunita Singhal",
+    role: "Faculty Coordinator, WIE",
+    profilepic: "https://images.prismic.io/ieeemuj/aLk4yWGNHVfTOpBp_5.jpg?auto=format,compress",
+  },
 ];
 
 export default facultyData;
